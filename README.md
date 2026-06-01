@@ -49,16 +49,12 @@ Showz es una empresa de venta de entradas de eventos. Anteriormente a la ejecuci
 ### Metodología
 
 - **Preprocesamiento de datos:** Se limpiaron y estandarizaron los datos, eliminando inconsistencias y verificando la ausencia de duplicados y valores faltantes.
-- **Exploratory Data Analysis (EDA):** Análisis de métricas para identificación de tendencias:
+- **Exploratory Data Analysis (EDA):** Análisis de métricas para identificación de tendencias (entre fuentes de anuncios y entte dispositivos touch y desktop):
    - Tasa de conversión
    - Tamaño promedio de orden
    - LTV
    - CAC
    - ROMI
-
-y cada análisis de métricas de negocio se realiza a modo de comparación entre:
-   - Fuentes de anuncios
-   - Dispositivos habilitados para uso de plataforma (Touch y Desktop)
 
 - **Generación de visualizaciones de datos:** Se definieron gráficos de histogramas, barras, mapas de calor; con la intención de contar con recursos que permitan al cliente el entendimiento más sencillo de las métricas y descubrimientos obtenidos.
 
