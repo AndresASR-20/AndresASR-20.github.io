@@ -32,6 +32,7 @@ Showz es una empresa de venta de entradas de eventos. Anteriormente a la ejecuci
   - LTV
   - CAC
   - ROMI
+
   y cada análisis de métricas de negocio se realiza a modo de comparación entre:
   - Fuentes de anuncios
   - Dispositivos habilitados para uso de plataforma (Touch y Desktop)
