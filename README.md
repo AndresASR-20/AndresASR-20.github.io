@@ -57,8 +57,10 @@ Showz es una empresa de venta de entradas de eventos. Anteriormente a la ejecuci
     * ROMI
 
 y cada análisis de métricas de negocio se realiza a modo de comparación entre:
+
     * Fuentes de anuncios
     * Dispositivos habilitados para uso de plataforma (Touch y Desktop)
+
 * **Generación de visualizaciones de datos:** Se definieron gráficos de histogramas, barras, mapas de calor; con la intención de contar con recursos que permitan al cliente el entendimiento más sencillo de las métricas y descubrimientos obtenidos.
 
 ### Conclusiones y recomendaciones
