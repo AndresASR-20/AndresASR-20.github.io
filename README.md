@@ -49,7 +49,7 @@ Showz es una empresa de venta de entradas de eventos. Anteriormente a la ejecuci
 ### Metodología
 
 - **Preprocesamiento de datos:** Se limpiaron y estandarizaron los datos, eliminando inconsistencias y verificando la ausencia de duplicados y valores faltantes.
-- **Exploratory Data Analysis (EDA):** Análisis de métricas para identificación de tendencias (entre fuentes de anuncios y entte dispositivos touch y desktop):
+- **Exploratory Data Analysis (EDA):** Análisis de métricas para identificación de tendencias (entre fuentes de anuncios y entre dispositivos touch y desktop):
    - Tasa de conversión
    - Tamaño promedio de orden
    - LTV
