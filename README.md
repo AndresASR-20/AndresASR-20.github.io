@@ -85,6 +85,19 @@ y cada análisis de métricas de negocio se realiza a modo de comparación entre
 
 ### Visualizaciones destacadas
 
-(agregar información)
+1. **Mapa de calor del ciclo de vida de la tasa de retención de Showz**
+   Observamos que en cada cohorte (mes de primera visita al portal de Showz) por cada mes que pasa, se presenta una tendencia de decremento de la tasa de retención de los clientes (hablando en un sentido general de la empresa, sin distinguir entre fuentes de anuncios o dispositivos. Esto denota para Shows una alerta para tener claro que es relevante realizar una investigación a profundización de en qué medios es donde se está presentando esta perdida de interés del cliente.
+
+![Mapa de calor del ciclo de vida de la tasa de retención](assets/img/project_Business_Analysis/Graphic_2.png)
+
+2. **Rangos de días requeridos para conversión de clientes (análisis por dispositivos)**
+   Se puede percibir que el dispositivo "desktop" mantiene un mejor comportamiento de conversión de clientes, puesto que este dispositivo muestra una considerable cantidad de clientes que el mismo día que se registraron, realizaron una compra en la plataforma de Showz. Por otra parte, el dispositivo "touch" tiene una cantidad considerablemente menor de clientes que realizaron una compra el mismo día que se registraron. El mismo comportamiento de diferencia de conversión de clientes entre dispositivos se puede percibir para los otros 3 rangos de días.
+
+![Gráfico de barras de rangos de días para conversión de clientes](assets/img/project_Business_Analysis/Graphic_4.png)
+
+3. **Análisis de clientes únicos con participación en plataforma por unidad de tiempo**
+   Este análisis entrega información de utilidad para conocer el comportamiento dentro de la plataforma por distintas unidades de tiempo (día, semana y mes). Mediante estos gráficos se puede detectar comportamientos peculiares debido a fechas festivas, comportamientos temporales durante el año, entre otros comportamientos temporales que agregue valor identificar.
+
+![Histogramas de clientes únicos en plataforma por unidades de tiempo](assets/img/project_Business_Analysis/Graphic_1.png)
 
 Explora más detalles del proyecto en el [repositorio completo](https://www.linkedin.com/in/luis-andres-aponte-san-roman/).
