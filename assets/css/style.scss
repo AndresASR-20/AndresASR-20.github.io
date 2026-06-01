@@ -1,0 +1,8 @@
+---
+---
+@import "{{ site.theme }}";
+
+// Esto añade espacio al final de tu contenido para que no se choque con el footer
+#content, .wrapper, section {
+    padding-bottom: 60px; 
+}
