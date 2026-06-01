@@ -55,6 +55,7 @@ Showz es una empresa de venta de entradas de eventos. Anteriormente a la ejecuci
     * LTV
     * CAC
     * ROMI
+
 y cada análisis de métricas de negocio se realiza a modo de comparación entre:
     * Fuentes de anuncios
     * Dispositivos habilitados para uso de plataforma (Touch y Desktop)
@@ -63,41 +64,57 @@ y cada análisis de métricas de negocio se realiza a modo de comparación entre
 ### Conclusiones y recomendaciones
 
 **RECOMENDACIONES DE FUENTES/PLATAFORMAS**
-  **FUENTES ALTAMENTE RECOMENDADAS 🏆** 
-    **FUENTE 1 - PRIORIDAD MÁXIMA**
-* Métricas clave: ROMI = 113.2%, CAC = 4.04, LTV = 1.12
-* Fundamentación: Combina la mejor rentabilidad con eficiencia en costos
-* Recomendación: INCREMENTAR presupuesto en 50-100%
-    **FUENTE 2 - ALTA PRIORIDAD**
-* Métricas clave: ROMI = 43.7%, CAC = 9.05, LTV = 1.29
-* Fundamentación: Rentable y genera el mayor LTV promedio
-* Recomendación: INCREMENTAR presupuesto en 30-50%
-  **FUENTES A REEVALUAR CRÍTICAMENTE ⚠️**
-    **FUENTE 3 - ACCIÓN INMEDIATA REQUERIDA**
-* Métricas clave: ROMI = -70.0%, CAC = 14.74, Mayor volumen pero pérdidas masivas
-* Fundamentación: A pesar de generar 9,587 clientes, produce pérdidas de 98,878
-* Recomendación: SUSPENDER temporalmente y optimizar estrategia
-  **FUENTES A ELIMINAR O REDUCIR 🔻**
-    **FUENTES 4, 5, 9, 10**
-* Métricas clave: ROMI negativo (-11.4% a -30.9%)
-* Fundamentación: Todas generan pérdidas consistentes
-* Recomendación: REDUCIR presupuesto en 70% o ELIMINAR
+
+- FUENTES ALTAMENTE RECOMENDADAS 🏆
+  - FUENTE 1 - PRIORIDAD MÁXIMA
+
+  Métricas clave: ROMI = 113.2%, CAC = 4.04, LTV = 1.12
+  
+  Fundamentación: Combina la mejor rentabilidad con eficiencia en costos
+  
+  Recomendación: INCREMENTAR presupuesto en 50-100%
+  
+  - FUENTE 2 - ALTA PRIORIDAD
+
+  Métricas clave: ROMI = 43.7%, CAC = 9.05, LTV = 1.29
+  
+  Fundamentación: Rentable y genera el mayor LTV promedio
+  
+  Recomendación: INCREMENTAR presupuesto en 30-50%
+  
+- FUENTES A REEVALUAR CRÍTICAMENTE ⚠️
+  - FUENTE 3 - ACCIÓN INMEDIATA REQUERIDA
+
+  Métricas clave: ROMI = -70.0%, CAC = 14.74, Mayor volumen pero pérdidas masivas
+  
+  Fundamentación: A pesar de generar 9,587 clientes, produce pérdidas de 98,878
+  
+  Recomendación: SUSPENDER temporalmente y optimizar estrategia
+  
+- FUENTES A ELIMINAR O REDUCIR 🔻
+  - FUENTES 4, 5, 9, 10
+
+  Métricas clave: ROMI negativo (-11.4% a -30.9%)
+  
+  Fundamentación: Todas generan pérdidas consistentes
+  
+  Recomendación: REDUCIR presupuesto en 70% o ELIMINAR
 
 ### Visualizaciones destacadas
 
-1. **Mapa de calor del ciclo de vida de la tasa de retención de Showz**
+- **Mapa de calor del ciclo de vida de la tasa de retención de Showz**
    Observamos que en cada cohorte (mes de primera visita al portal de Showz) por cada mes que pasa, se presenta una tendencia de decremento de la tasa de retención de los clientes (hablando en un sentido general de la empresa, sin distinguir entre fuentes de anuncios o dispositivos. Esto denota para Shows una alerta para tener claro que es relevante realizar una investigación a profundización de en qué medios es donde se está presentando esta perdida de interés del cliente.
 
 ![Mapa de calor del ciclo de vida de la tasa de retención](assets/img/project_Business_Analysis/Graphic_2.png)
 
-2. **Rangos de días requeridos para conversión de clientes (análisis por dispositivos)**
+- **Rangos de días requeridos para conversión de clientes (análisis por dispositivos)**
    Se puede percibir que el dispositivo "desktop" mantiene un mejor comportamiento de conversión de clientes, puesto que este dispositivo muestra una considerable cantidad de clientes que el mismo día que se registraron, realizaron una compra en la plataforma de Showz. Por otra parte, el dispositivo "touch" tiene una cantidad considerablemente menor de clientes que realizaron una compra el mismo día que se registraron. El mismo comportamiento de diferencia de conversión de clientes entre dispositivos se puede percibir para los otros 3 rangos de días.
 
 ![Gráfico de barras de rangos de días para conversión de clientes](assets/img/project_Business_Analysis/Graphic_4.png)
 
-3. **Análisis de clientes únicos con participación en plataforma por unidad de tiempo**
+- **Análisis de clientes únicos con participación en plataforma por unidad de tiempo**
    Este análisis entrega información de utilidad para conocer el comportamiento dentro de la plataforma por distintas unidades de tiempo (día, semana y mes). Mediante estos gráficos se puede detectar comportamientos peculiares debido a fechas festivas, comportamientos temporales durante el año, entre otros comportamientos temporales que agregue valor identificar.
 
 ![Histogramas de clientes únicos en plataforma por unidades de tiempo](assets/img/project_Business_Analysis/Graphic_1.png)
 
-Explora más detalles del proyecto en el [repositorio completo](https://www.linkedin.com/in/luis-andres-aponte-san-roman/).
+Explora más detalles del proyecto en el [repositorio completo](https://github.com/AndresASR-20/AndresASR-20.github.io/tree/main/assets/projects/project_Business_Analysis).
