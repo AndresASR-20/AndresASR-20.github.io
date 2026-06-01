@@ -44,24 +44,35 @@ Showz es una empresa de venta de entradas de eventos. Anteriormente a la ejecuci
   - FUENTE 1 - PRIORIDAD MÁXIMA
 
   Métricas clave: ROMI = 113.2%, CAC = 4.04, LTV = 1.12
+  
   Fundamentación: Combina la mejor rentabilidad con eficiencia en costos
+  
   Recomendación: INCREMENTAR presupuesto en 50-100%
+  
   - FUENTE 2 - ALTA PRIORIDAD
 
   Métricas clave: ROMI = 43.7%, CAC = 9.05, LTV = 1.29
+  
   Fundamentación: Rentable y genera el mayor LTV promedio
+  
   Recomendación: INCREMENTAR presupuesto en 30-50%
+  
 - FUENTES A REEVALUAR CRÍTICAMENTE ⚠️
   - FUENTE 3 - ACCIÓN INMEDIATA REQUERIDA
 
   Métricas clave: ROMI = -70.0%, CAC = 14.74, Mayor volumen pero pérdidas masivas
+  
   Fundamentación: A pesar de generar 9,587 clientes, produce pérdidas de 98,878
+  
   Recomendación: SUSPENDER temporalmente y optimizar estrategia
+  
 - FUENTES A ELIMINAR O REDUCIR 🔻
   - FUENTES 4, 5, 9, 10
 
   Métricas clave: ROMI negativo (-11.4% a -30.9%)
+  
   Fundamentación: Todas generan pérdidas consistentes
+  
   Recomendación: REDUCIR presupuesto en 70% o ELIMINAR
 
 ## Diccionario de datos
@@ -69,10 +80,6 @@ La tabla costs_us (estadísticas de gastos de marketing):
 - source_id: identificador de la fuente de anuncios.
 - dt: fecha.
 - costs: gastos en esta fuente de anuncios en este día.
-
-La tabla costs_us (datos sobre pedidos):
-- Uid: identificador único del usuario que realiza un pedido.
-- Buy Ts: fecha y hora del pedido. Revenue: el ingreso de Showz por el pedido.
 
 La tabla orders_log_us (datos sobre pedidos):
 - Uid: identificador único del usuario que realiza un pedido.
