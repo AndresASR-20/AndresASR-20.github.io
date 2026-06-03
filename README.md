@@ -115,3 +115,105 @@ Showz es una empresa de venta de entradas de eventos. Anteriormente a la ejecuci
 ![Histogramas de clientes únicos en plataforma por unidades de tiempo](assets/img/project_Business_Analysis/Graphic_1.png)
 
 Explora más detalles del proyecto en el [repositorio completo](https://github.com/AndresASR-20/AndresASR-20.github.io/tree/main/assets/projects/project_Business_Analysis).
+
+## Análisis de retención de clientes para gimnasio
+
+En todas las industrias, la retención de clientes es fundamental para garantizar ingresos sostenibles y reducir los costos asociados con la adquisición de nuevos clientes. LLevando esta situación de retención de clientes al sector de los servicios de gimnasio, uno de los problemas más comunes que enfrentan los gimnasios y otros servicios es la pérdida de clientes. ¿Cómo descubres si un/a cliente ya no está contigo? En el caso de un gimnasio, tiene sentido decir que un/a cliente se ha ido si no viene durante un mes. Por supuesto, es posible que se hayan ido de viaje y retomen sus visitas cuando regresen, pero ese no es un caso típico. Por lo general, si un/a cliente se une, viene varias veces y luego desaparece, es poco probable que regrese. Identificar los factores clave que influyen en la retención y cancelación permite al gimnasio Model Fitness anticiparse a los riesgos de abandono, diseñar estrategias de fidelización efectivas y personalizar las experiencias para cada cliente.
+
+### Herramientas y Tipo de Proyecto
+
+| Tecnologías | Proceso de Datos |
+| :--- | :--- |
+| `PYTHON` | `LIMPIEZA DE DATOS` |
+| `PANDAS` | `TRANSFORMACIÓN DE DATOS` |
+| `MATPLOTLIB` | `GENERACIÓN DE GRÁFICOS` |
+| `PIPLOT` | `GENERACIÓN DE GRÁFICOS` |
+| `SEABORN` | `ANÁLISIS ESTADÍSTICO` |
+| `NUMPY` | `CÁLCULO NUMÉRICO` |
+| `SCIKIT-LEARN` | `CÁLCULO NUMÉRICO` |
+
+---
+
+### Preguntas clave
+
+1. ¿Qué factores demográficos o de comportamiento influyen más en la cancelación?
+2. ¿Qué características diferencian a los clientes leales de los que abandonan?
+3. ¿Cómo se pueden segmentar los clientes para diseñar estrategias personalizadas?
+
+### Metodología
+
+- **Preprocesamiento de datos:** Se limpiaron y estandarizaron los datos, eliminando inconsistencias y verificando la ausencia de duplicados y valores faltantes.
+- **Explorartory Data Analysis (EDA):** Se analizaron características demográficas y de uso, identificando patrones en clientes que permanecen y los que cancelan.
+- **Modelado predictivo:** Se entrenaron modelos de regresión logística y bosque aleatorio para predecir la cancelación de clientes con un precisión del 85% y 84%, respectivamente.
+- **Clustering:** Se segmentaron los clientes en grupos utilizando K-means para identificar comportamientos similares.
+
+### Conclusiones y recomendaciones
+
+#### CONCLUSIONES Y RECOMENDACIONES ESTRATÉGICAS
+##### GRUPOS OBJETIVO PRIORITARIOS
+- ALTA PRIORIDAD - Clúster 3 "Nuevos y jóvenes" (55.8% cancelación)
+
+Perfil: Clientes de 26.9 años promedio, nuevos (1.7 meses), contratos cortos
+
+- PRIORIDAD MEDIA - Clúster 2 "Distantes geográficamente" (44.9% cancelación)
+
+Perfil: Ninguno vive cerca del gimnasio, contratos cortos
+
+**Acciones específicas:**
+
+- Convenios con apps de transporte (Uber/taxi con descuento)
+- Horarios extendidos para mayor flexibilidad
+- Clases virtuales complementarias
+- Programa de referidos con bonificaciones especiales
+
+##### MEDIDAS PARA REDUCIR LA ROTACIÓN
+
+A) ESTRATEGIAS PREVENTIVAS
+
+- Para nuevos miembros (primeros 3 meses):
+   - Metas progresivas personalizadas
+   - Descuentos progresivos por permanencia
+
+B) ESTRATEGIAS DE RETENCIÓN ACTIVA
+
+- Monitoreo de señales de alerta:
+   - Frecuencia de visitas < 1.5 veces/mes → Intervención inmediata
+   - Contratos de 1 mes → Oferta automática de extensión con beneficios
+   - Sin teléfono registrado → Campaña especial de contacto
+
+##### APROVECHAMIENTO DE GRUPOS LEALES
+
+###### Clúster 1 "Comprometidos de largo plazo" (1.5% cancelación)
+
+Estrategia: Convertirlos en embajadores de marca
+
+Acciones:
+- Programa VIP con beneficios exclusivos
+- Comisiones por referir nuevos miembros
+- Acceso prioritario a nuevas clases/equipos
+
+###### Clúster 0 "Promocionales VIP" (13.9% cancelación)
+
+Estrategia: Maximizar el poder del marketing boca a boca
+
+Acciones:
+- Ampliar programa de referidos
+- Eventos especiales para empresas asociadas
+- Descuentos familiares/grupales
+ 
+##### MÉTRICAS DE SEGUIMIENTO RECOMENDADAS
+- KPIs mensuales por clúster:
+   - Tasa de cancelación por grupo
+   - Frecuencia promedio de visitas
+   - Tiempo promedio de permanencia
+   - ROI de programas de retención específicos
+
+### Visualizaciones destacadas
+
+- **Mapa de calor del ciclo de vida de la tasa de retención de Showz**
+   Observamos que en cada cohorte (mes de primera visita al portal de Showz) por cada mes que pasa, se presenta una tendencia de decremento de la tasa de retención de los clientes (hablando en un sentido general de la empresa, sin distinguir entre fuentes de anuncios o dispositivos. Esto denota para Shows una alerta para tener claro que es relevante realizar una investigación a profundización de en qué medios es donde se está presentando esta perdida de interés del cliente.
+
+![Mapa de calor del ciclo de vida de la tasa de retención](assets/img/project_Business_Analysis/Graphic_2.png)
+
+
+Explora más detalles del proyecto en el [repositorio completo](https://github.com/AndresASR-20/AndresASR-20.github.io/tree/main/assets/projects/project_Business_Analysis).
