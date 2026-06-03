@@ -216,18 +216,18 @@ Acciones:
 
    Se encontró que Las características month_to_end_contract y contract_period están altamente correlacionadas (0.9), lo que sugiere que se debe tener cuidado con la multicolinealidad al desarrollar modelos predictivos.
 
-![Mapa de calor de correlación entre características](assets/img/project_Business_Analysis/archivo_2.png)
+![Mapa de calor de correlación entre características](assets/img/project_Data_Modelling/archivo_2.png)
 
 - **Histograma de características con base en estátus de cliente (vigente o cancelado)**
 
    Este tipo de visualizaciones de datos agregan un valor visual considerable puesto que pueden representar un apoyo para percibir comportamientos de cada característica, desde un enfoque individual, con base en el estátus de los clientes (vigentes o cancelados).
 
-![Histograma de características con base en estátus de cliente](assets/img/project_Business_Analysis/archivo_3.png)
+![Histograma de características con base en estátus de cliente](assets/img/project_Data_Modelling/archivo_3.png)
 
 - **Dendograma para análisis de clústeres**
 
    El dendrograma muestran cómo los clientes se agrupan en segmentos distintos basados en sus características, donde el número óptimo de clústeres sugerido es 4.
 
-![Dendograma para análisis de clústeres](assets/img/project_Business_Analysis/archivo_1.png)
+![Dendograma para análisis de clústeres](assets/img/project_Data_Modelling/archivo_1.png)
 
 Explora más detalles del proyecto en el [repositorio completo](https://github.com/AndresASR-20/AndresASR-20.github.io/tree/main/assets/projects/project_Data_Modelling).
