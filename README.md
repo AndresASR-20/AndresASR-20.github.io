@@ -100,16 +100,19 @@ Showz es una empresa de venta de entradas de eventos. Anteriormente a la ejecuci
 ### Visualizaciones destacadas
 
 - **Mapa de calor del ciclo de vida de la tasa de retención de Showz**
+
    Observamos que en cada cohorte (mes de primera visita al portal de Showz) por cada mes que pasa, se presenta una tendencia de decremento de la tasa de retención de los clientes (hablando en un sentido general de la empresa, sin distinguir entre fuentes de anuncios o dispositivos. Esto denota para Shows una alerta para tener claro que es relevante realizar una investigación a profundización de en qué medios es donde se está presentando esta perdida de interés del cliente.
 
 ![Mapa de calor del ciclo de vida de la tasa de retención](assets/img/project_Business_Analysis/Graphic_2.png)
 
 - **Rangos de días requeridos para conversión de clientes (análisis por dispositivos)**
+
    Se puede percibir que el dispositivo "desktop" mantiene un mejor comportamiento de conversión de clientes, puesto que este dispositivo muestra una considerable cantidad de clientes que el mismo día que se registraron, realizaron una compra en la plataforma de Showz. Por otra parte, el dispositivo "touch" tiene una cantidad considerablemente menor de clientes que realizaron una compra el mismo día que se registraron. El mismo comportamiento de diferencia de conversión de clientes entre dispositivos se puede percibir para los otros 3 rangos de días.
 
 ![Gráfico de barras de rangos de días para conversión de clientes](assets/img/project_Business_Analysis/Graphic_4.png)
 
 - **Análisis de clientes únicos con participación en plataforma por unidad de tiempo**
+
    Este análisis entrega información de utilidad para conocer el comportamiento dentro de la plataforma por distintas unidades de tiempo (día, semana y mes). Mediante estos gráficos se puede detectar comportamientos peculiares debido a fechas festivas, comportamientos temporales durante el año, entre otros comportamientos temporales que agregue valor identificar.
 
 ![Histogramas de clientes únicos en plataforma por unidades de tiempo](assets/img/project_Business_Analysis/Graphic_1.png)
@@ -130,7 +133,7 @@ En todas las industrias, la retención de clientes es fundamental para garantiza
 | `PIPLOT` | `GENERACIÓN DE GRÁFICOS` |
 | `SEABORN` | `ANÁLISIS ESTADÍSTICO` |
 | `NUMPY` | `CÁLCULO NUMÉRICO` |
-| `SCIKIT-LEARN` | `CÁLCULO NUMÉRICO` |
+| `SCIKIT-LEARN` | `MODELADO DE DATOS (CLUSTERING)` |
 
 ---
 
@@ -149,8 +152,7 @@ En todas las industrias, la retención de clientes es fundamental para garantiza
 
 ### Conclusiones y recomendaciones
 
-#### CONCLUSIONES Y RECOMENDACIONES ESTRATÉGICAS
-##### GRUPOS OBJETIVO PRIORITARIOS
+#### GRUPOS OBJETIVO PRIORITARIOS
 - ALTA PRIORIDAD - Clúster 3 "Nuevos y jóvenes" (55.8% cancelación)
 
 Perfil: Clientes de 26.9 años promedio, nuevos (1.7 meses), contratos cortos
@@ -166,7 +168,7 @@ Perfil: Ninguno vive cerca del gimnasio, contratos cortos
 - Clases virtuales complementarias
 - Programa de referidos con bonificaciones especiales
 
-##### MEDIDAS PARA REDUCIR LA ROTACIÓN
+#### MEDIDAS PARA REDUCIR LA ROTACIÓN
 
 A) ESTRATEGIAS PREVENTIVAS
 
@@ -181,9 +183,9 @@ B) ESTRATEGIAS DE RETENCIÓN ACTIVA
    - Contratos de 1 mes → Oferta automática de extensión con beneficios
    - Sin teléfono registrado → Campaña especial de contacto
 
-##### APROVECHAMIENTO DE GRUPOS LEALES
+#### APROVECHAMIENTO DE GRUPOS LEALES
 
-###### Clúster 1 "Comprometidos de largo plazo" (1.5% cancelación)
+##### Clúster 1 "Comprometidos de largo plazo" (1.5% cancelación)
 
 Estrategia: Convertirlos en embajadores de marca
 
@@ -192,7 +194,7 @@ Acciones:
 - Comisiones por referir nuevos miembros
 - Acceso prioritario a nuevas clases/equipos
 
-###### Clúster 0 "Promocionales VIP" (13.9% cancelación)
+##### Clúster 0 "Promocionales VIP" (13.9% cancelación)
 
 Estrategia: Maximizar el poder del marketing boca a boca
 
@@ -201,7 +203,7 @@ Acciones:
 - Eventos especiales para empresas asociadas
 - Descuentos familiares/grupales
  
-##### MÉTRICAS DE SEGUIMIENTO RECOMENDADAS
+#### MÉTRICAS DE SEGUIMIENTO RECOMENDADAS
 - KPIs mensuales por clúster:
    - Tasa de cancelación por grupo
    - Frecuencia promedio de visitas
@@ -210,10 +212,22 @@ Acciones:
 
 ### Visualizaciones destacadas
 
-- **Mapa de calor del ciclo de vida de la tasa de retención de Showz**
-   Observamos que en cada cohorte (mes de primera visita al portal de Showz) por cada mes que pasa, se presenta una tendencia de decremento de la tasa de retención de los clientes (hablando en un sentido general de la empresa, sin distinguir entre fuentes de anuncios o dispositivos. Esto denota para Shows una alerta para tener claro que es relevante realizar una investigación a profundización de en qué medios es donde se está presentando esta perdida de interés del cliente.
+- **Mapa de calor de correlación entre características**
 
-![Mapa de calor del ciclo de vida de la tasa de retención](assets/img/project_Business_Analysis/Graphic_2.png)
+   Se encontró que Las características month_to_end_contract y contract_period están altamente correlacionadas (0.9), lo que sugiere que se debe tener cuidado con la multicolinealidad al desarrollar modelos predictivos.
 
+![Mapa de calor de correlación entre características](assets/img/project_Business_Analysis/archivo_2.png)
 
-Explora más detalles del proyecto en el [repositorio completo](https://github.com/AndresASR-20/AndresASR-20.github.io/tree/main/assets/projects/project_Business_Analysis).
+- **Histograma de características con base en estátus de cliente (vigente o cancelado)**
+
+   Este tipo de visualizaciones de datos agregan un valor visual considerable puesto que pueden representar un apoyo para percibir comportamientos de cada característica, desde un enfoque individual, con base en el estátus de los clientes (vigentes o cancelados).
+
+![Histograma de características con base en estátus de cliente](assets/img/project_Business_Analysis/archivo_3.png)
+
+- **Dendograma para análisis de clústeres**
+
+   El dendrograma muestran cómo los clientes se agrupan en segmentos distintos basados en sus características, donde el número óptimo de clústeres sugerido es 4.
+
+![Dendograma para análisis de clústeres](assets/img/project_Business_Analysis/archivo_1.png)
+
+Explora más detalles del proyecto en el [repositorio completo](https://github.com/AndresASR-20/AndresASR-20.github.io/tree/main/assets/projects/project_Data_Modelling).
