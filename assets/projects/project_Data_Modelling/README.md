@@ -9,7 +9,7 @@ En todas las industrias, la retención de clientes es fundamental para garantiza
 ![Pyplot](https://img.shields.io/badge/Pyplot-3262A8?style=for-the-badge)
 ![Seaborn](https://img.shields.io/badge/Seaborn-3262A8?style=for-the-badge)
 ![NumPy](https://img.shields.io/badge/NumPy-3262A8?style=for-the-badge)
-![Scikit-Learn](https://img.shields.io/badge/Scikit-Learn-3262A8?style=for-the-badge)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-%23357ebd.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
 ![Jupyter Notebook](https://img.shields.io/badge/Jupyter_Notebook-3262A8?style=for-the-badge&logo=jupyter&logoColor=white)
 ![Limpieza de datos](https://img.shields.io/badge/Limpieza_de_datos-031796?style=for-the-badge)
 ![Transformación de datos](https://img.shields.io/badge/Transformación_de_datos-031796?style=for-the-badge)
