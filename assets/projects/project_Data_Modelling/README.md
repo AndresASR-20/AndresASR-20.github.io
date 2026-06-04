@@ -112,7 +112,7 @@ La tabla gym_churn_us:
 
 Across all industries, customer retention is essential to ensure sustainable revenue and reduce the costs associated with acquiring new customers. Bringing this customer retention situation to the gym services sector, one of the most common problems faced by gyms and other services is customer churn. How do you find out if a customer is no longer with you? In the case of a gym, it makes sense to say that a customer has left if they do not come for a month. Of course, it is possible that they went on a trip and resume their visits when they return, but that is not a typical case. Usually, if a customer joins, comes a few times, and then disappears, they are unlikely to return. Identifying the key factors influencing retention and cancellation allows the Model Fitness gym to anticipate churn risks, design effective loyalty strategies, and personalize experiences for each customer.
 
-## Tools & Data processes
+### Tools & Data processes
 ![Python](https://img.shields.io/badge/Python-3262A8?style=for-the-badge&logo=Python&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-3262A8?style=for-the-badge&logo=pandas&logoColor=white)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-3262A8?style=for-the-badge)
@@ -128,22 +128,22 @@ Across all industries, customer retention is essential to ensure sustainable rev
 ![Numerical Calculus](https://img.shields.io/badge/Numerical_Calculation-031796?style=for-the-badge)
 ![Data Modelling](https://img.shields.io/badge/Data_Modeling-031796?style=for-the-badge)
 
-## Key questions
+### Key questions
 
 1. What demographic or behavioral factors influence churn the most?
 2. What characteristics differentiate loyal customers from those who leave?
 3. How can customers be segmented to design personalized strategies?
 
-## Methodology
+### Methodology
 
 - **Data preprocessing:** Data was cleaned and standardized, removing inconsistencies and verifying the absence of duplicates and missing values.
 - **Explorartory Data Analysis (EDA):** Demographic and usage characteristics were analyzed, identifying patterns in customers who stay and those who churn.
 - **Predictive modeling:** Logistic regression and random forest models were trained to predict customer churn with an accuracy of 85% and 84%, respectively.
 - **Clustering:** Customers were segmented into groups using K-means to identify similar behaviors.
 
-## Conclusions & recommendations
+### Conclusions & recommendations
 
-### PRIORITY TARGET GROUPS
+#### PRIORITY TARGET GROUPS
 - HIGH PRIORITY - Cluster 3 "New and young" (55.8% churn)
 
 Profile: Customers 26.9 years old on average, new (1.7 months), short-term contracts
@@ -159,7 +159,7 @@ Profile: None live close to the gym, short-term contracts
 - Complementary virtual classes
 - Referral program with special bonuses
 
-### MEASURES TO REDUCE TURNOVER
+#### MEASURES TO REDUCE TURNOVER
 
 A) PREVENTIVE STRATEGIES
 
@@ -174,9 +174,9 @@ B) ACTIVE RETENTION STRATEGIES
    - 1-month contracts → Automatic extension offer with benefits
    - No registered phone number → Special contact campaign
 
-### EXPLOITATION OF LOYAL GROUPS
+#### EXPLOITATION OF LOYAL GROUPS
 
-#### Cluster 1 "Long-term committed" (1.5% churn)
+##### Cluster 1 "Long-term committed" (1.5% churn)
 
 Strategy: Turn them into brand ambassadors
 
@@ -185,7 +185,7 @@ Actions:
 - Commissions for referring new members
 - Priority access to new classes/equipment
 
-#### Cluster 0 "VIP Promotional" (13.9% churn)
+##### Cluster 0 "VIP Promotional" (13.9% churn)
 
 Strategy: Maximize the power of word-of-mouth marketing
 
@@ -194,14 +194,14 @@ Actions:
 - Special events for partner companies
 - Family/group discounts
  
-### SUGGESTED TRACKING METRICS
+#### SUGGESTED TRACKING METRICS
 - Monthly KPIs by cluster:
    - Churn rate by group
    - Average visit frequency
    - Average lifetime duration
    - ROI of specific retention programs
 
-## Data Dictionary
+### Data Dictionary
 The table gym_churn_us:
 - 'Churn' — churn for the month in question
 - Current dataset fields:
