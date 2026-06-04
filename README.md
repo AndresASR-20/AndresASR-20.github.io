@@ -231,3 +231,71 @@ Acciones:
 ![Dendograma para análisis de clústeres](assets/img/project_Data_Modelling/archivo_1.png)
 
 Explora más detalles del proyecto en el [repositorio completo](https://github.com/AndresASR-20/AndresASR-20.github.io/tree/main/assets/projects/project_Data_Modelling).
+
+## Análisis de tendencias de categorías consumidas en Youtube
+
+La agencia de publicidad Sterling & Draper tiene la necesidad de analizar tendencias de vídeos en YouTube para determinar qué contenido merece atención para la mercadotecnia. Cada video tiene una categoría específica (entretenimiento, música, noticias y política, etc.), una región y una fecha en que se hace tendencia. Un video puede estar en la sección de tendencias durante varios días seguidos.
+Cada semana, es requerido que se genere una respuesta a las siguientes preguntas:
+
+- ¿Qué categorías estaban en las tendencias de la semana pasada?
+- ¿Cómo se distribuyeron en diversas regiones?
+- ¿Qué categorías fueron particularmente populares en los Estados Unidos?
+
+Para dar solución a la necesidad, se plantea la creación de un dashboard que habilite la solución a las preguntas anteriores. Para ello, se reunen los siguientes requisitos técnicos:
+
+- Objetivo de negocios: analizar el historial de tendencias de videos en YouTube
+- Con qué frecuencia se usará el dashboard: al menos una vez al día
+- Usuario objetivo del dashboard: gerentes de planificación de videos publicitarios
+- Contenido de los datos del dashboard:
+   - Tendencias pasadas de videos, ordenadas por día y categoría
+   - Tendencias de videos, ordenadas por país
+   - Una tabla de correspondencia entre categorías y países
+- Parámetros para agrupar los datos:
+   - Fecha de tendencia
+   - Categoría de video
+   - País
+
+### Herramientas y Tipo de Proyecto
+
+| Tecnologías | Proceso de Datos |
+| :--- | :--- |
+| `TABLEAU` | `VISUALIZACIÓN DE DATOS` |
+
+---
+
+### Preguntas clave
+
+1. ¿Qué categorías estaban en las tendencias de la semana pasada?
+2. ¿Cómo se distribuyeron en diversas regiones?
+3. ¿Qué categorías fueron particularmente populares en los Estados Unidos?
+
+### Metodología
+
+- **Generación de gráfico para número de videos vistos por categoría y por día**: Se genera un gráfico que es capaz de mostrar las cantidades y proporciones de videos vistos en cada día por cada categoría (uno de valores absolutos y otro de valores porcentuales). Debe reaccionar al ajuste de filtros de región e intervalo de fechas.
+- **Generación de gráfico de vistas totales por categoría**: Se genera un pie bar que es capaz de mostrar la proporción de videos vistos por cada categoría, entre el total de videos vistos. Debe reaccionar al ajuste de filtros de región e intervalo de fechas.
+- **Generación de tabla de tendencias de videos por país y categoría**: Se genera un mapa de calor que es capaz de mostrar la cantidad de videos vista, donde se menciona la cantidad específica por cada posible combinación independiente de categoría y de región.
+- **Generación de dashboard que conjunte gráficos**
+
+### Visualizaciones destacadas
+
+- **Gráfico para número de videos vistos por categoría y por día**
+
+   Se encontró que las categorías que tienden a tener mayor participación en los videos vistos en Youtube en todos los datos recabados en el dataset son principalmente entretenimiento, people & blogs, music, news & politics y comedy
+
+![Gráfico para número de videos vistos por categoría y por día](assets/img/project_Data_Visualization/archivo_2.png)
+
+- **Gráfico de vistas totales por categoría**
+
+   Se encontró que las categorías que tienden a tener mayor participación en los videos totales vistos en Youtube en todos los datos recabados en el dataset son principalmente entretenimiento (27.94%), people & blogs (13.15%), music (10.12%), news & politics (10.06%) y comedy (8.67%).
+
+![Gráfico de vistas totales por categoría](assets/img/project_Data_Visualization/archivo_3.png)
+
+- **Tabla de tendencias de videos por país y categoría**
+
+![Tabla de tendencias de videos por país y categoría](assets/img/project_Data_Visualization/archivo_4.png)
+
+- **Generación de dashboard que conjunte gráficos**
+
+![Dashboard que conjunte gráficos](assets/img/project_Data_Visualization/archivo_1.png)
+
+Explora más detalles del proyecto en el [repositorio completo](https://github.com/AndresASR-20/AndresASR-20.github.io/tree/main/assets/projects/project_Data_Visualization).
