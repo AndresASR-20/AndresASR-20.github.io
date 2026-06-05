@@ -1,7 +1,8 @@
 ---
 layout: default
-title: My Portfolio
-lang: en
+title: Luis Andrés Aponte San Román
+description: Welcome to my Data Analysis project portfolio!
+permalink: /en/
 ---
 
 <div align="right">
