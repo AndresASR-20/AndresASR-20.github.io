@@ -119,19 +119,19 @@ Showz is an event ticketing company. Prior to the execution of the project, the 
 
    We observe that in each cohort (month of first visit to the Showz portal) for each passing month, there is a decreasing trend in the customer retention rate (speaking in a general company sense, without distinguishing between ad sources or devices). This denotes an alert for Showz to be clear that it is relevant to conduct an in-depth investigation into which channels this loss of customer interest is occurring.
 
-![Retention rate lifecycle heatmap](assets/img/project_Business_Analysis/Graphic_2.png)
+![Retention rate lifecycle heatmap](/assets/img/project_Business_Analysis/Graphic_2.png)
 
 - **Day ranges required for customer conversion (analysis by devices)**
 
    It can be perceived that the "desktop" device maintains a better customer conversion behavior, since this device shows a considerable number of customers who made a purchase on the Showz platform on the very same day they registered. On the other hand, the "touch" device has a considerably lower number of customers who made a purchase on the same day they registered. The same behavioral difference in customer conversion between devices can be perceived for the other 3 day ranges.
 
-![Bar graph of day ranges required for customer conversion](assets/img/project_Business_Analysis/Graphic_4.png)
+![Bar graph of day ranges required for customer conversion](/assets/img/project_Business_Analysis/Graphic_4.png)
 
 - **Analysis of unique customers with platform participation per unit of time**
 
    This analysis delivers useful information to understand behavior within the platform by different units of time (day, week, and month). Through these charts, peculiar behaviors due to holidays, seasonal behaviors during the year, among other temporal behaviors that add value to identify, can be detected.
 
-![*Analysis of unique customers with platform participation per unit of time](assets/img/project_Business_Analysis/Graphic_1.png)
+![*Analysis of unique customers with platform participation per unit of time](/assets/img/project_Business_Analysis/Graphic_1.png)
 
 Explore more details of the project in the [entire repository](https://github.com/AndresASR-20/AndresASR-20.github.io/tree/main/assets/projects/project_Business_Analysis).
 
@@ -237,19 +237,19 @@ Actions:
 
    It was found that the features month_to_end_contract and contract_period are highly correlated (0.9), suggesting that care must be taken with multicollinearity when developing predictive models.
 
-![Feature correlation heatmap](assets/img/project_Data_Modelling/archivo_2.png)
+![Feature correlation heatmap](/assets/img/project_Data_Modelling/archivo_2.png)
 
 - **Feature histogram based on customer status (active or canceled)**
 
    These types of data visualizations add considerable visual value since they can represent support to perceive the behavior of each characteristic, from an individual approach, based on customer status (active or canceled).
 
-![Feature histogram based on customer status](assets/img/project_Data_Modelling/archivo_3.png)
+![Feature histogram based on customer status](/assets/img/project_Data_Modelling/archivo_3.png)
 
 - **Dendrogram for cluster analysis**
 
    The dendrogram shows how customers group into distinct segments based on their characteristics, where the suggested optimal number of clusters is 4.
 
-![Dendrogram for cluster analysis](assets/img/project_Data_Modelling/archivo_1.png)
+![Dendrogram for cluster analysis](/assets/img/project_Data_Modelling/archivo_1.png)
 
 Explore more details of the project in the [entire_repository](https://github.com/AndresASR-20/AndresASR-20.github.io/tree/main/assets/projects/project_Data_Modelling).
 
@@ -302,20 +302,20 @@ To provide a solution to this need, the creation of a dashboard that enables ans
 
    It was found that the categories that tend to have the highest participation in videos viewed on YouTube across all data collected in the dataset are mainly entertainment, people & blogs, music, news & politics, and comedy.
 
-![Chart for number of videos viewed by category and by day](assets/img/project_Data_Visualization/archivo_2.png)
+![Chart for number of videos viewed by category and by day](/assets/img/project_Data_Visualization/archivo_2.png)
 
 - **Total views chart by category**
 
    It was found that the categories that tend to have the highest participation in total videos viewed on YouTube across all data collected in the dataset are mainly entertainment (27.94%), people & blogs (13.15%), music (10.12%), news & politics (10.06%), and comedy (8.67%).
 
-![Total views chart by category](assets/img/project_Data_Visualization/archivo_3.png)
+![Total views chart by category](/assets/img/project_Data_Visualization/archivo_3.png)
 
 - **Video trends table by country and category**
 
-![Video trends table by country and category](assets/img/project_Data_Visualization/archivo_4.png)
+![Video trends table by country and category](/assets/img/project_Data_Visualization/archivo_4.png)
 
 - **Generation of a dashboard that combines charts**
 
-![Dashboard that combines charts](assets/img/project_Data_Visualization/archivo_1.png)
+![Dashboard that combines charts](/assets/img/project_Data_Visualization/archivo_1.png)
 
 Explore more details of the project in the [entire repository](https://github.com/AndresASR-20/AndresASR-20.github.io/tree/main/assets/projects/project_Data_Visualization).
