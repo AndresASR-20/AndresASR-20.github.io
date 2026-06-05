@@ -1,7 +1,5 @@
 ---
 layout: default
-title: Mi Portafolio
-lang: es
 ---
 
 <div align="right">
