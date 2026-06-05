@@ -4,6 +4,11 @@ title: Mi Portafolio
 lang: es
 ---
 
+<div align="right">
+  <strong>Cambiar idioma:</strong> 
+  <u>Español</u> | <a href="./en/">English</a>
+</div>
+
 # Acerca de mí
 
 Ingeniero mecánico y consultor de ERP certificado en análisis de datos con sólida experiencia en extracción, limpieza y modelado de datos estratégicos.
