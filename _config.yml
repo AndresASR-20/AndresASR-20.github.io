@@ -2,10 +2,6 @@ theme: jekyll-theme-minimal
 title: Luis Andrés Aponte San Román
 logo: /assets/img/my_photo.png
 
-# Descripciones por idioma
-description_es: "¡Hola! Te doy la bienvenida a mi portafolio de proyectos de Análisis de Datos."
-description_en: "Welcome to my Data Analysis project portfolio!"
-
 # Forzar a Jekyll a incluir la carpeta de inglés
 include:
   - en
