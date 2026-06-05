@@ -29,7 +29,7 @@ Especialista en el ciclo completo del dato: desde la extracción y limpieza de g
 ### Habilidades blandas
 Análisis de datos | Resolución de problemas | Comunicación efectiva | Trabajo en equipo | Orientación a resultados | Organización | Proactividad | Atención al detalle | Optimización de Procesos
 
-[LINKEDIN](https://www.linkedin.com/in/luis-andres-aponte-san-roman/) | [MICROSOFT OUTLOOK](mailto:andres_laasr20@outlook.com) | Phone: +52 5539249978
+[LINKEDIN](https://www.linkedin.com/in/luis-andres-aponte-san-roman/) | [MICROSOFT OUTLOOK](mailto:andres_laasr20@outlook.com) | Teléfono: +52 5539249978
 
 # Proyectos Seleccionados
 
