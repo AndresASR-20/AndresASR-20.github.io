@@ -32,7 +32,7 @@ Specialist in the full data lifecycle: from the extraction and cleaning of large
 ### Soft skills
 Data analysis | Problem solving | Effective communication | Teamwork | Results orientation | Organization | Proactivity | Attention to detail | Process Optimization
 
-[LINKEDIN](https://www.linkedin.com/in/luis-andres-aponte-san-roman/) | [MICROSOFT OUTLOOK](mailto:andres_laasr20@outlook.com)
+[LINKEDIN](https://www.linkedin.com/in/luis-andres-aponte-san-roman/) | [MICROSOFT OUTLOOK](mailto:andres_laasr20@outlook.com) | Phone: +52 5539249978
 
 # Selected Projects
 
