@@ -1,12 +1,13 @@
 ---
 layout: default
-description: site.description_es
 ---
 
 <div align="right">
   <strong>Cambiar idioma:</strong> 
   <u>Español</u> | <a href="./en/">English</a>
 </div>
+
+*¡Hola! Te doy la bienvenida a mi portafolio de proyectos de Análisis de Datos.*
 
 # Acerca de mí
 
