@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Luis Andrés Aponte San Román
-description: Welcome to my Data Analysis project portfolio!
+description: site.description_en
 permalink: /en/
 ---
 
