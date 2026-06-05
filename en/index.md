@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Luis Andrés Aponte San Román
-description: site.description_en
 permalink: /en/
 ---
 
@@ -9,6 +8,8 @@ permalink: /en/
   <strong>Change language:</strong> 
   <a href="../">Español</a> | <u>English</u>
 </div>
+
+*¡Hello! Welcome to my projects portfolio of Data Analysis.*
 
 # About me
 
