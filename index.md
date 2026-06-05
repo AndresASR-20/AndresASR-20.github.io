@@ -7,7 +7,6 @@ layout: default
   <u>Español</u> | <a href="./en/">English</a>
 </div>
 
-
 *¡Hola! Te doy la bienvenida a mi portafolio de proyectos de Análisis de Datos.*
 
 # Acerca de mí
@@ -30,7 +29,7 @@ Especialista en el ciclo completo del dato: desde la extracción y limpieza de g
 ### Habilidades blandas
 Análisis de datos | Resolución de problemas | Comunicación efectiva | Trabajo en equipo | Orientación a resultados | Organización | Proactividad | Atención al detalle | Optimización de Procesos
 
-[LINKEDIN](https://www.linkedin.com/in/luis-andres-aponte-san-roman/) | [MICROSOFT OUTLOOK](mailto:andres_laasr20@outlook.com)
+[LINKEDIN](https://www.linkedin.com/in/luis-andres-aponte-san-roman/) | [MICROSOFT OUTLOOK](mailto:andres_laasr20@outlook.com) | Phone: +52 5539249978
 
 # Proyectos Seleccionados
 
