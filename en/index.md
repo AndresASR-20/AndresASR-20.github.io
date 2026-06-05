@@ -47,11 +47,11 @@ Showz is an event ticketing company. Prior to the execution of the project, the 
 ![Seaborn](https://img.shields.io/badge/Seaborn-3262A8?style=for-the-badge)
 ![NumPy](https://img.shields.io/badge/NumPy-3262A8?style=for-the-badge)
 ![Jupyter Notebook](https://img.shields.io/badge/Jupyter_Notebook-3262A8?style=for-the-badge&logo=jupyter&logoColor=white)
-![Data Cleaning](https://img.shields.io/badge/Limpieza_de_datos-031796?style=for-the-badge)
-![Data Transformation](https://img.shields.io/badge/Transformación_de_datos-031796?style=for-the-badge)
-![Data Visualization](https://img.shields.io/badge/Visualización_de_datos-031796?style=for-the-badge)
-![Stadistical Analysis](https://img.shields.io/badge/Análisis_estadístico-031796?style=for-the-badge)
-![Numerical Calculus](https://img.shields.io/badge/Cálculo_numérico-031796?style=for-the-badge)
+![Data Cleaning](https://img.shields.io/badge/Data_Cleaning-031796?style=for-the-badge)
+![Data Transformation](https://img.shields.io/badge/Data_Transformation-031796?style=for-the-badge)
+![Data Visualization](https://img.shields.io/badge/Data_Visualization-031796?style=for-the-badge)
+![Statistical Analysis](https://img.shields.io/badge/Statistical_Analysis-031796?style=for-the-badge)
+![Numerical Calculus](https://img.shields.io/badge/Numerical_Calculus-031796?style=for-the-badge)
 
 ---
 
@@ -149,12 +149,12 @@ In all industries, customer retention is essential to ensure sustainable revenue
 ![NumPy](https://img.shields.io/badge/NumPy-3262A8?style=for-the-badge)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23357ebd.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
 ![Jupyter Notebook](https://img.shields.io/badge/Jupyter_Notebook-3262A8?style=for-the-badge&logo=jupyter&logoColor=white)
-![Data Cleaning](https://img.shields.io/badge/Limpieza_de_datos-031796?style=for-the-badge)
-![Data Transformation](https://img.shields.io/badge/Transformación_de_datos-031796?style=for-the-badge)
-![Data Visualization](https://img.shields.io/badge/Visualización_de_datos-031796?style=for-the-badge)
-![Stadistical Analysis](https://img.shields.io/badge/Análisis_estadístico-031796?style=for-the-badge)
-![Numerical Calculus](https://img.shields.io/badge/Cálculo_numérico-031796?style=for-the-badge)
-![Data Modelling](https://img.shields.io/badge/Modelado_de_datos-031796?style=for-the-badge)
+![Data Cleaning](https://img.shields.io/badge/Data_Cleaning-031796?style=for-the-badge)
+![Data Transformation](https://img.shields.io/badge/Data_Transformation-031796?style=for-the-badge)
+![Data Visualization](https://img.shields.io/badge/Data_Visualization-031796?style=for-the-badge)
+![Statistical Analysis](https://img.shields.io/badge/Statistical_Analysis-031796?style=for-the-badge)
+![Numerical Calculus](https://img.shields.io/badge/Numerical_Calculus-031796?style=for-the-badge)
+![Data Modelling](https://img.shields.io/badge/Data_Modelling-031796?style=for-the-badge)
 
 ---
 
@@ -279,7 +279,7 @@ To provide a solution to this need, the creation of a dashboard that enables ans
 ### Tools & Data Processes
 
 ![Tableau](https://img.shields.io/badge/Tableau-3262A8?style=for-the-badge)
-![Data Visualization](https://img.shields.io/badge/Visualización_de_datos-031796?style=for-the-badge)
+![Data Visualization](https://img.shields.io/badge/Data_Visualization-031796?style=for-the-badge)
 
 ---
 
