@@ -2,16 +2,13 @@ theme: jekyll-theme-minimal
 title: Luis Andrés Aponte San Román
 logo: /assets/img/my_photo.png
 
-# AQUÍ AGREGAMOS TUS DATOS DE CONTACTO:
-# La descripción aparecerá en texto plano debajo de tu nombre
-description: |
-  LinkedIn: [Luis Andrés Aponte](https://www.linkedin.com/in/luis-andres-aponte-san-roman/)  
-  📧 andres_laasr20@outlook.com
-  📱 +52 5539249978
+# Forzar a Jekyll a incluir la carpeta de inglés
+include:
+  - en
 
-# Esto activará un enlace nativo a tu LinkedIn (algunas versiones del tema lo ponen al final)
-linkedin_username: Luis Andrés Aponte San Román
-
+# Configuración de estilos personalizados
+sass:
+  style: :compressed
 # Forzar a Jekyll a incluir la carpeta de inglés
 include:
   - en
