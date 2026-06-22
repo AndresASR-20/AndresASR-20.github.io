@@ -7,7 +7,7 @@ layout: default
   <u>Español</u> | <a href="./en/">English</a>
 </div>
 
-[LINKEDIN](https://www.linkedin.com/in/luis-andres-aponte-san-roman/) 
+[LINKEDIN: Luis Andrés Aponte San Román](https://www.linkedin.com/in/luis-andres-aponte-san-roman/) 
 
 📧 [MICROSOFT OUTLOOK: andres_laasr20@outlook.com](mailto:andres_laasr20@outlook.com)
 
