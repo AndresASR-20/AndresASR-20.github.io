@@ -8,7 +8,9 @@ layout: default
 </div>
 
 LinkedIn: [Luis Andrés Aponte San Román](https://www.linkedin.com/in/luis-andres-aponte-san-roman/)  
+
 📧 andres_laasr20@outlook.com
+
 📱 +52 5539249978
 
 *¡Hola! Te doy la bienvenida a mi portafolio de proyectos de Análisis de Datos.*
