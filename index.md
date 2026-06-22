@@ -7,9 +7,9 @@ layout: default
   <u>Español</u> | <a href="./en/">English</a>
 </div>
 
-LinkedIn: [Luis Andrés Aponte San Román](https://www.linkedin.com/in/luis-andres-aponte-san-roman/)  
+[LINKEDIN](https://www.linkedin.com/in/luis-andres-aponte-san-roman/) 
 
-📧 andres_laasr20@outlook.com
+📧 [MICROSOFT OUTLOOK](mailto:andres_laasr20@outlook.com)
 
 📱 +52 5539249978
 
@@ -34,10 +34,6 @@ Especialista en el ciclo completo del dato: desde la extracción y limpieza de g
 
 ### Habilidades blandas
 Análisis de datos | Resolución de problemas | Comunicación efectiva | Trabajo en equipo | Orientación a resultados | Organización | Proactividad | Atención al detalle | Optimización de Procesos
-
-[LINKEDIN](https://www.linkedin.com/in/luis-andres-aponte-san-roman/) | [MICROSOFT OUTLOOK](mailto:andres_laasr20@outlook.com)
-
-Teléfono: +52 5539249978
 
 # Proyectos Seleccionados
 
