@@ -16,7 +16,7 @@ LinkedIn: [Luis Andrés Aponte San Román](https://www.linkedin.com/in/luis-andr
 
 📱 +52 5539249978
 
-*¡Hello! Welcome to my projects portfolio of Data Analysis.*
+*Hello! Welcome to my projects portfolio of Data Analysis.*
 
 # About me
 
