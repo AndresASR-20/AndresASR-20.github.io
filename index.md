@@ -7,10 +7,6 @@ layout: default
   <u>Español</u> | <a href="./en/">English</a>
 </div>
 
-theme: jekyll-theme-minimal
-title: Luis Andrés Aponte San Román
-logo: /assets/img/my_photo.png
-
 LinkedIn: [Luis Andrés Aponte San Román](https://www.linkedin.com/in/luis-andres-aponte-san-roman/)  
 📧 andres_laasr20@outlook.com
 📱 +52 5539249978
