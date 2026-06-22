@@ -10,9 +10,9 @@ permalink: /en/
 </div>
 
 
-LinkedIn: [Luis Andrés Aponte San Román](https://www.linkedin.com/in/luis-andres-aponte-san-roman/)  
+[LINKEDIN](https://www.linkedin.com/in/luis-andres-aponte-san-roman/) 
 
-📧 andres_laasr20@outlook.com
+📧 [MICROSOFT OUTLOOK](mailto:andres_laasr20@outlook.com)
 
 📱 +52 5539249978
 
