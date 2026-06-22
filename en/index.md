@@ -9,6 +9,7 @@ permalink: /en/
   <a href="../">Español</a> | <u>English</u>
 </div>
 
+
 LinkedIn: [Luis Andrés Aponte San Román](https://www.linkedin.com/in/luis-andres-aponte-san-roman/)  
 
 📧 andres_laasr20@outlook.com
