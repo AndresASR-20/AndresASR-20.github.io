@@ -9,7 +9,7 @@ layout: default
 
 [LINKEDIN](https://www.linkedin.com/in/luis-andres-aponte-san-roman/) 
 
-📧 [MICROSOFT OUTLOOK](mailto:andres_laasr20@outlook.com)
+📧 [MICROSOFT OUTLOOK: andres_laasr20@outlook.com](mailto:andres_laasr20@outlook.com)
 
 📱 +52 5539249978
 
