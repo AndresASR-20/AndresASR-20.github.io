@@ -10,7 +10,7 @@ permalink: /en/
 </div>
 
 
-[LINKEDIN: Luis Andres Aponte San Roman](https://www.linkedin.com/in/luis-andres-aponte-san-roman/) 
+[LINKEDIN:Luis Andres Aponte San Roman](https://www.linkedin.com/in/luis-andres-aponte-san-roman/) 
 
 📧 [MICROSOFT OUTLOOK: andres_laasr20@outlook.com](mailto:andres_laasr20@outlook.com)
 
