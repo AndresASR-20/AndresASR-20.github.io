@@ -365,12 +365,12 @@ La solución permite al negocio supervisar continuamente su estatus de ventas me
 
 Se encontró que ha existido un comportamiento controlado y regulado de ganancias del negocio, a pesar de que las ventas han tenido un comportamiento irregular, teniendo un pico de ventas en enero y marzo, y teniendo el declive de ventas en Julio. Adicional, se puede percibir que la zona geográfica con mayor participación de ventas está en Maharashtra y Madhya Pradesh, y las peores participaciones del negocio ocurren en zonas como Sikkim y Haryana. 
 
-![Gráfico para número de videos vistos por categoría y por día](assets/img/project_Data_Visualization_Online_Sales/Screenshot_2026_07_07_113817.png)
+![Dashboard ejecutivo](assets/img/project_Data_Visualization_Online_Sales/Screenshot_2026_07_07_113817.png)
 
 - **Dashboard dinámico para análisis comercial**
 
 Se encontró que existe una variabilidad de la participación de cada genero en las ventas del negocio, siendo observable que el genero femenino tuvo una mayor participación entre marzo a mediados de julio, mientras que el género masculino tuvo una mayor participación durante el periodo restante del año. Adicional, se pudo detectar que las categorías de producto preferidas por los clientes en general son Saree, Hankerchief y Stole; conservando dicha participación individualmente por género. 
 
-![Gráfico para número de videos vistos por categoría y por día](assets/img/project_Data_Visualization_Online_Sales/Screenshot_2026_07_07_113947.png)
+![Dashboard Comercial](assets/img/project_Data_Visualization_Online_Sales/Screenshot_2026_07_07_113947.png)
 
 Explora más detalles del proyecto en el [repositorio completo](https://github.com/AndresASR-20/AndresASR-20.github.io/tree/main/assets/projects/project_Data_Visualization_Online_Sales).
