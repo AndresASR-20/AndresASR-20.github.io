@@ -329,3 +329,55 @@ To provide a solution to this need, the creation of a dashboard that enables ans
 ![Dashboard that combines charts](/assets/img/project_Data_Visualization/archivo_1.png)
 
 Explore more details of the project in the [entire repository](https://github.com/AndresASR-20/AndresASR-20.github.io/tree/main/assets/projects/project_Data_Visualization).
+
+## Dashboard for executive and commercial sales analysis for online store 
+
+This project consisted of the design and implementation of an interactive dashboard in Power BI for an online store (starter) in a stage of continuous growth. The main objective was to centralize and structure the information coming from two key sources of the company: the general sales record (which details dates, customers, and geographic locations) and the breakdown of each order (which breaks down amounts, profits, payment methods, and the hierarchy of product categories and subcategories). With this base, raw data were transformed into a unified visualization ecosystem that balances a high-level executive approach with a deeply operational commercial analysis.
+
+The solution allows the business to continuously monitor its sales status through the tracking of critical retail KPIs such as total products sold, average sales value, profit margin, and the average number of items per transaction. To respond to the strategic needs of the company, the dashboard was equipped with dynamic tools that explain the temporal and geographical behavior of revenues, consumption segmentation by gender through interactive filters, and the level of real participation of each category in the catalog. As a result, the business now has a key tool to streamline decision-making and detect new market opportunities.
+
+### Tools and Data Process
+
+![Power BI](https://img.shields.io/badge/Power_BI-3262A8?style=for-the-badge)
+![Power Query](https://img.shields.io/badge/Power_Query-3262A8?style=for-the-badge)
+![Data Visualization](https://img.shields.io/badge/Data_Visualization-031796?style=for-the-badge)
+![Dashboards](https://img.shields.io/badge/Dashboards-031796?style=for-the-badge)
+![KPIs](https://img.shields.io/badge/KPI-031796?style=for-the-badge)
+![Business Metrics](https://img.shields.io/badge/Business_Metrics-031796?style=for-the-badge)
+![StoryTelling](https://img.shields.io/badge/Storytelling-031796?style=for-the-badge)
+
+---
+
+### Key questions
+
+1. How do the key business metrics behave?
+2. How do sales behave over time? Are there unusual behaviors due to holidays or season of the year?
+3. How is the geographical behavior of sales? Where is more sold and where is less sold (talking about number of orders and total sold)?
+4. Which categories have more sales and which are sold little?
+5. What is the sales behavior by gender? Which categories does each gender prefer?
+
+### Methodology
+
+- **Generation of cards for key business metrics**: A visualization of key metric values (total sale, average sale per order, total profit, average profit per order, margin percentage) is generated for agile understanding of the business status.
+- **Generation of cards for key commercial area metrics**: A visualization of key metric values (total items sold, average quantity of items per order) is generated for agile understanding of sales behavior from a commercial focus.
+- **Generation of graph of sales-profits behavior over time**: A line graph visualization is generated that allows to easily understand how sales and profits have evolved over time.
+- **Generation of graph of sales distribution geographically**: A map graph visualization is generated in which it can be perceived, according to the size of the circle, where more sales have been generated and, according to the color shade, where more has been sold.
+- **Generation of graph of sales-profits behavior by gender over time**: A line graph visualization is generated that allows to easily understand how sales by gender have evolved over time.
+- **Generation of graph of behavior of items sold by category-subcategory**: A bar graph visualization is generated that allows to easily understand the participation of each category and each subcategory within the total items sold by the company.
+- **Creation of buttons, sliders, and filtering lists**: Visual elements were created to allow dynamic dashboards that can filter information according to dates, states, and gender, allowing to generate a deeper analysis of business behavior.
+
+### Featured visualizations
+
+- **Dynamic dashboard for executive analysis**
+
+It was found that there has been a controlled and regulated behavior of business profits, despite the fact that sales have had an irregular behavior, having a peak of sales in January and March, and having the decline of sales in July. Additionally, it can be perceived that the geographical area with the highest sales participation is in Maharashtra and Madhya Pradesh, and the worst business participations occur in areas like Sikkim and Haryana. 
+
+![Executive Dashboard](assets/img/project_Data_Visualization_Online_Sales/Screenshot_2026_07_07_113817.png)
+
+- **Dynamic dashboard for commercial analysis**
+
+It was found that there is a variability in the participation of each gender in the sales of the business, being observable that the female gender had a greater participation between March to mid-July, while the male gender had a greater participation during the remaining period of the year. Additionally, it could be detected that the product categories preferred by customers in general are Saree, Hankerchief, and Stole; keeping said participation individually by gender. 
+
+![Commercial Dashboard](assets/img/project_Data_Visualization_Online_Sales/Screenshot_2026_07_07_113947.png)
+
+Explore more details of the project in the [entire repository](https://github.com/AndresASR-20/AndresASR-20.github.io/tree/main/assets/projects/project_Data_Visualization_Online_Sales).
