@@ -372,12 +372,12 @@ The solution allows the business to continuously monitor its sales status throug
 
 It was found that there has been a controlled and regulated behavior of business profits, despite the fact that sales have had an irregular behavior, having a peak of sales in January and March, and having the decline of sales in July. Additionally, it can be perceived that the geographical area with the highest sales participation is in Maharashtra and Madhya Pradesh, and the worst business participations occur in areas like Sikkim and Haryana. 
 
-![Executive Dashboard](assets/img/project_Data_Visualization_Online_Sales/Screenshot_2026_07_07_113817.png)
+![Executive Dashboard](/assets/img/project_Data_Visualization_Online_Sales/Screenshot_2026_07_07_113817.png)
 
 - **Dynamic dashboard for commercial analysis**
 
 It was found that there is a variability in the participation of each gender in the sales of the business, being observable that the female gender had a greater participation between March to mid-July, while the male gender had a greater participation during the remaining period of the year. Additionally, it could be detected that the product categories preferred by customers in general are Saree, Hankerchief, and Stole; keeping said participation individually by gender. 
 
-![Commercial Dashboard](assets/img/project_Data_Visualization_Online_Sales/Screenshot_2026_07_07_113947.png)
+![Commercial Dashboard](/assets/img/project_Data_Visualization_Online_Sales/Screenshot_2026_07_07_113947.png)
 
 Explore more details of the project in the [entire repository](https://github.com/AndresASR-20/AndresASR-20.github.io/tree/main/assets/projects/project_Data_Visualization_Online_Sales).
