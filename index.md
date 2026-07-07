@@ -322,3 +322,55 @@ Para dar solución a la necesidad, se plantea la creación de un dashboard que h
 ![Dashboard que conjunte gráficos](assets/img/project_Data_Visualization/archivo_1.png)
 
 Explora más detalles del proyecto en el [repositorio completo](https://github.com/AndresASR-20/AndresASR-20.github.io/tree/main/assets/projects/project_Data_Visualization).
+
+## Dashboard para análisis ejecutivo y comercial de ventas para tienda online 
+
+Este proyecto consistió en el diseño e implementación de un dashboard interactivo en Power BI para una tienda en línea (starter) en etapa de crecimiento continuo. El objetivo principal fue centralizar y estructurar la información proveniente de dos fuentes clave de la empresa: el registro general de ventas (que detalla fechas, clientes y ubicaciones geográficas) y el desglose de cada orden (que desmenuza montos, ganancias, métodos de pago y la jerarquía de categorías y subcategorías de productos). Con esta base, se transformaron los datos crudos en un ecosistema de visualización unificado que equilibra un enfoque ejecutivo de alto nivel con un análisis comercial profundamente operativo.
+
+La solución permite al negocio supervisar continuamente su estatus de ventas mediante el seguimiento de KPIs minoristas críticos como el total de productos vendidos, el valor de venta promedio, el margen de ganancia y el promedio de artículos por transacción. Para responder a las necesidades estratégicas de la empresa, el cuadro de mando fue dotado de herramientas dinámicas que explican el comportamiento temporal y geográfico de los ingresos, la segmentación del consumo por género mediante filtros interactivos y el nivel de participación real de cada categoría en el catálogo. Como resultado, el negocio ahora cuenta con una herramienta clave para agilizar la toma de decisiones y detectar nuevas oportunidades de mercado.
+
+### Herramientas y Proceso de Datos
+
+![Power BI](https://img.shields.io/badge/Power_BI-3262A8?style=for-the-badge)
+![Power Query](https://img.shields.io/badge/Power_Query-3262A8?style=for-the-badge)
+![Visualización de datos](https://img.shields.io/badge/Visualización_de_datos-031796?style=for-the-badge)
+![Dashboards](https://img.shields.io/badge/Dashboards-031796?style=for-the-badge)
+![KPIs](https://img.shields.io/badge/KPI-031796?style=for-the-badge)
+![Métricas de negocio](https://img.shields.io/badge/Métricas_de_Negocio-031796?style=for-the-badge)
+![StoryTelling](https://img.shields.io/badge/Storytelling-031796?style=for-the-badge)
+
+---
+
+### Preguntas clave
+
+1. ¿Cómo se comportan las métricas clave del negocio?
+2. ¿Cómo se comportan las ventas a través del tiempo? ¿Existen comportamientos inusuales por festividades o temporada del año?
+3. ¿Cómo es el comportamiento geográfico de las ventas? ¿Dónde se vende más y dónde se vende menos (hablando de cantidad de órdenes y total vendido)?
+4. ¿Qué categorías tienen más venta y cuáles se vende poco?
+5. ¿Cuál es el comportamiento de ventas por género? ¿Qué categorías prefiere cada género?
+
+### Metodología
+
+- **Generación de cards para métricas clave de negocio**: Se genera una visualización de valores de métricas clave (venta total, venta por orden promedio, ganancia total, ganancia por orden promedio, porcentaje de margen) para compresión ágil del estatus del negocio.
+- **Generación de cards para métricas clave de área comercial**: Se genera una visualización de valores de métricas clave (total artículos vendidos, promedio de cantidad de artículos por orden) para compresión ágil del comportamiento de las ventas desde un enfoque comercial.
+- **Generación de gráfico de comportamiento de ventas-ganancias en el tiempo**: Se genera una visualización de gráfico de líneas que permite entender ágilmente cómo han evolucionado las ventas y ganancias a través del tiempo.
+- **Generación de gráfico de distribución de ventas geográficamente**: Se genera una visualización de gráfico de mapa en el cual se puede percibir, acorde al tamaño del círculo, dónde se han generado más ventas y, acorde a la tonalidad del color, dónde se ha vendido más.
+- **Generación de gráfico de comportamiento de ventas-ganancias por género en el tiempo**: Se genera una visualización de gráfico de líneas que permite entender ágilmente cómo han evolucionado las ventas por género a través del tiempo.
+- **Generación de gráfico de comportamiento de artículos vendidos por categoría-subcategoría**: Se genera una visualización de gráfico de barras que permite entender ágilmente la participación de cada categoría y cada subcategoría dentro del total de artículos vendidos por la empresa.
+- **Creación de botones, deslizadores y listas filtradoras**: Se crearon elementos visuales para permitir dashboards dinámicos que puedan filtrar la información acorde a fechas, estados y género, que permitan generar un análisis más profundo del comportamiento del negocio.
+
+### Visualizaciones destacadas
+
+- **Dashboard dinámico para análisis ejecutivo**
+
+Se encontró que ha existido un comportamiento controlado y regulado de ganancias del negocio, a pesar de que las ventas han tenido un comportamiento irregular, teniendo un pico de ventas en enero y marzo, y teniendo el declive de ventas en Julio. Adicional, se puede percibir que la zona geográfica con mayor participación de ventas está en Maharashtra y Madhya Pradesh, y las peores participaciones del negocio ocurren en zonas como Sikkim y Haryana. 
+
+![Gráfico para número de videos vistos por categoría y por día](assets/img/project_Data_Visualization_Online_Sales/Screenshot_2026_07_07_113817.png)
+
+- **Dashboard dinámico para análisis comercial**
+
+Se encontró que existe una variabilidad de la participación de cada genero en las ventas del negocio, siendo observable que el genero femenino tuvo una mayor participación entre marzo a mediados de julio, mientras que el género masculino tuvo una mayor participación durante el periodo restante del año. Adicional, se pudo detectar que las categorías de producto preferidas por los clientes en general son Saree, Hankerchief y Stole; conservando dicha participación individualmente por género. 
+
+![Gráfico para número de videos vistos por categoría y por día](assets/img/project_Data_Visualization_Online_Sales/Screenshot_2026_07_07_113947.png)
+
+Explora más detalles del proyecto en el [repositorio completo](https://github.com/AndresASR-20/AndresASR-20.github.io/tree/main/assets/projects/project_Data_Visualization_Online_Sales).
