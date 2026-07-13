@@ -484,7 +484,7 @@ Se encontró que los canales de recaudación financiera tienen un impacto direct
 
 - **Auditoría de métodos de facturación y fricción digital**
 
-Se encontró que la digitalización forzada de la facturación introduce un factor de fricción psicológica o conveniencia que impacta la retención. Los usuarios suscritos a la facturación electrónica (`PaperlessBilling = Yes`) registran una tasa de Churn del 33.49%, una cifra sustancialmente más alta en comparación con el 16.33% de aquellos que aún reciben su factura física tradicional (`PaperlessBilling = No`). Este patrón sugiere que los recordatorios digitales de cobro o la falta de un soporte tangible elevan la propensión al abandono del servicio.
+Se encontró que la digitalización forzada de la facturación introduce un factor de fricción psicológica o conveniencia que impacta la retención. Los usuarios suscritos a la facturación electrónica (`PaperlessBilling = Yes`) registran una tasa de Churn del 33.57%, una cifra sustancialmente más alta en comparación con el 16.33% de aquellos que aún reciben su factura física tradicional (`PaperlessBilling = No`). Este patrón sugiere que los recordatorios digitales de cobro o la falta de un soporte tangible elevan la propensión al abandono del servicio.
 
 ![Impacto del Método de Facturación en el Churn](assets/img/project_Trends_Analysis_SQL/Respuesta_9.png)
 
