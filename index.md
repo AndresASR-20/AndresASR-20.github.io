@@ -377,50 +377,121 @@ Explora más detalles del proyecto en el [repositorio completo](https://github.c
 
 ## Análisis de tendencias y patrones de cancelación en servicio de suscripción para empresa de telecomunicaciones
 
+Este proyecto consistió en el análisis estratégico y la optimización del ecosistema de retención de clientes para una compañía de telecomunicaciones en expansión. El objetivo principal fue centralizar y estructurar la información masiva proveniente de su base de datos de suscriptores (que detalla perfiles demográficos, antigüedad, tipos de contrato y métodos de pago) junto con el desglose del consumo de su suite de servicios avanzados (conectividad por DSL y fibra óptica, herramientas de ciberseguridad, soporte técnico y plataformas de streaming). Con esta base de datos crudos, se implementó un proceso riguroso de limpieza y transformación en PostgreSQL, convirtiendo registros inconsistentes en un entorno analítico unificado que equilibra un diagnóstico financiero de alto nivel con un análisis del comportamiento operativo de los usuarios.
 
+La solución permite al negocio supervisar continuamente su salud comercial mediante el seguimiento de KPIs de retención críticos como la tasa de Churn global, el impacto en ingresos mensuales perdidos, el valor de vida acumulado (Customer Lifetime Value) y la densidad de adopción de servicios por usuario. Para responder a las necesidades estratégicas de la empresa, el análisis fue estructurado para identificar los principales focos rojos de la operación. Como resultado del proyecto, se diseñó e implementó un modelo automatizado de Alerta Temprana (Early Warning) en SQL que aísla de forma proactiva a los 500 clientes activos con mayor probabilidad de abandono según sus patrones de consumo. Gracias a esto, el negocio ahora cuenta con un activo analítico clave para transicionar de una postura reactiva a una estrategia proactiva, agilizando la toma de decisiones comerciales y permitiendo al equipo de Marketing y Customer Success desplegar campañas de lealtad hiper-dirigidas para blindar los ingresos de la compañía.
 
 ### Herramientas y Proceso de Datos
 
-![Power BI](https://img.shields.io/badge/Power_BI-3262A8?style=for-the-badge)
-![Power Query](https://img.shields.io/badge/Power_Query-3262A8?style=for-the-badge)
-![Visualización de datos](https://img.shields.io/badge/Visualización_de_datos-031796?style=for-the-badge)
-![Dashboards](https://img.shields.io/badge/Dashboards-031796?style=for-the-badge)
-![KPIs](https://img.shields.io/badge/KPI-031796?style=for-the-badge)
-![Métricas de negocio](https://img.shields.io/badge/Métricas_de_Negocio-031796?style=for-the-badge)
-![StoryTelling](https://img.shields.io/badge/Storytelling-031796?style=for-the-badge)
+![SQL](https://img.shields.io/badge/SQL-3262A8?style=for-the-badge)
+![Postgre SQL](https://img.shields.io/badge/PostgreSQL-3262A8?style=for-the-badge)
+![Análisis exploratorio de datos](https://img.shields.io/badge/Análisis_exploratorio_de_datos-031796?style=for-the-badge)
+![Análisis de tendencias](https://img.shields.io/badge/Análisis_de_tendencias-031796?style=for-the-badge)
+![Limpieza de datos](https://img.shields.io/badge/Limpieza_de_datos-031796?style=for-the-badge)
+![Transformación de datos](https://img.shields.io/badge/Transformación_de_datos-031796?style=for-the-badge)
+![Modelado Lógico y Condicional](https://img.shields.io/badge/Modelado_Lógico_y_Condicional-031796?style=for-the-badge)
+![Análisis financiero](https://img.shields.io/badge/Análisis_financiero-031796?style=for-the-badge)
 
 ---
 
 ### Preguntas clave
 
-1. ¿Cómo se comportan las métricas clave del negocio?
-2. ¿Cómo se comportan las ventas a través del tiempo? ¿Existen comportamientos inusuales por festividades o temporada del año?
-3. ¿Cómo es el comportamiento geográfico de las ventas? ¿Dónde se vende más y dónde se vende menos (hablando de cantidad de órdenes y total vendido)?
-4. ¿Qué categorías tienen más venta y cuáles se vende poco?
-5. ¿Cuál es el comportamiento de ventas por género? ¿Qué categorías prefiere cada género?
+- Diagnóstico de Impacto Financiero e Identificación del Problema
+1. ¿Cuál es la tasa de Churn global actual de la compañía y cuánto dinero en ingresos mensuales (MonthlyCharges) representa perder a estos clientes?
+2. Si analizamos el histórico total (TotalCharges), ¿cuánto dinero han dejado de percibir los clientes que ya abandonaron la empresa en comparación con el valor total acumulado de los que siguen activos?
+- Análisis de Portafolio de Servicios (Saturación y Lealtad)
+3. Los clientes que contratan internet de Fibra Óptica (Fiber optic), ¿tienen una tasa de Churn más alta o más baja que los que usan DSL? ¿A qué crees que se deba económicamente considerando sus cargos mensuales promedio?
+4. ¿El soporte técnico (TechSupport) y la seguridad en línea (OnlineSecurity) realmente retienen clientes? Compara la tasa de Churn de los clientes que tienen estos servicios activados frente a los que no.
+5. ¿Cuántos servicios adicionales consumen en promedio los clientes leales frente a los que cancelan? (Servicios a evaluar: OnlineSecurity, OnlineBackup, DeviceProtection, TechSupport, StreamingTV, StreamingMovies).
+- Operaciones y Ciclo de Vida del Cliente
+6. ¿Cuál es la distribución de antigüedad (tenure) de los clientes que se van? ¿Existe un "mes crítico" o periodo de tiempo (ej. los primeros 6 meses) donde ocurra la mayor parte de las cancelaciones?
+7. ¿Cómo afecta el tipo de contrato (Contract) al Churn? Calcula el porcentaje de abandono para contratos Mes a Mes (Month-to-month) vs. Contratos a 1 y 2 años.
+- Estrategia de Canales y Facturación (Marketing & Finanzas)
+8. ¿El método de pago influye en la deserción? Calcula el Churn Rate desglosado por cada PaymentMethod. ¿Los métodos automáticos (tarjeta/banco) son más efectivos para retener que el cheque electrónico?
+9. ¿Los clientes con facturación electrónica (PaperlessBilling = Yes) son más propensos al Churn que los que reciben factura física?
+- Alerta Temprana (Enfoque Predictivo)
+10. Genera un listado con el customerID de los Top 500 clientes activos con mayor riesgo de Churn para enviarles una oferta mañana por la mañana.
 
 ### Metodología
 
-- **Generación de cards para métricas clave de negocio**: Se genera una visualización de valores de métricas clave (venta total, venta por orden promedio, ganancia total, ganancia por orden promedio, porcentaje de margen) para compresión ágil del estatus del negocio.
-- **Generación de cards para métricas clave de área comercial**: Se genera una visualización de valores de métricas clave (total artículos vendidos, promedio de cantidad de artículos por orden) para compresión ágil del comportamiento de las ventas desde un enfoque comercial.
-- **Generación de gráfico de comportamiento de ventas-ganancias en el tiempo**: Se genera una visualización de gráfico de líneas que permite entender ágilmente cómo han evolucionado las ventas y ganancias a través del tiempo.
-- **Generación de gráfico de distribución de ventas geográficamente**: Se genera una visualización de gráfico de mapa en el cual se puede percibir, acorde al tamaño del círculo, dónde se han generado más ventas y, acorde a la tonalidad del color, dónde se ha vendido más.
-- **Generación de gráfico de comportamiento de ventas-ganancias por género en el tiempo**: Se genera una visualización de gráfico de líneas que permite entender ágilmente cómo han evolucionado las ventas por género a través del tiempo.
-- **Generación de gráfico de comportamiento de artículos vendidos por categoría-subcategoría**: Se genera una visualización de gráfico de barras que permite entender ágilmente la participación de cada categoría y cada subcategoría dentro del total de artículos vendidos por la empresa.
-- **Creación de botones, deslizadores y listas filtradoras**: Se crearon elementos visuales para permitir dashboards dinámicos que puedan filtrar la información acorde a fechas, estados y género, que permitan generar un análisis más profundo del comportamiento del negocio.
+- **Estandarización y conversión de tipos de datos**: Se ejecutó la transformación de la columna `TotalCharges` mediante la eliminación de registros vacíos y la reconfiguración de su tipo de dato a valor numérico flotante (`FLOAT`), corrigiendo inconsistencias estructurales de origen y asegurando la integridad del análisis financiero.
+- **Cuantificación del impacto financiero y volumétrico**: Se desarrollaron consultas de agregación para determinar la tasa de Churn global, el volumen exacto de deserción y la fuga de ingresos mensuales recurrentes (`MonthlyCharges`), contrastando estas métricas con el valor histórico acumulado (`TotalCharges`) de los clientes retenidos.
+- **Evaluación y segmentación de infraestructura técnica**: Se agruparon y analizaron los perfiles de consumo según el tipo de servicio de internet (`InternetService`), aislando las tasas de cancelación y los costos promedio para identificar discrepancies operativas en la oferta de Fibra Óptica.
+- **Análisis de la densidad de adopción de productos**: Se implementó una matriz de lógica condicional utilizando sentencias `CASE WHEN` para sumar el volumen de servicios de valor agregado contratados, midiendo la correlación directa entre el nivel de *cross-selling* y la lealtad a largo plazo del usuario.
+- **Mapeo del ciclo de vida y ventanas críticas**: Se estructuró un análisis de cohortes temporales agrupando la antigüedad (`tenure`) en rangos trimestrales y semestrales, logrando localizar con precisión milimétrica el periodo de tiempo con mayor vulnerabilidad operativa.
+- **Auditoría contractual y operativa**: Se desglosó el comportamiento de deserción cruzando los esquemas legales de contratación (`Contract`) y los métodos de facturación (`PaperlessBilling`), identificando el riesgo latente en los modelos de cobro no automáticos.
+- **Diseño del modelo de Alerta Temprana (Early Warning)**: Se construyó una consulta predictiva basada en reglas de negocio que filtra y extrae de forma proactiva un listado de los 500 clientes activos con el mayor índice de riesgo acumulado, priorizados por su valor financiero para el despliegue de campañas de retención inmediatas.
+
+### Conclusiones y recomendaciones
+
+- **Migración contractual proactiva**: Implementar campañas de incentivos financieros u operativos (como duplicar la velocidad de internet o regalar meses de servicios de streaming) dirigidas exclusivamente a clientes en modalidad "Mes a Mes", motivándolos a firmar un compromiso a 1 o 2 años para desplomar su tasa de Churn del 42% a menos del 11%.
+- **Empaquetamiento preventivo de servicios de valor agregado**: Configurar paquetes comerciales que incluyan Soporte Técnico (`TechSupport`) y Seguridad en Línea (`OnlineSecurity`) de forma gratuita por los primeros meses o integrados nativamente en los planes de Fibra Óptica, aprovechando que los usuarios con estos servicios muestran una retención tres veces mayor.
+- **Auditoría de infraestructura y expectativas en Fibra Óptica**: Iniciar una revisión técnica urgente y un análisis de satisfacción en las zonas con cobertura de Fibra Óptica, dado que, a pesar de ser el servicio con mayor facturación promedio ($93 USD), registra una tasa de deserción crítica que supera el 40%.
+- **Domiciliación e incentivos de pago automático**: Lanzar un programa de bonificación única (ej. un descuento de $5 USD en la próxima factura) para incentivar a los clientes que utilizan Cheque Electrónico (el método con peor Churn, cercano al 45%) a migrar sus cuentas hacia cargos automáticos con Tarjeta de Crédito o Transferencia Bancaria.
+- **Reforzamiento del Onboarding en el ciclo de vida inicial**: Rediseñar la estrategia de acompañamiento y atención al cliente (*Customer Success*) durante los primeros 90 días posteriores a la contratación, concentrando los esfuerzos de retención en esta ventana temporal crítica que concentra el mayor volumen de cancelaciones históricas.
+- **Mitigación psicológica del cobro digital**: Optimizar el formato de las notificaciones de facturación electrónica (`PaperlessBilling = Yes`) para los perfiles digitales, añadiendo resúmenes automatizados de los beneficios y volumen de datos consumidos en el mes con el fin de justificar el valor del servicio y contrarrestar su propensión del 33% al abandono.
+- **Activación del protocolo de Alerta Temprana**: Desplegar de forma inmediata la lista automatizada del Top 500 de clientes de alto riesgo hacia los equipos de retención avanzada y Call Center, permitiendo realizar llamadas de fidelización proactivas antes de que los usuarios inicien el proceso de cancelación.
 
 ### Visualizaciones destacadas
 
-- **Dashboard dinámico para análisis ejecutivo**
+- **Métricas de control para la pérdida de ingresos mensuales**
 
-Se encontró que ha existido un comportamiento controlado y regulado de ganancias del negocio, a pesar de que las ventas han tenido un comportamiento irregular, teniendo un pico de ventas en enero y marzo, y teniendo el declive de ventas en Julio. Adicional, se puede percibir que la zona geográfica con mayor participación de ventas está en Maharashtra y Madhya Pradesh, y las peores participaciones del negocio ocurren en zonas como Sikkim y Haryana. 
+Se encontró que la tasa de Churn global del negocio se sitúa en un crítico 26.54%, lo que representa una base total de 1,869 clientes perdidos. El impacto financiero directo de esta deserción se traduce en una fuga mensual recurrente de $139,130.85 USD en cargos facturados, lo que evidencia que el abandono no solo afecta el volumen de usuarios, sino que desestabiliza severamente el flujo de caja operativo mes con mes.
 
-![Dashboard ejecutivo](assets/img/project_Data_Visualization_Online_Sales/Screenshot_2026_07_07_113817.png)
+![Tasa de Churn e Impacto Mensual](assets/img/project_Trends_Analysis_SQL/Respuesta_1.png)
 
-- **Dashboard dinámico para análisis comercial**
+- **Auditoría financiera del valor histórico acumulado**
 
-Se encontró que existe una variabilidad de la participación de cada genero en las ventas del negocio, siendo observable que el genero femenino tuvo una mayor participación entre marzo a mediados de julio, mientras que el género masculino tuvo una mayor participación durante el periodo restante del año. Adicional, se pudo detectar que las categorías de producto preferidas por los clientes en general son Saree, Hankerchief y Stole; conservando dicha participación individualmente por género. 
+Se encontró que la pérdida acumulada por los clientes que abandonaron la compañía asciende a una cifra alarmante de $2.86 millones de USD en `TotalCharges`. Al contrastar este dato con los $13.19 millones de USD generados por la base de clientes retenidos, se demuestra que la deserción histórica ha drenado cerca del 18% del valor total del ciclo de vida del negocio, confirmando que el Churn es el principal inhibidor del crecimiento financiero a largo plazo.
 
-![Dashboard Comercial](assets/img/project_Data_Visualization_Online_Sales/Screenshot_2026_07_07_113947.png)
+![Análisis de Cargos Totales Acumulados](assets/img/project_Trends_Analysis_SQL/Respuesta_2.png)
 
-Explora más detalles del proyecto en el [repositorio completo](https://github.com/AndresASR-20/AndresASR-20.github.io/tree/main/assets/projects/project_Data_Visualization_Online_Sales).
+- **Evaluación operativa por tipo de infraestructura de internet**
+
+Se encontró una preocupante paradoja operativa en el núcleo de conectividad del negocio: la Fibra Óptica registra una alarmante tasa de Churn del 41.89%, a pesar de ser el servicio que genera el cargo promedio más alto para la empresa ($93.90 USD). En contraste, los clientes con servicio DSL muestran un comportamiento sustancialmente más estable con una tasa de deserción de apenas el 18.96% y un cargo de $58.10 USD, lo que apunta a un serio problema de calidad o insatisfacción técnica en la oferta de alta velocidad.
+
+![Análisis de Churn por Servicio de Internet](assets/img/project_Trends_Analysis_SQL/Respuesta_3.png)
+
+- **Evaluación del impacto de los servicios de asistencia y protección**
+
+Se encontró que los servicios de valor agregado actúan como un ancla masiva de retención para el negocio. Los clientes que carecen de Seguridad en Línea o de Soporte Técnico registran tasas de Churn críticas que superan el 41% en ambos casos. Por el contrario, la habilitación de estas soluciones reduce el abandono drásticamente a rangos de entre el 14% y 15%, demostrando que la asistencia activa y la protección digital blindan la lealtad del usuario y mitigan la fricción con la compañía.
+
+![Impacto de TechSupport y OnlineSecurity](assets/img/project_Trends_Analysis_SQL/Respuesta_4.png)
+
+- **Correlación entre densidad de productos y lealtad del cliente**
+
+Se encontró una relación inversamente proporcional entre el volumen de servicios de valor agregado contratados y la propensión al abandono. Los clientes que no cuentan con ningún servicio adicional presentan un Churn crítico del 49.85%, mientras que aquellos que integran un ecosistema robusto de 5 o 6 servicios reducen su tasa de deserción a niveles mínimos de entre el 3% y el 5%. Estos resultados comprueban que las estrategias de *cross-selling* no solo incrementan el ticket promedio, sino que son el mecanismo más efectivo para asegurar la retención.
+
+![Análisis de Churn por Cantidad de Servicios Adicionales](assets/img/project_Trends_Analysis_SQL/Respuesta_5.png)
+
+- **Mapeo del ciclo de vida y vulnerabilidad temporal del cliente**
+
+Se encontró que el periodo de mayor riesgo de deserción se concentra de forma crítica en los primeros meses de relación con la compañía. Los clientes nuevos con menos de un año de antigüedad (`tenure < 12`) registran una alarmante tasa de Churn del 47.44%, concentrando el mayor volumen de bajas del negocio. Conforme avanza el ciclo de vida del usuario y este supera la barrera de los 24 meses, la lealtad se estabiliza de forma drástica, cayendo el Churn por debajo del 14%, lo que resalta la urgencia de blindar la experiencia durante el primer año.
+
+![Tasa de Churn por Rangos de Antigüedad](assets/img/project_Trends_Analysis_SQL/Respuesta_6.png)
+
+- **Auditoría de esquemas contractuales y estabilidad comercial**
+
+Se encontró que la flexibilidad contractual del negocio representa su mayor vulnerabilidad financiera. Los clientes bajo la modalidad "Mes a Mes" (`Month-to-month`) exhiben una tasa de Churn crítica del 42.71%, concentrando la gran mayoría de las cancelaciones de la empresa. En un contraste radical, los esquemas de lealtad a largo plazo demuestran un blindaje operativo casi absoluto, reduciendo el abandono a un 11.27% en contratos de un año y a un minúsculo 2.83% en contratos a dos años, lo que confirma la necesidad de incentivar la migración de esquema.
+
+![Impacto del Tipo de Contrato en el Churn](assets/img/project_Trends_Analysis_SQL/Respuesta_7.png)
+
+- **Auditoría de pasarelas de pago y comportamiento transaccional**
+
+Se encontró que los canales de recaudación financiera tienen un impacto directo y desproporcionado en la retención. Los usuarios que utilizan el Cheque Electrónico (`Electronic check`) como método de pago registran una tasa de Churn crítica del 45.29%, convirtiéndose en el principal punto de fuga transaccional del negocio. Por el contrario, los clientes que adoptan métodos automatizados como la Tarjeta de Crédito o la Transferencia Bancaria muestran una deserción sustancialmente menor, oscilando entre el 15% y 16%, lo que evidencia la urgencia de desincentivar los procesos de cobro manuales.
+
+![Análisis de Churn por Método de Pago](assets/img/project_Trends_Analysis_SQL/Respuesta_8.png)
+
+- **Auditoría de métodos de facturación y fricción digital**
+
+Se encontró que la digitalización forzada de la facturación introduce un factor de fricción psicológica o conveniencia que impacta la retención. Los usuarios suscritos a la facturación electrónica (`PaperlessBilling = Yes`) registran una tasa de Churn del 33.49%, una cifra sustancialmente más alta en comparación con el 16.33% de aquellos que aún reciben su factura física tradicional (`PaperlessBilling = No`). Este patrón sugiere que los recordatorios digitales de cobro o la falta de un soporte tangible elevan la propensión al abandono del servicio.
+
+![Impacto del Método de Facturación en el Churn](assets/img/project_Trends_Analysis_SQL/Respuesta_9.png)
+
+- **Diseño del modelo de Alerta Temprana para retención proactiva**
+
+Se encontró que la concentración del riesgo financiero puede aislarse mediante algoritmos basados en reglas de negocio. Al cruzar las variables críticas identificadas en el análisis (contrato "Mes a Mes", uso de Cheque Electrónico y nula adopción de servicios de soporte), se logró segmentar y extraer un listado predictivo automatizado con los 500 clientes activos con mayor probabilidad de abandono. Este enfoque permite al equipo de retención pasar de una postura reactiva a una estrategia proactiva, interviniendo cuentas con un valor financiero agregado antes de que se formalice la baja.
+
+![Estrategia de Alerta Temprana e Intervención](assets/img/project_Trends_Analysis_SQL/Respuesta_10.png)
+
+Explora más detalles del proyecto en el [repositorio completo](https://github.com/AndresASR-20/AndresASR-20.github.io/tree/main/assets/projects/project_Trends_Analysis_SQL).
