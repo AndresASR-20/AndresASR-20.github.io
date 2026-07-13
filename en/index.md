@@ -381,3 +381,124 @@ It was found that there is a variability in the participation of each gender in 
 ![Commercial Dashboard](/assets/img/project_Data_Visualization_Online_Sales/Screenshot_2026_07_07_113947.png)
 
 Explore more details of the project in the [entire repository](https://github.com/AndresASR-20/AndresASR-20.github.io/tree/main/assets/projects/project_Data_Visualization_Online_Sales).
+
+## Trend and Churn Pattern Analysis in Subscription Services for a Telecommunications Company
+
+This project consisted of the strategic analysis and optimization of the customer retention ecosystem for a growing telecommunications company. The main objective was to centralize and structure massive information from its subscriber database (detailing demographic profiles, tenure, contract types, and payment methods) along with the breakdown of consumption across its suite of advanced services (DSL and fiber optic connectivity, cybersecurity tools, technical support, and streaming platforms). With this raw database, a rigorous cleaning and transformation process was implemented in PostgreSQL, converting inconsistent records into a unified analytical environment that balances a high-level financial diagnosis with an analysis of users' operational behavior.
+
+The solution allows the business to continuously monitor its commercial health by tracking critical retention KPIs such as the global Churn rate, the impact on lost monthly revenue, accumulated Customer Lifetime Value, and service adoption density per user. To respond to the strategic needs of the company, the analysis was structured to identify the main red flags in the operation. As a result of the project, an automated Early Warning model was designed and implemented in SQL to proactively isolate the top 500 active customers with the highest probability of leaving based on their consumption patterns. Thanks to this, the business now has a key analytical asset to transition from a reactive stance to a proactive strategy, streamlining commercial decision-making and allowing the Marketing and Customer Success teams to deploy hyper-targeted loyalty campaigns to safeguard the company's revenue.
+
+### Tools and Data Process
+
+![SQL](https://img.shields.io/badge/SQL-3262A8?style=for-the-badge)
+![Postgre SQL](https://img.shields.io/badge/PostgreSQL-3262A8?style=for-the-badge)
+![Exploratory Data Analysis](https://img.shields.io/badge/Exploratory_Data_Analysis-031796?style=for-the-badge)
+![Trends Analysis](https://img.shields.io/badge/Trends_Analysis-031796?style=for-the-badge)
+![Data Cleaning](https://img.shields.io/badge/Data_Cleaning-031796?style=for-the-badge)
+![Data Transformation](https://img.shields.io/badge/Data_Transformation-031796?style=for-the-badge)
+![Logical and Conditional Modelling](https://img.shields.io/badge/Logical_and_Conditional_Modelling-031796?style=for-the-badge)
+![Financial Analysis](https://img.shields.io/badge/Financial_Analysis-031796?style=for-the-badge)
+
+---
+
+### Key Questions
+
+- Financial Impact Diagnosis and Problem Identification
+1. What is the company's current global Churn rate and how much money in monthly revenue (MonthlyCharges) does losing these customers represent?
+2. If we analyze the total historical record (TotalCharges), how much money have customers who already left the company stopped contributing compared to the total accumulated value of those who remain active?
+- Service Portfolio Analysis (Saturation and Loyalty)
+3. Do customers who contract Fiber optic internet have a higher or lower Churn rate than those using DSL? What do you think is the economic reason considering their average monthly charges?
+4. Do technical support (TechSupport) and online security (OnlineSecurity) really retain customers? Compare the Churn rate of customers who have these services activated versus those who do not.
+5. How many additional services do loyal customers consume on average compared to those who cancel? (Services to evaluate: OnlineSecurity, OnlineBackup, DeviceProtection, TechSupport, StreamingTV, StreamingMovies).
+- Operations and Customer Lifecycle
+6. What is the tenure distribution of customers who leave? Is there a "critical month" or period of time (e.g., the first 6 months) where most cancellations occur?
+7. How does the type of contract (Contract) affect Churn? Calculate the abandonment percentage for Month-to-month contracts vs. 1 and 2-year contracts.
+- Channel and Billing Strategy (Marketing & Finance)
+8. Does the payment method influence attrition? Calculate the Churn Rate broken down by each PaymentMethod. Are automatic methods (credit card/bank transfer) more effective at retaining than electronic checks?
+9. Are customers with paperless billing (PaperlessBilling = Yes) more prone to Churn than those who receive a physical invoice?
+- Early Warning (Predictive Approach)
+10. Generate a list with the customerID of the Top 500 active customers with the highest risk of Churn to send them an offer tomorrow morning.
+
+### Methodology
+
+- **Data standardization and type conversion**: The transformation of the `TotalCharges` column was executed by removing empty records and reconfiguring its data type to a floating-point numeric value (`FLOAT`), correcting structural inconsistencies at the source and ensuring the integrity of the financial analysis.
+- **Quantification of financial and volumetric impact**: Aggregation queries were developed to determine the global Churn rate, the exact volume of attrition, and the leakage of recurring monthly revenue (`MonthlyCharges`), contrasting these metrics with the accumulated historical value (`TotalCharges`) of retained customers.
+- **Technical infrastructure evaluation and segmentation**: Consumption profiles were grouped and analyzed according to the type of internet service (`InternetService`), isolating cancellation rates and average costs to identify operational discrepancies in the Fiber Optic offering.
+- **Product adoption density analysis**: A conditional logic matrix was implemented using `CASE WHEN` statements to sum the volume of contracted value-added services, measuring the direct correlation between the level of *cross-selling* and long-term user loyalty.
+- **Lifecycle mapping and critical windows**: A time cohorst analysis was structured by grouping tenure (`tenure`) into quarterly and semi-annual ranges, successfully locating the period of time with the greatest operational vulnerability with pinpoint precision.
+- **Contractual and operational audit**: Attrition behavior was broken down by crossing legal billing schemes (`Contract`) and invoicing methods (`PaperlessBilling`), identifying the latent risk in non-automated payment models.
+- **Early Warning model design**: A predictive query based on business rules was built to proactively filter and extract a list of the 500 active customers with the highest accumulated risk index, prioritized by their financial value for the deployment of immediate retention campaigns.
+
+### Conclusions and Recommendations
+
+- **Proactive contract migration**: Implement financial or operational incentive campaigns (such as doubling internet speed or gifting months of streaming services) aimed exclusively at "Month-to-month" customers, motivating them to sign a 1 or 2-year commitment to plunge their Churn rate from 42% to less than 11%.
+- **Preventive packaging of value-added services**: Configure commercial bundles that include Technical Support (`TechSupport`) and Online Security (`OnlineSecurity`) free of charge for the first few months or natively integrated into Fiber Optic plans, taking advantage of the fact that users with these services show a three times higher retention rate.
+- **Infrastructure and expectation audit in Fiber Optic**: Initiate an urgent technical review and satisfaction analysis in areas with Fiber Optic coverage, given that, despite being the service with the highest average billing ($93 USD), it records a critical attrition rate that exceeds 40%.
+- **Direct debit and automatic payment incentives**: Launch a one-time bonus program (e.g., a $5 USD discount on the next bill) to encourage customers who use Electronic Check (the method with the worst Churn, close to 45%) to migrate their accounts toward automatic charges with a Credit Card or Bank Transfer.
+- **Reinforcement of Onboarding in the initial lifecycle**: Redesign the customer support and attention strategy (*Customer Success*) during the first 90 days following contraction, concentrating retention efforts on this critical temporal window that concentrates the largest volume of historical cancellations.
+- **Psychological mitigation of digital billing**: Optimize the format of electronic billing notifications (`PaperlessBilling = Yes`) for digital profiles, adding automated summaries of the benefits and volume of data consumed in the month in order to justify the value of the service and counteract its 33% propensity to abandon.
+- **Activation of the Early Warning protocol**: Immediately deploy the automated list of the Top 500 high-risk customers to the advanced retention and Call Center teams, allowing proactive loyalty calls to be made before users initiate the cancellation process.
+
+### Featured Visualizations
+
+- **Control metrics for monthly income loss**
+
+It was found that the business's global Churn rate stands at a critical 26.54%, which represents a total base of 1,869 lost customers. The direct financial impact of this attrition translates into a recurring monthly leakage of $139,130.85 USD in billed charges, which evidences that abandonment not only affects user volume but severely destabilizes the operational cash flow month after month.
+
+![Tasa de Churn e Impacto Mensual](assets/img/project_Trends_Analysis_SQL/Respuesta_1.png)
+
+- **Financial audit of the accumulated historical value**
+
+It was found that the accumulated loss from customers who abandoned the company amounts to an alarming figure of $2.86 million USD in `TotalCharges`. By contrasting this data with the $13.19 million USD generated by the retained customer base, it is shown that historical attrition has drained nearly 18% of the business's total lifecycle value, confirming that Churn is the main inhibitor of long-term financial growth.
+
+![Análisis de Cargos Totales Acumulados](assets/img/project_Trends_Analysis_SQL/Respuesta_2.png)
+
+- **Operational evaluation by type of internet infrastructure**
+
+A troubling operational paradox was found at the core of the business's connectivity: Fiber Optic records an alarming Churn rate of 41.89%, despite being the service that generates the highest average charge for the company ($93.90 USD). In contrast, customers with DSL service show substantially more stable behavior with an attrition rate of just 18.96% and a charge of $58.10 USD, pointing to a serious quality or technical dissatisfaction issue in the high-speed offering.
+
+![Análisis de Churn por Servicio de Internet](assets/img/project_Trends_Analysis_SQL/Respuesta_3.png)
+
+- **Impact evaluation of assistance and protection services**
+
+Value-added services were found to act as a massive retention anchor for the business. Customers who lack Online Security or Technical Support record critical Churn rates exceeding 41% in both cases. Conversely, enabling these solutions drastically reduces abandonment to ranges between 14% and 15%, demonstrating that active assistance and digital protection shield user loyalty and mitigate friction with the company.
+
+![Impacto de TechSupport y OnlineSecurity](assets/img/project_Trends_Analysis_SQL/Respuesta_4.png)
+
+- **Correlation between product density and customer loyalty**
+
+An inversely proportional relationship was found between the volume of contracted value-added services and the propensity to abandon. Customers who do not have any additional service present a critical Churn of 49.85%, while those who integrate a robust ecosystem of 5 or 6 services reduce their attrition rate to minimal levels between 3% and 5%. These results prove that *cross-selling* strategies not only increase the average ticket but are the most effective mechanism to ensure retention.
+
+![Análisis de Churn por Cantidad de Servicios Adicionales](assets/img/project_Trends_Analysis_SQL/Respuesta_5.png)
+
+- **Lifecycle mapping and temporal vulnerability of the customer**
+
+The period of greatest attrition risk was found to be critically concentrated in the first months of relationship with the company. New customers with less than a year of seniority (`tenure < 12`) record an alarming Churn rate of 47.44%, concentrating the largest volume of business losses. As the user lifecycle progresses and exceeds the 24-month barrier, loyalty stabilizes drastically, with Churn falling below 14%, highlighting the urgency of shielding the experience during the first year.
+
+![Tasa de Churn por Rangos de Antigüedad](assets/img/project_Trends_Analysis_SQL/Respuesta_6.png)
+
+- **Audit of contractual schemes and commercial stability**
+
+The business's contractual flexibility was found to represent its greatest financial vulnerability. Customers under the "Month-to-month" (`Month-to-month`) modality exhibit a critical Churn rate of 42.71%, concentrating the vast majority of the company's cancellations. In radical contrast, long-term loyalty schemes demonstrate an almost absolute operational shield, reducing abandonment to 11.27% in one-year contracts and to a minuscule 2.83% in two-year contracts, confirming the need to incentivize scheme migration.
+
+![Impacto del Tipo de Contrato en el Churn](assets/img/project_Trends_Analysis_SQL/Respuesta_7.png)
+
+- **Audit of payment gateways and transactional behavior**
+
+Financial collection channels were found to have a direct and disproportionate impact on retention. Users who use Electronic Check (`Electronic check`) as a payment method record a critical Churn rate of 45.29%, becoming the business's main transactional leak. Conversely, customers who adopt automated methods such as Credit Card or Bank Transfer show substantially lower attrition, ranging between 15% and 16%, which evidences the urgency of desincentivizing manual collection processes.
+
+![Análisis de Churn por Método de Pago](assets/img/project_Trends_Analysis_SQL/Respuesta_8.png)
+
+- **Audit of billing methods and digital friction**
+
+Forced digitalization of billing was found to introduce a psychological friction or convenience factor that impacts retention. Users subscribed to paperless billing (`PaperlessBilling = Yes`) record a Churn rate of 33.57%, a substantially higher figure compared to the 16.33% of those who still receive their traditional physical invoice (`PaperlessBilling = No`). This pattern suggests that digital payment reminders or the lack of a tangible statement elevate the propensity to abandon the service.
+
+![Impacto del Método de Facturación en el Churn](assets/img/project_Trends_Analysis_SQL/Respuesta_9.png)
+
+- **Design of the Early Warning model for proactive retention**
+
+It was found that the concentration of financial risk can be isolated through business rules-based algorithms. By crossing the critical variables identified in the analysis (Month-to-month contract, use of Electronic Check, and zero adoption of support services), it was possible to segment and extract an automated predictive list with the 500 active customers with the highest probability of abandonment. This approach allows the retention team to move from a reactive posture to a proactive strategy, intervening in accounts with aggregated financial value before the cancellation is formalized.
+
+![Estrategia de Alerta Temprana e Intervención](assets/img/project_Trends_Analysis_SQL/Respuesta_10.png)
+
+Explore more project details in the [full repository](https://github.com/AndresASR-20/AndresASR-20.github.io/tree/main/assets/projects/project_Trends_Analysis_SQL).
