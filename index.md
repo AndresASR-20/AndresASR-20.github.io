@@ -35,7 +35,37 @@ Especialista en el ciclo completo del dato: desde la extracción y limpieza de g
 ### Habilidades blandas
 Análisis de datos | Resolución de problemas | Comunicación efectiva | Trabajo en equipo | Orientación a resultados | Organización | Proactividad | Atención al detalle | Optimización de Procesos
 
-# Proyectos Seleccionados
+## Índice de Proyectos
+
+<section class="quick-links-section">
+    <div class="index-container">
+        {% assign proyectos_agrupados = site.data.proyectos | group_by: "area_es" %}
+        {% for grupo in proyectos_agrupados %}
+        <div class="index-category">
+            <h3>{{ grupo.name }}</h3>
+            <ul>
+                {% for proyecto in grupo.items %}
+                <li>
+                    <a href="#{{ proyecto.id }}">{{ proyecto.titulo_es }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+## Proyectos Seleccionados
+
+<section class="projects-section">
+    {% for proyecto in site.data.proyectos %}
+    <article id="{{ proyecto.id }}" class="project-item">
+        <h3>{{ proyecto.titulo_es }}</h3>
+        <p>{{ proyecto.descripcion_es }}</p>
+        <p><strong>Herramientas:</strong> {{ proyecto.herramientas }}</p>
+    </article>
+    {% endfor %}
+</section>
 
 ## Optimización de gastos de distribuidora de entrada a eventos de entretenimiento
 
