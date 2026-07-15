@@ -37,35 +37,18 @@ Análisis de datos | Resolución de problemas | Comunicación efectiva | Trabajo
 
 ## Índice de Proyectos
 
-<section class="quick-links-section">
-    <div class="index-container">
-        {% assign proyectos_agrupados = site.data.proyectos | group_by: "area_es" %}
-        {% for grupo in proyectos_agrupados %}
-        <div class="index-category">
-            <h3>{{ grupo.name }}</h3>
-            <ul>
-                {% for proyecto in grupo.items %}
-                <li>
-                    <a href="#{{ proyecto.id }}">{{ proyecto.titulo_es }}</a>
-                </li>
-                {% endfor %}
-            </ul>
-        </div>
-        {% endfor %}
-    </div>
-</section>
+### Área: Análisis de Datos & Modelado
+* [Optimización de gastos de distribuidora de entrada a eventos de entretenimiento](#optimización-de-gastos-de-distribuidora-de-entrada-a-eventos-de-entretenimiento)
+* [Análisis de retención de clientes para gimnasio](#análisis-de-retención-de-clientes-para-gimnasio)
+
+### Área: Dashboards & Visualización
+* [Análisis de tendencias de categorías consumidas en Youtube](#análisis-de-tendencias-de-categorías-consumidas-en-youtube)
+* [Dashboard para análisis ejecutivo y comercial de ventas para tienda online](#dashboard-para-análisis-ejecutivo-y-comercial-de-ventas-for-tienda-online)
+
+### Área: Ingeniería de Datos & SQL
+* [Análisis de tendencias y patrones de cancelación en servicio de suscripción para empresa de telecomunicaciones](#análisis-de-tendencias-y-patrones-de-cancelación-en-servicio-de-suscripción-para-empresa-de-telecomunicaciones)
 
 ## Proyectos Seleccionados
-
-<section class="projects-section">
-    {% for proyecto in site.data.proyectos %}
-    <article id="{{ proyecto.id }}" class="project-item">
-        <h3>{{ proyecto.titulo_es }}</h3>
-        <p>{{ proyecto.descripcion_es }}</p>
-        <p><strong>Herramientas:</strong> {{ proyecto.herramientas }}</p>
-    </article>
-    {% endfor %}
-</section>
 
 ## Optimización de gastos de distribuidora de entrada a eventos de entretenimiento
 
