@@ -41,11 +41,11 @@ Análisis de datos | Resolución de problemas | Comunicación efectiva | Trabajo
 * [Optimización de gastos de distribuidora de entrada a eventos de entretenimiento](#optimización-de-gastos-de-distribuidora-de-entrada-a-eventos-de-entretenimiento)
 * [Análisis de retención de clientes para gimnasio](#análisis-de-retención-de-clientes-para-gimnasio)
 
-### Área: Dashboards & Visualización
+### Área: Dashboards y Visualización
 * [Análisis de tendencias de categorías consumidas en Youtube](#análisis-de-tendencias-de-categorías-consumidas-en-youtube)
 * [Dashboard para análisis ejecutivo y comercial de ventas para tienda online](#dashboard-para-análisis-ejecutivo-y-comercial-de-ventas-para-tienda-online)
 
-### Área: Ingeniería de Datos & SQL
+### Área: Ingeniería de Datos y SQL
 * [Análisis de tendencias y patrones de cancelación en servicio de suscripción para empresa de telecomunicaciones](#análisis-de-tendencias-y-patrones-de-cancelación-en-servicio-de-suscripción-para-empresa-de-telecomunicaciones)
 
 ## Proyectos Seleccionados
