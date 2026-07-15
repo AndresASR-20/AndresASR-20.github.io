@@ -8,7 +8,7 @@
 }
 
 // ==========================================================================
-// NUEVOS ESTILOS: Índice de Proyectos y Desplazamiento Suave
+// NUEVOS ESTILOS: Ajustes Globales y Desplazamiento Suave
 // ==========================================================================
 
 // Hace que la página se desplace suavemente al hacer clic en los enlaces de anclaje
@@ -21,24 +21,28 @@ h2 {
     scroll-margin-top: 40px;
 }
 
-// Estilizamos todos los títulos de áreas (h3) que pertenezcan al índice (independiente del idioma)
-.project-index + h3,
-.project-index ~ h3 {
-    margin-top: 25px;
-    margin-bottom: 10px;
-    font-size: 1.15rem;
+// ==========================================================================
+// RESALTADO DE APARTADOS (Aplica a TODOS los h3 en Español e Inglés)
+// ==========================================================================
+h3 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
     color: #0056b3;
-    border-left: 4px solid #0056b3; // Línea azul a la izquierda de cada categoría
-    padding-left: 10px;
+    border-left: 4px solid #0056b3; // Tu hermosa línea azul a la izquierda
+    padding-left: 12px;
 }
 
-// Estilizamos todas las listas de proyectos (ul) pertenecientes al índice
-.project-index ~ ul {
-    background-color: #f8f9fa; // Fondo gris claro para el índice
+// ==========================================================================
+// ESTILOS PARA LAS LISTAS DE PROYECTOS (Fondo gris con viñetas cuadradas)
+// ==========================================================================
+// Esto selecciona las listas que van inmediatamente después o cerca de un h3
+h3 + ul {
+    background-color: #f8f9fa; // Fondo gris claro
     padding: 20px 20px 20px 35px;
     border-radius: 6px;
-    margin-bottom: 20px;
-    list-style-type: square; // Viñetas cuadradas elegancia
+    margin-bottom: 25px;
+    list-style-type: square; // Viñetas cuadradas elegantes
     
     li {
         margin-bottom: 8px;
@@ -49,33 +53,6 @@ h2 {
         text-decoration: none;
         font-size: 0.95rem;
         font-weight: bold;
-        
-        &:hover {
-            text-decoration: underline;
-        }
-    }
-}
-
-// ==========================================================================
-// PROTECCIÓN: Reseteo para listas fuera del índice
-// ==========================================================================
-
-// Evita que las listas que se encuentran bajo "Proyectos Seleccionados" o títulos posteriores adopten el fondo gris
-h2#proyectos-seleccionados ~ ul,
-h2#selected-projects ~ ul {
-    background-color: transparent;
-    padding: 0px 0px 0px 20px;
-    border-radius: 0;
-    margin-bottom: 15px;
-    list-style-type: disc;
-    
-    li {
-        margin-bottom: inherit;
-    }
-    
-    a {
-        font-weight: normal;
-        color: inherit;
         
         &:hover {
             text-decoration: underline;
