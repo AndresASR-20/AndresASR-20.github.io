@@ -16,38 +16,29 @@ html {
     scroll-behavior: smooth;
 }
 
-// Contenedor principal del Índice de Accesos Rápidos
-.quick-links-section {
-    background-color: #f8f9fa; 
-    padding: 25px;
+// Estilos automáticos para los proyectos (evita que se corten arriba al saltar)
+h2 {
+    scroll-margin-top: 40px;
+}
+
+// Estilizamos los títulos de las áreas del índice (h3 que están debajo del título principal ## Índice...)
+h2 + h3 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 1.15rem;
+    color: #0056b3;
+    border-left: 4px solid #0056b3; // Línea azul a la izquierda de cada categoría
+    padding-left: 10px;
+}
+
+// Estilizamos las listas de proyectos del índice para que parezcan un menú limpio
+h2 + h3 + ul, 
+ul + h3 + ul {
+    background-color: #f8f9fa; // Fondo gris claro para el índice
+    padding: 20px 20px 20px 35px;
     border-radius: 6px;
-    margin: 20px 0 40px 0;
-    border-left: 4px solid #0056b3; // Línea azul a la izquierda
-}
-
-.index-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    margin-top: 15px;
-}
-
-.index-category {
-    flex: 1;
-    min-width: 250px;
-    
-    h3 {
-        font-size: 1.1rem;
-        color: #0056b3;
-        margin-top: 0;
-        margin-bottom: 10px;
-    }
-    
-    ul {
-        list-style-type: square;
-        padding-left: 20px;
-        margin: 0;
-    }
+    margin-bottom: 20px;
+    list-style-type: square; // Viñetas cuadradas elegancia
     
     li {
         margin-bottom: 8px;
@@ -57,17 +48,10 @@ html {
         color: #0056b3;
         text-decoration: none;
         font-size: 0.95rem;
+        font-weight: bold;
         
         &:hover {
             text-decoration: underline;
         }
     }
-}
-
-// Estilos para las secciones de los proyectos destino
-.project-item {
-    margin-bottom: 60px;
-    
-    // Evita que el título del proyecto quede oculto en el borde superior de la pantalla tras el salto
-    scroll-margin-top: 40px; 
 }
