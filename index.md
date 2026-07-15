@@ -43,7 +43,7 @@ Análisis de datos | Resolución de problemas | Comunicación efectiva | Trabajo
 
 ### Área: Dashboards & Visualización
 * [Análisis de tendencias de categorías consumidas en Youtube](#análisis-de-tendencias-de-categorías-consumidas-en-youtube)
-* [Dashboard para análisis ejecutivo y comercial de ventas para tienda online](#dashboard-para-análisis-ejecutivo-y-comercial-de-ventas-for-tienda-online)
+* [Dashboard para análisis ejecutivo y comercial de ventas para tienda online](#dashboard-para-análisis-ejecutivo-y-comercial-de-ventas-para-tienda-online) Dashboard para análisis ejecutivo y comercial de ventas para tienda online 
 
 ### Área: Ingeniería de Datos & SQL
 * [Análisis de tendencias y patrones de cancelación en servicio de suscripción para empresa de telecomunicaciones](#análisis-de-tendencias-y-patrones-de-cancelación-en-servicio-de-suscripción-para-empresa-de-telecomunicaciones)
