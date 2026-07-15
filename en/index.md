@@ -38,7 +38,7 @@ Specialist in the full data lifecycle: from the extraction and cleaning of large
 ### Soft skills
 Data analysis | Problem solving | Effective communication | Teamwork | Results orientation | Organization | Proactivity | Attention to detail | Process Optimization
 
-## Project Index
+## Project Index { .project-index }
 
 ### Area: Business Data Patterns Analysis
 * [Expense Optimization for Event Ticketing Distributor](#expense-optimization-for-an-entertainment-event-ticket-distributor)
