@@ -2,17 +2,11 @@ theme: jekyll-theme-minimal
 title: Luis Andrés Aponte San Román
 logo: /assets/img/my_photo.png
 
-# Forzar a Jekyll a incluir la carpeta de inglés
+# Forzar a Jekyll a incluir la carpeta de inglés para portafolio multilingüe
 include:
   - en
 
-# Configuración de estilos personalizados
+# Configuración del motor Sass para compilar tus estilos personalizados
 sass:
-  style: :compressed
-# Forzar a Jekyll a incluir la carpeta de inglés
-include:
-  - en
-
-# Configuración de estilos personalizados
-sass:
-  style: :compressed
+  sass_dir: _sass
+  style: compressed
