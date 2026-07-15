@@ -44,11 +44,11 @@ Data analysis | Problem solving | Effective communication | Teamwork | Results o
 * [Expense Optimization for Event Ticketing Distributor](#expense-optimization-for-an-entertainment-event-ticket-distributor)
 * [Customer Churn Analysis for Gym Service](#customer-retention-analysis-for-a-gym)
 
-### Area: Dashboards & Visualization
+### Area: Dashboards and Visualization
 * [Category Trend Analysis on YouTube](#youtube-trending-categories-analysis)
 * [Executive and Commercial Sales Analysis Dashboard for Online Store](#dashboard-for-executive-and-commercial-sales-analysis-for-online-store) 
 
-### Area: Data Engineering & SQL
+### Area: Data Engineering and SQL
 * [Trend and Churn Pattern Analysis in Subscription Service for Telecom Company](#trend-and-churn-pattern-analysis-in-subscription-services-for-a-telecommunications-company)
 
 ## Selected Projects
