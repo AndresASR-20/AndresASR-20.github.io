@@ -69,8 +69,6 @@ Showz es una empresa de venta de entradas de eventos. Anteriormente a la ejecuci
 ![Análisis estadístico](https://img.shields.io/badge/Análisis_estadístico-031796?style=for-the-badge)
 ![Cálculo numérico](https://img.shields.io/badge/Cálculo_numérico-031796?style=for-the-badge)
 
----
-
 ### Preguntas clave
 
 1. ¿Cómo los clientes usan el servicio?
@@ -151,7 +149,7 @@ Showz es una empresa de venta de entradas de eventos. Anteriormente a la ejecuci
 
 Explora más detalles del proyecto en el [repositorio completo](https://github.com/AndresASR-20/AndresASR-20.github.io/tree/main/assets/projects/project_Business_Analysis).
 
-___________________________________________________________________
+---
 
 ## Análisis de retención de clientes para gimnasio
 
@@ -173,8 +171,6 @@ En todas las industrias, la retención de clientes es fundamental para garantiza
 ![Análisis estadístico](https://img.shields.io/badge/Análisis_estadístico-031796?style=for-the-badge)
 ![Cálculo numérico](https://img.shields.io/badge/Cálculo_numérico-031796?style=for-the-badge)
 ![Modelado de datos](https://img.shields.io/badge/Modelado_de_datos-031796?style=for-the-badge)
-
----
 
 ### Preguntas clave
 
@@ -271,6 +267,8 @@ Acciones:
 
 Explora más detalles del proyecto en el [repositorio completo](https://github.com/AndresASR-20/AndresASR-20.github.io/tree/main/assets/projects/project_Data_Modelling).
 
+---
+
 ## Análisis de tendencias de categorías consumidas en Youtube
 
 La agencia de publicidad Sterling & Draper tiene la necesidad de analizar tendencias de vídeos en YouTube para determinar qué contenido merece atención para la mercadotecnia. Cada video tiene una categoría específica (entretenimiento, música, noticias y política, etc.), una región y una fecha en que se hace tendencia. Un video puede estar en la sección de tendencias durante varios días seguidos.
@@ -298,8 +296,6 @@ Para dar solución a la necesidad, se plantea la creación de un dashboard que h
 
 ![Tableau](https://img.shields.io/badge/Tableau-3262A8?style=for-the-badge)
 ![Visualización de datos](https://img.shields.io/badge/Visualización_de_datos-031796?style=for-the-badge)
-
----
 
 ### Preguntas clave
 
@@ -338,6 +334,8 @@ Para dar solución a la necesidad, se plantea la creación de un dashboard que h
 
 Explora más detalles del proyecto en el [repositorio completo](https://github.com/AndresASR-20/AndresASR-20.github.io/tree/main/assets/projects/project_Data_Visualization).
 
+---
+
 ## Dashboard para análisis ejecutivo y comercial de ventas para tienda online 
 
 Este proyecto consistió en el diseño e implementación de un dashboard interactivo en Power BI para una tienda en línea (starter) en etapa de crecimiento continuo. El objetivo principal fue centralizar y estructurar la información proveniente de dos fuentes clave de la empresa: el registro general de ventas (que detalla fechas, clientes y ubicaciones geográficas) y el desglose de cada orden (que desmenuza montos, ganancias, métodos de pago y la jerarquía de categorías y subcategorías de productos). Con esta base, se transformaron los datos crudos en un ecosistema de visualización unificado que equilibra un enfoque ejecutivo de alto nivel con un análisis comercial profundamente operativo.
@@ -353,8 +351,6 @@ La solución permite al negocio supervisar continuamente su estatus de ventas me
 ![KPIs](https://img.shields.io/badge/KPI-031796?style=for-the-badge)
 ![Métricas de negocio](https://img.shields.io/badge/Métricas_de_Negocio-031796?style=for-the-badge)
 ![StoryTelling](https://img.shields.io/badge/Storytelling-031796?style=for-the-badge)
-
----
 
 ### Preguntas clave
 
@@ -390,6 +386,8 @@ Se encontró que existe una variabilidad de la participación de cada genero en 
 
 Explora más detalles del proyecto en el [repositorio completo](https://github.com/AndresASR-20/AndresASR-20.github.io/tree/main/assets/projects/project_Data_Visualization_Online_Sales).
 
+---
+
 ## Análisis de tendencias y patrones de cancelación en servicio de suscripción para empresa de telecomunicaciones
 
 Este proyecto consistió en el análisis estratégico y la optimización del ecosistema de retención de clientes para una compañía de telecomunicaciones en expansión. El objetivo principal fue centralizar y estructurar la información masiva proveniente de su base de datos de suscriptores (que detalla perfiles demográficos, antigüedad, tipos de contrato y métodos de pago) junto con el desglose del consumo de su suite de servicios avanzados (conectividad por DSL y fibra óptica, herramientas de ciberseguridad, soporte técnico y plataformas de streaming). Con esta base de datos crudos, se implementó un proceso riguroso de limpieza y transformación en PostgreSQL, convirtiendo registros inconsistentes en un entorno analítico unificado que equilibra un diagnóstico financiero de alto nivel con un análisis del comportamiento operativo de los usuarios.
@@ -406,8 +404,6 @@ La solución permite al negocio supervisar continuamente su salud comercial medi
 ![Transformación de datos](https://img.shields.io/badge/Transformación_de_datos-031796?style=for-the-badge)
 ![Modelado Lógico y Condicional](https://img.shields.io/badge/Modelado_Lógico_y_Condicional-031796?style=for-the-badge)
 ![Análisis financiero](https://img.shields.io/badge/Análisis_financiero-031796?style=for-the-badge)
-
----
 
 ### Preguntas clave
 
