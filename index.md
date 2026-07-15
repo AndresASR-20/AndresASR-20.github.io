@@ -35,7 +35,7 @@ Especialista en el ciclo completo del dato: desde la extracción y limpieza de g
 ### Habilidades blandas
 Análisis de datos | Resolución de problemas | Comunicación efectiva | Trabajo en equipo | Orientación a resultados | Organización | Proactividad | Atención al detalle | Optimización de Procesos
 
-## Índice de Proyectos { .project-index }
+## Índice de Proyectos
 
 ### Área: Análisis de Patrones en Datos de Negocio
 * [Optimización de gastos de distribuidora de entrada a eventos de entretenimiento](#optimización-de-gastos-de-distribuidora-de-entrada-a-eventos-de-entretenimiento)
