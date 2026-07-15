@@ -40,7 +40,7 @@ Data analysis | Problem solving | Effective communication | Teamwork | Results o
 
 ## Project Index
 
-### Area: Data Analysis & Modeling
+### Area: Business Data Patterns Analysis
 * [Expense Optimization for Event Ticketing Distributor](#expense-optimization-for-event-ticketing-distributor)
 * [Customer Churn Analysis for Gym Service](#customer-churn-analysis-for-gym-service)
 
