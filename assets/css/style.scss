@@ -2,6 +2,17 @@
 ---
 @import "{{ site.theme }}";
 
+// ==========================================================================
+// ESTILO PARA LA LÍNEA SEPARADORA DE PROYECTOS
+// ==========================================================================
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 86, 179, 0.1), rgba(0, 86, 179, 0.75), rgba(0, 86, 179, 0.1));
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 // Esto añade espacio al final de tu contenido para que no se choque con el footer
 #content, .wrapper, section {
     padding-bottom: 60px; 
