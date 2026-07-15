@@ -42,7 +42,37 @@ Data analysis | Problem solving | Effective communication | Teamwork | Results o
 
 Phone: +52 5539249978
 
-# Selected Projects
+## Project Index
+
+<section class="quick-links-section">
+    <div class="index-container">
+        {% assign proyectos_agrupados = site.data.proyectos | group_by: "area_en" %}
+        {% for grupo in proyectos_agrupados %}
+        <div class="index-category">
+            <h3>{{ grupo.name }}</h3>
+            <ul>
+                {% for proyecto in grupo.items %}
+                <li>
+                    <a href="#{{ proyecto.id }}">{{ proyecto.titulo_en }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+## Selected Projects
+
+<section class="projects-section">
+    {% for proyecto in site.data.proyectos %}
+    <article id="{{ proyecto.id }}" class="project-item">
+        <h3>{{ proyecto.titulo_en }}</h3>
+        <p>{{ proyecto.descripcion_en }}</p>
+        <p><strong>Tools:</strong> {{ proyecto.herramientas }}</p>
+    </article>
+    {% endfor %}
+</section>
 
 ## Expense optimization for an entertainment event ticket distributor
 
