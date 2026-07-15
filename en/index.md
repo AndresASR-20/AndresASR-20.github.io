@@ -41,15 +41,15 @@ Data analysis | Problem solving | Effective communication | Teamwork | Results o
 ## Project Index
 
 ### Area: Business Data Patterns Analysis
-* [Expense Optimization for Event Ticketing Distributor](#expense-optimization-for-event-ticketing-distributor)
-* [Customer Churn Analysis for Gym Service](#customer-churn-analysis-for-gym-service)
+* [Expense Optimization for Event Ticketing Distributor](#expense-optimization-for-an-entertainment-event-ticket-distributor)
+* [Customer Churn Analysis for Gym Service](#customer-retention-analysis-for-a-gym)
 
 ### Area: Dashboards & Visualization
-* [Category Trend Analysis on YouTube](#category-trend-analysis-on-youtube)
-* [Executive and Commercial Sales Analysis Dashboard for Online Store](#executive-and-commercial-sales-analysis-dashboard-for-online-store)
+* [Category Trend Analysis on YouTube](#youtube-trending-categories-analysis)
+* [Executive and Commercial Sales Analysis Dashboard for Online Store](#Dashboard-for-executive-and-commercial-sales-analysis-for-online-store)
 
 ### Area: Data Engineering & SQL
-* [Trend and Churn Pattern Analysis in Subscription Service for Telecom Company](#trend-and-churn-pattern-analysis-in-subscription-service-for-telecom-company)
+* [Trend and Churn Pattern Analysis in Subscription Service for Telecom Company](#trend-and-churn-pattern-analysis-in-subscription-services-for-a-telecommunications-company)
 
 ## Selected Projects
 
