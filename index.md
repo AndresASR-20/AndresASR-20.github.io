@@ -37,7 +37,7 @@ Análisis de datos | Resolución de problemas | Comunicación efectiva | Trabajo
 
 ## Índice de Proyectos
 
-### Área: Análisis de Datos & Modelado
+### Área: Análisis de Patrones en Datos de Negocio
 * [Optimización de gastos de distribuidora de entrada a eventos de entretenimiento](#optimización-de-gastos-de-distribuidora-de-entrada-a-eventos-de-entretenimiento)
 * [Análisis de retención de clientes para gimnasio](#análisis-de-retención-de-clientes-para-gimnasio)
 
