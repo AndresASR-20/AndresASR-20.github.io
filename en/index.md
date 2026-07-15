@@ -72,8 +72,6 @@ Showz is an event ticketing company. Prior to the execution of the project, the 
 ![Statistical Analysis](https://img.shields.io/badge/Statistical_Analysis-031796?style=for-the-badge)
 ![Numerical Calculus](https://img.shields.io/badge/Numerical_Calculus-031796?style=for-the-badge)
 
----
-
 ### Key questions
 
 1. How do customers use the service?
@@ -154,6 +152,8 @@ Showz is an event ticketing company. Prior to the execution of the project, the 
 
 Explore more details of the project in the [entire repository](https://github.com/AndresASR-20/AndresASR-20.github.io/tree/main/assets/projects/project_Business_Analysis).
 
+---
+
 ## Customer retention analysis for a gym
 
 In all industries, customer retention is essential to ensure sustainable revenue and reduce costs associated with acquiring new customers. Bringing this customer retention situation to the gym services sector, one of the most common problems faced by gyms and other services is customer churn. How do you find out if a customer is no longer with you? In the case of a gym, it makes sense to say that a customer has left if they do not come for a month. Of course, they might have gone on a trip and resume their visits when they return, but that is not a typical case. Usually, if a customer joins, comes a few times and then disappears, they are unlikely to return. Identifying the key factors influencing retention and cancellation allows the Model Fitness gym to anticipate churn risks, design effective loyalty strategies, and personalize experiences for each customer.
@@ -174,8 +174,6 @@ In all industries, customer retention is essential to ensure sustainable revenue
 ![Statistical Analysis](https://img.shields.io/badge/Statistical_Analysis-031796?style=for-the-badge)
 ![Numerical Calculus](https://img.shields.io/badge/Numerical_Calculus-031796?style=for-the-badge)
 ![Data Modelling](https://img.shields.io/badge/Data_Modelling-031796?style=for-the-badge)
-
----
 
 ### Key questions
 
@@ -272,6 +270,8 @@ Actions:
 
 Explore more details of the project in the [entire_repository](https://github.com/AndresASR-20/AndresASR-20.github.io/tree/main/assets/projects/project_Data_Modelling).
 
+---
+
 ## YouTube trending categories analysis
 
 The advertising agency Sterling & Draper has the need to analyze video trends on YouTube to determine which content deserves marketing attention. Each video has a specific category (entertainment, music, news and politics, etc.), a region, and a date when it becomes trending. A video can be in the trending section for several consecutive days.
@@ -299,8 +299,6 @@ To provide a solution to this need, the creation of a dashboard that enables ans
 
 ![Tableau](https://img.shields.io/badge/Tableau-3262A8?style=for-the-badge)
 ![Data Visualization](https://img.shields.io/badge/Data_Visualization-031796?style=for-the-badge)
-
----
 
 ### Key questions
 
@@ -339,6 +337,8 @@ To provide a solution to this need, the creation of a dashboard that enables ans
 
 Explore more details of the project in the [entire repository](https://github.com/AndresASR-20/AndresASR-20.github.io/tree/main/assets/projects/project_Data_Visualization).
 
+---
+
 ## Dashboard for executive and commercial sales analysis for online store 
 
 This project consisted of the design and implementation of an interactive dashboard in Power BI for an online store (starter) in a stage of continuous growth. The main objective was to centralize and structure the information coming from two key sources of the company: the general sales record (which details dates, customers, and geographic locations) and the breakdown of each order (which breaks down amounts, profits, payment methods, and the hierarchy of product categories and subcategories). With this base, raw data were transformed into a unified visualization ecosystem that balances a high-level executive approach with a deeply operational commercial analysis.
@@ -354,8 +354,6 @@ The solution allows the business to continuously monitor its sales status throug
 ![KPIs](https://img.shields.io/badge/KPI-031796?style=for-the-badge)
 ![Business Metrics](https://img.shields.io/badge/Business_Metrics-031796?style=for-the-badge)
 ![StoryTelling](https://img.shields.io/badge/Storytelling-031796?style=for-the-badge)
-
----
 
 ### Key questions
 
@@ -391,6 +389,8 @@ It was found that there is a variability in the participation of each gender in 
 
 Explore more details of the project in the [entire repository](https://github.com/AndresASR-20/AndresASR-20.github.io/tree/main/assets/projects/project_Data_Visualization_Online_Sales).
 
+---
+
 ## Trend and Churn Pattern Analysis in Subscription Services for a Telecommunications Company
 
 This project consisted of the strategic analysis and optimization of the customer retention ecosystem for a growing telecommunications company. The main objective was to centralize and structure massive information from its subscriber database (detailing demographic profiles, tenure, contract types, and payment methods) along with the breakdown of consumption across its suite of advanced services (DSL and fiber optic connectivity, cybersecurity tools, technical support, and streaming platforms). With this raw database, a rigorous cleaning and transformation process was implemented in PostgreSQL, converting inconsistent records into a unified analytical environment that balances a high-level financial diagnosis with an analysis of users' operational behavior.
@@ -407,8 +407,6 @@ The solution allows the business to continuously monitor its commercial health b
 ![Data Transformation](https://img.shields.io/badge/Data_Transformation-031796?style=for-the-badge)
 ![Logical and Conditional Modelling](https://img.shields.io/badge/Logical_and_Conditional_Modelling-031796?style=for-the-badge)
 ![Financial Analysis](https://img.shields.io/badge/Financial_Analysis-031796?style=for-the-badge)
-
----
 
 ### Key Questions
 
