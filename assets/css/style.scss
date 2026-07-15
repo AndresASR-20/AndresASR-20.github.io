@@ -21,8 +21,9 @@ h2 {
     scroll-margin-top: 40px;
 }
 
-// Estilizamos los títulos de las áreas del índice (h3 que están debajo del título principal ## Índice...)
-h2 + h3 {
+// Estilizamos de forma uniforme todos los títulos de áreas (h3) que pertenezcan al índice
+h2#índice-de-proyectos + h3,
+h2#índice-de-proyectos ~ h3 {
     margin-top: 25px;
     margin-bottom: 10px;
     font-size: 1.15rem;
@@ -31,9 +32,8 @@ h2 + h3 {
     padding-left: 10px;
 }
 
-// Estilizamos las listas de proyectos del índice para que parezcan un menú limpio
-h2 + h3 + ul, 
-ul + h3 + ul {
+// Estilizamos todas las listas de proyectos (ul) pertenecientes al índice
+h2#índice-de-proyectos ~ ul {
     background-color: #f8f9fa; // Fondo gris claro para el índice
     padding: 20px 20px 20px 35px;
     border-radius: 6px;
@@ -49,6 +49,32 @@ ul + h3 + ul {
         text-decoration: none;
         font-size: 0.95rem;
         font-weight: bold;
+        
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+// ==========================================================================
+// PROTECCIÓN: Reseteo para listas fuera del índice
+// ==========================================================================
+
+// Evita que las listas que se encuentran bajo "Proyectos Seleccionados" adopten el fondo gris
+h2#proyectos-seleccionados ~ ul {
+    background-color: transparent;
+    padding: 0px 0px 0px 20px;
+    border-radius: 0;
+    margin-bottom: 15px;
+    list-style-type: disc;
+    
+    li {
+        margin-bottom: inherit;
+    }
+    
+    a {
+        font-weight: normal;
+        color: inherit;
         
         &:hover {
             text-decoration: underline;
