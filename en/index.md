@@ -46,7 +46,7 @@ Data analysis | Problem solving | Effective communication | Teamwork | Results o
 
 ### Area: Dashboards & Visualization
 * [Category Trend Analysis on YouTube](#youtube-trending-categories-analysis)
-* [Executive and Commercial Sales Analysis Dashboard for Online Store](#Dashboard-for-executive-and-commercial-sales-analysis-for-online-store)
+* [Executive and Commercial Sales Analysis Dashboard for Online Store](#dashboard-for-executive-and-commercial-sales-analysis-for-online-store) 
 
 ### Area: Data Engineering & SQL
 * [Trend and Churn Pattern Analysis in Subscription Service for Telecom Company](#trend-and-churn-pattern-analysis-in-subscription-services-for-a-telecommunications-company)
