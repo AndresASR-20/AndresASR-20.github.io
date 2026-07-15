@@ -38,41 +38,20 @@ Specialist in the full data lifecycle: from the extraction and cleaning of large
 ### Soft skills
 Data analysis | Problem solving | Effective communication | Teamwork | Results orientation | Organization | Proactivity | Attention to detail | Process Optimization
 
-[LINKEDIN](https://www.linkedin.com/in/luis-andres-aponte-san-roman/) | [MICROSOFT OUTLOOK](mailto:andres_laasr20@outlook.com)
-
-Phone: +52 5539249978
-
 ## Project Index
 
-<section class="quick-links-section">
-    <div class="index-container">
-        {% assign proyectos_agrupados = site.data.proyectos | group_by: "area_en" %}
-        {% for grupo in proyectos_agrupados %}
-        <div class="index-category">
-            <h3>{{ grupo.name }}</h3>
-            <ul>
-                {% for proyecto in grupo.items %}
-                <li>
-                    <a href="#{{ proyecto.id }}">{{ proyecto.titulo_en }}</a>
-                </li>
-                {% endfor %}
-            </ul>
-        </div>
-        {% endfor %}
-    </div>
-</section>
+### Area: Data Analysis & Modeling
+* [Expense Optimization for Event Ticketing Distributor](#expense-optimization-for-event-ticketing-distributor)
+* [Customer Churn Analysis for Gym Service](#customer-churn-analysis-for-gym-service)
+
+### Area: Dashboards & Visualization
+* [Category Trend Analysis on YouTube](#category-trend-analysis-on-youtube)
+* [Executive and Commercial Sales Analysis Dashboard for Online Store](#executive-and-commercial-sales-analysis-dashboard-for-online-store)
+
+### Area: Data Engineering & SQL
+* [Trend and Churn Pattern Analysis in Subscription Service for Telecom Company](#trend-and-churn-pattern-analysis-in-subscription-service-for-telecom-company)
 
 ## Selected Projects
-
-<section class="projects-section">
-    {% for proyecto in site.data.proyectos %}
-    <article id="{{ proyecto.id }}" class="project-item">
-        <h3>{{ proyecto.titulo_en }}</h3>
-        <p>{{ proyecto.descripcion_en }}</p>
-        <p><strong>Tools:</strong> {{ proyecto.herramientas }}</p>
-    </article>
-    {% endfor %}
-</section>
 
 ## Expense optimization for an entertainment event ticket distributor
 
