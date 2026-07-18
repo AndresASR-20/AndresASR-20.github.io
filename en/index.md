@@ -523,7 +523,7 @@ The solution provides the company with a key analytical asset that transforms mi
 
 ![SQL](https://img.shields.io/badge/SQL-3262A8?style=for-the-badge)
 ![Microsoft SQL Server](https://img.shields.io/badge/microsoft_sql_server-3262A8?style=for-the-badge)
-![Exploratory Data Analysis](https://img.shields.io/badge/exploratoy_data_analysis-031796?style=for-the-badge)
+![Exploratory Data Analysis](https://img.shields.io/badge/exploratory_data_analysis-031796?style=for-the-badge)
 ![Trends Analysis](https://img.shields.io/badge/trends_analysis-031796?style=for-the-badge)
 ![Data Cleaning](https://img.shields.io/badge/data_cleaning-031796?style=for-the-badge)
 ![Data Transformation](https://img.shields.io/badge/data_transformation-031796?style=for-the-badge)
