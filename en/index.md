@@ -50,6 +50,7 @@ Data analysis | Problem solving | Effective communication | Teamwork | Results o
 
 ### Area: Data Engineering and SQL
 * [Trend and Churn Pattern Analysis in Subscription Service for Telecom Company](#trend-and-churn-pattern-analysis-in-subscription-services-for-a-telecommunications-company)
+* [Sales Performance Analysis and Cohort Analysis](sales-performance-analysis-and-cohort-analysis)
 
 ## Selected Projects
 
@@ -509,3 +510,70 @@ It was found that the concentration of financial risk can be isolated through bu
 ![Estrategia de Alerta Temprana e Intervención](/assets/img/project_Trends_Analysis_SQL/Respuesta_10.png)
 
 Explore more project details in the [full repository](https://github.com/AndresASR-20/AndresASR-20.github.io/tree/main/assets/projects/project_Trends_Analysis_SQL).
+
+---
+
+## Sales Performance Analysis and Cohort Analysis
+
+This project consisted of the strategic analysis and centralization of massive transactional data from Microsoft SQL Server (T-SQL) to diagnose customer retention and optimize the commercial portfolio of a major e-commerce marketplace in Latin America. Following a rigorous data ingestion and typing process in SSMS, three advanced analysis models were developed: a horizontal cohort matrix that measures user lifecycles through conditional pivoting; a ranking of "star products" by category using window functions (DENSE_RANK()) to mitigate inventory risks; and a temporal smoothing model using ROWS BETWEEN to calculate the 7-day moving average of demand, isolating the natural volatility of weekends.
+
+The solution provides the company with a key analytical asset that transforms millions of records into a managerial decision-making map for the Growth Marketing, Logistics, and Purchasing teams. Thanks to this diagnosis, the business can transition from purely intuitive management to a proactive strategy, enabling the design of hyper-targeted loyalty campaigns for the highest-value star products, accurately predicting distribution capacity with carriers, and redefining user retention efforts to safeguard and boost the company's revenue.
+
+### Key Tools and Data Process
+
+![SQL](https://img.shields.io/badge/SQL-3262A8?style=for-the-badge)
+![Microsoft SQL Server](https://img.shields.io/badge/microsoft_sql_server-3262A8?style=for-the-badge)
+![Exploratory Data Analysis](https://img.shields.io/badge/exploratoy_data_analysis-031796?style=for-the-badge)
+![Trends Analysis](https://img.shields.io/badge/trends_analysis-031796?style=for-the-badge)
+![Data Cleaning](https://img.shields.io/badge/data_cleaning-031796?style=for-the-badge)
+![Data Transformation](https://img.shields.io/badge/data_transformation-031796?style=for-the-badge)
+![Cohorts Analysis](https://img.shields.io/badge/cohorts_analysis-031796?style=for-the-badge)
+![Temporarily Analysis](https://img.shields.io/badge/temporarily_analysis-031796?style=for-the-badge)
+![Financial Analysis](https://img.shields.io/badge/financial_analysis-031796?style=for-the-badge)
+
+### Key Questions
+
+1. Do first-time customers on Olist return to buy in the following months, or are we a "one-time purchase" platform? Has retention improved for customers acquired in 2017 compared to those in 2018? 
+2. If we were to run hyper-segmented marketing campaigns by product category, what are the top 3 specific products (by ID) generating the highest sales volume in each category to feature on the homepage? Are there categories dominated by a single product, or is the internal competition diverse?
+3. Daily sales volume is highly noisy and experiences strange peaks (such as Black Friday). How can we view the actual "smoothed" trend of daily sales so that the operations team can plan carrier logistics capacity without being alarmed by single-day spikes?
+
+### Methodology
+
+- **Data ingestion, cleaning, and structural typing**: Flat file importation to **SSMS** was executed, and source inconsistencies were corrected by reconfiguring complex data types, transforming unique identifiers into strings (`VARCHAR`), commercial amounts into decimal values (`DECIMAL(10,2)`), and timestamps into native date formats (`DATETIME`), guaranteeing the integrity of time-based calculations.
+- **Chronological isolation and temporal truncation**: Date normalization logic was implemented using the mathematical combination of the `DATEADD` and `DATEDIFF` functions on the first purchase record (`MIN`), successfully truncating raw timestamps to the first day of their corresponding month for the exact establishment of starting periods.
+- **Analytical cohort modeling and conditional pivoting**: Sequential common table expressions (CTEs) were structured to calculate the customer maturity index, and through advanced conditional aggregation statements (`COUNT DISTINCT` with `CASE WHEN`), a vertical record stream was transformed into a horizontal matrix that maps user lifecycles and retention leakage.
+- **Inventory partitioning and ranking**: Catalog dimensions were unified with order records via multiple `JOINs`, applying the analytical window function `DENSE_RANK() OVER (PARTITION BY ... ORDER BY ...)` to compactly segment and extract the Top 3 highest-grossing products for each business category without omitting fair ties.
+- **Demand smoothing via Window Framing**: A daily moving aggregation model was developed by applying the row restriction clause `ROWS BETWEEN 6 PRECEDING AND CURRENT ROW`, effectively isolating volatility, transactional noise, and the natural weekly seasonality to expose the real trend of logistics capacity.
+- **Filtering and operational status debugging**: Rigorous business rules were integrated into the persistence layer using condition filters (`WHERE order_status = 'delivered'`), mitigating data bias caused by canceled or pending orders and ensuring that retention and billing conclusions were based exclusively on actual consolidated revenue.
+
+### Conclusions and Recommendations
+
+- **Campaign restructuring toward high-value tickets**: Reorient the digital advertising budget of the Growth Marketing team to preferentially promote products identified in the Top 3 by revenue (such as the leading ID in `health_beauty` which generates over $63k USD), prioritizing profit margins over items that only drive low-cost logistics volume.
+- **Supplier diversification in monopolized categories**: Initiate negotiation meetings to onboard new sellers within the Bed and Bath (`bed_bath_table`) category, mitigating the critical centralization risk where the number-one star product absorbs nearly the entirety of demand and exposes the platform to a revenue collapse in the event of stockouts.
+- **Implementation of post-purchase loyalty incentives (Cross-Selling)**: Design an automation strategy for email marketing and discount coupons valid exclusively for the 30 and 60 days following the first transaction, aiming to break the inertia of the current model where less than 1% of a cohort's users return to make a second purchase in the short term.
+- **Logistics capacity planning based on smoothed demand**: Deploy the 7-day moving average model (`Media_Movil_Ordenes_7D`) on the distribution center's operational dashboards, allowing the logistics team to predict and contract the necessary carrier fleet based on the real demand trend, isolating noise and false alarms caused by natural weekend volume drops.
+- **Fidelization and safeguarding of strategic sellers**: Develop an exclusive benefits and reduced commissions program for sellers controlling Top 1 products in highly competitive and fragmented categories (such as `watches_gifts`), ensuring the permanence of their catalogs on Olist against the temptation to migrate to competitor platforms.
+- **Isolation and auditing of lagging orders at month-end**: Establish a joint review protocol between the Operations and Customer Service teams during the final weeks of each month to unlock and accelerate the transition to 'delivered' status for pending orders (a critical phenomenon observed in August 2018), preventing delivery lags from negatively impacting brand perception and analytical repurchase tracking.
+- **Transition to a dynamic portfolio ecosystem**: Automate the ranking script (`DENSE_RANK`) to run on a seasonal (quarterly) basis, allowing the commercial team to proactively detect which products are losing traction against new trends and ensuring that the marketplace's main banners always display the items with the highest organic conversion of the moment.
+
+### Featured Visualizations
+
+- **Cohort analysis matrix for repurchase rate diagnosis**
+
+The query revealed a flat transactional structure with low horizontal retention throughout the entire user lifecycle. Taking the cohort with the highest acquisition traction, 2017-11 (with 7,060 initial customers) as an example, it is observed that only 40 users returned to make a second transaction in Mes_1 (an immediate retention rate of 0.56%), stabilizing at marginal levels toward Mes_6 with only 8 active customers. This widespread behavior across all cohorts demonstrates that Olist's growth has critically depended on a massive new user acquisition engine, highlighting the lack of an organic long-term loyalty ecosystem.
+
+![Cohort analysis matrix](/assets/img/project_Sales_Trends_Analysis_SQL/Respuesta_1.png)
+
+- **Commercial portfolio hierarchy and star product identification**
+
+Through hierarchical segmentation by category, the analysis exposed sharp operational discrepancies between logistics volume and the financial value of items. In the Bed and Bath vertical (bed_bath_table), the leading product (99a478...) demonstrates absolute market dominance with 488 units sold that consolidated $43,025.56, creating a critical dependency gap against its Top 3 counterpart (84f456...), which only generated $10,304.96. On the other hand, in high-end categories such as Babies (baby), the Top 1 product (25c385...) leads revenue with $38,907.32 despite registering just 38 units sold, confirming that inventory optimization and campaigns must be segmented by ticket value and not by warehouse turnover.
+
+![Commercial portfolio hierarchy and star product identification](/assets/img/project_Sales_Trends_Analysis_SQL/Respuesta_2.png)
+
+- **Temporal smoothing and analytical stabilization of daily demand**
+
+The moving average calculation demonstrates how the extreme volatility of daily operations can distort the diagnosis of actual demand if evaluated in isolation. During the operational kickoff in October 2016, an isolated peak is observed on 2016-10-04 with $8,595.89 in raw sales and 54 orders, which drops drastically toward 2016-10-09, registering just $2,399.70. By applying the 7-day analytical function (Media_Movil_Ventas_7D), the flow progressively stabilizes, showing a smoothed curve of $3,057.61 that climbs steadily up to $5,309.36, isolating seasonal weekend drops and providing a reliable indicator for carrier fleet logistics planning.
+
+![Temporal smoothing and analytical stabilization of daily demand](/assets/img/project_Sales_Trends_Analysis_SQL/Respuesta_3.png)
+
+Explore more details of the project in the [full repository](https://github.com/AndresASR-20/AndresASR-20.github.io/tree/main/assets/projects/project_Sales_Trends_Analysis_SQL).
