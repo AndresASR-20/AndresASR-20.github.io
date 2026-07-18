@@ -50,7 +50,7 @@ Data analysis | Problem solving | Effective communication | Teamwork | Results o
 
 ### Area: Data Engineering and SQL
 * [Trend and Churn Pattern Analysis in Subscription Service for Telecom Company](#trend-and-churn-pattern-analysis-in-subscription-services-for-a-telecommunications-company)
-* [Sales Performance Analysis and Cohort Analysis](sales-performance-analysis-and-cohort-analysis)
+* [Sales Performance Analysis and Cohort Analysis](#sales-performance-analysis-and-cohort-analysis)
 
 ## Selected Projects
 
