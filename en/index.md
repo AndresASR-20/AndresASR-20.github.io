@@ -562,18 +562,18 @@ The solution provides the company with a key analytical asset that transforms mi
 
 The query revealed a flat transactional structure with low horizontal retention throughout the entire user lifecycle. Taking the cohort with the highest acquisition traction, 2017-11 (with 7,060 initial customers) as an example, it is observed that only 40 users returned to make a second transaction in Mes_1 (an immediate retention rate of 0.56%), stabilizing at marginal levels toward Mes_6 with only 8 active customers. This widespread behavior across all cohorts demonstrates that Olist's growth has critically depended on a massive new user acquisition engine, highlighting the lack of an organic long-term loyalty ecosystem.
 
-![Cohort analysis matrix](/assets/img/project_Sales_Trends_Analysis_SQL/Respuesta_1.png)
+![Cohort analysis matrix](/assets/img/project_Sales_Trend_Analysis_SQL/Respuesta_1.png)
 
 - **Commercial portfolio hierarchy and star product identification**
 
 Through hierarchical segmentation by category, the analysis exposed sharp operational discrepancies between logistics volume and the financial value of items. In the Bed and Bath vertical (bed_bath_table), the leading product (99a478...) demonstrates absolute market dominance with 488 units sold that consolidated $43,025.56, creating a critical dependency gap against its Top 3 counterpart (84f456...), which only generated $10,304.96. On the other hand, in high-end categories such as Babies (baby), the Top 1 product (25c385...) leads revenue with $38,907.32 despite registering just 38 units sold, confirming that inventory optimization and campaigns must be segmented by ticket value and not by warehouse turnover.
 
-![Commercial portfolio hierarchy and star product identification](/assets/img/project_Sales_Trends_Analysis_SQL/Respuesta_2.png)
+![Commercial portfolio hierarchy and star product identification](/assets/img/project_Sales_Trend_Analysis_SQL/Respuesta_2.png)
 
 - **Temporal smoothing and analytical stabilization of daily demand**
 
 The moving average calculation demonstrates how the extreme volatility of daily operations can distort the diagnosis of actual demand if evaluated in isolation. During the operational kickoff in October 2016, an isolated peak is observed on 2016-10-04 with $8,595.89 in raw sales and 54 orders, which drops drastically toward 2016-10-09, registering just $2,399.70. By applying the 7-day analytical function (Media_Movil_Ventas_7D), the flow progressively stabilizes, showing a smoothed curve of $3,057.61 that climbs steadily up to $5,309.36, isolating seasonal weekend drops and providing a reliable indicator for carrier fleet logistics planning.
 
-![Temporal smoothing and analytical stabilization of daily demand](/assets/img/project_Sales_Trends_Analysis_SQL/Respuesta_3.png)
+![Temporal smoothing and analytical stabilization of daily demand](/assets/img/project_Sales_Trend_Analysis_SQL/Respuesta_3.png)
 
-Explore more details of the project in the [full repository](https://github.com/AndresASR-20/AndresASR-20.github.io/tree/main/assets/projects/project_Sales_Trends_Analysis_SQL).
+Explore more details of the project in the [full repository](https://github.com/AndresASR-20/AndresASR-20.github.io/tree/main/assets/projects/project_Sales_Trend_Analysis_SQL).
