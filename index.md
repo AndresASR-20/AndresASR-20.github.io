@@ -559,18 +559,18 @@ La solución dota a la empresa de un activo analítico clave que transforma mill
 
 La consulta arrojó una estructura transaccional plana y de baja retención horizontal a lo largo de todo el ciclo de vida del usuario. Tomando como ejemplo la cohorte con mayor tracción de adquisición, 2017-11 (con 7,060 clientes iniciales), se observa que solo 40 usuarios regresaron a realizar una segunda transacción en el Mes_1 (una tasa de retención inmediata del 0.56%), estabilizándose en niveles marginales hacia el Mes_6 con solo 8 clientes activos. Este comportamiento generalizado en todas las cohortes demuestra que el crecimiento de Olist ha dependido críticamente de un motor de adquisición masiva de nuevos usuarios, evidenciando la ausencia de un ecosistema de fidelización orgánica a corto y mediano plazo.
 
-![Matriz de análisis de cohortes](assets/img/project_Sales_Trends_Analysis_SQL/Respuesta_1.png)
+![Matriz de análisis de cohortes](assets/img/project_Sales_Trend_Analysis_SQL/Respuesta_1.png)
 
 - **Jerarquización del portafolio comercial e identificación de productos estrella**
 
 A través de la segmentación jerárquica por categoría, el análisis expuso agudas discrepancias operativas entre el volumen logístico y el valor financiero de los artículos. En la vertical de Cama y Baño (bed_bath_table), el producto líder (99a478...) demuestra una dominancia absoluta en el mercado con 488 unidades vendidas que consolidaron $43,025.56, generando una brecha crítica de dependencia frente a su Top 3 (84f456...), el cual solo recaudó $10,304.96. Por otro lado, en categorías de alta gama como Bebés (baby), el producto Top 1 (25c385...) lidera la facturación con $38,907.32 a pesar de registrar apenas 38 unidades vendidas, lo que confirma que la optimización del inventario y las campañas deben segmentarse por valor de ticket y no por rotación de almacén.
 
-![Identificación de productos estrella](assets/img/project_Sales_Trends_Analysis_SQL/Respuesta_2.png)
+![Identificación de productos estrella](assets/img/project_Sales_Trend_Analysis_SQL/Respuesta_2.png)
 
 - **Suavizado temporal y estabilización analítica de la demanda diaria**
 
 El cálculo de la media móvil evidencia cómo la volatilidad extrema de la operación diaria puede distorsionar el diagnóstico de la demanda real si se evalúa de forma aislada. Durante el arranque de operaciones en octubre de 2016, se observa un pico aislado el 2016-10-04 con $8,595.89 en ventas crudas y 54 órdenes, el cual se desploma drásticamente hacia el 2016-10-09 registrando apenas $2,399.70. Al aplicar la función analítica de 7 días (Media_Movil_Ventas_7D), el flujo se estabiliza de forma progresiva, mostrando una curva suavizada de $3,057.61 que asciende de manera sana hasta $5,309.36, aislando las caídas estacionales de los fines de semana y proveyendo un indicador confiable para la planeación logística de la flota transportista.
 
-![Suavizado temporal y estabilización analítica de la demanda diaria](assets/img/project_Sales_Trends_Analysis_SQL/Respuesta_3.png)
+![Suavizado temporal y estabilización analítica de la demanda diaria](assets/img/project_Sales_Trend_Analysis_SQL/Respuesta_3.png)
 
-Explora más detalles del proyecto en el [repositorio completo](https://github.com/AndresASR-20/AndresASR-20.github.io/tree/main/assets/projects/project_Sales_Trends_Analysis_SQL).
+Explora más detalles del proyecto en el [repositorio completo](https://github.com/AndresASR-20/AndresASR-20.github.io/tree/main/assets/projects/project_Sales_Trend_Analysis_SQL).
