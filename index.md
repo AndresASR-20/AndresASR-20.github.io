@@ -47,6 +47,7 @@ Análisis de datos | Resolución de problemas | Comunicación efectiva | Trabajo
 
 ### Área: Ingeniería de Datos y SQL
 * [Análisis de tendencias y patrones de cancelación en servicio de suscripción para empresa de telecomunicaciones](#análisis-de-tendencias-y-patrones-de-cancelación-en-servicio-de-suscripción-para-empresa-de-telecomunicaciones)
+* [Análisis de rendimiento de ventas y análisis de cohortes](#análisis-de-rendimiento-de-ventas-y-análisis-de-cohortes)
 
 ## Proyectos Seleccionados
 
@@ -506,3 +507,70 @@ Se encontró que la concentración del riesgo financiero puede aislarse mediante
 ![Estrategia de Alerta Temprana e Intervención](assets/img/project_Trends_Analysis_SQL/Respuesta_10.png)
 
 Explora más detalles del proyecto en el [repositorio completo](https://github.com/AndresASR-20/AndresASR-20.github.io/tree/main/assets/projects/project_Trends_Analysis_SQL).
+
+---
+
+## Análisis de rendimiento de ventas y análisis de cohortes
+
+Este proyecto consistió en el análisis estratégico y la centralización de datos transaccionales masivos de Microsoft SQL Server (T-SQL) para diagnosticar la retención de clientes y optimizar el portafolio comercial de un importante marketplace de e-commerce en América Latina. Tras un riguroso proceso de ingesta y tipado de datos en SSMS, se desarrollaron tres modelos de análisis avanzado: una matriz horizontal de cohortes que mide los ciclos de vida de los usuarios mediante pivoteo condicional; un ranking de "productos estrella" por categoría utilizando funciones de ventana (DENSE_RANK()) para mitigar riesgos de inventario; y un modelo de suavizado temporal con ROWS BETWEEN para calcular la media móvil de demanda de 7 días, aislando la volatilidad natural de los fines de semana.
+
+La solución dota a la empresa de un activo analítico clave que transforma millones de registros en un mapa de decisiones directivas para los equipos de Growth Marketing, Logística y Compras. Gracias a este diagnóstico, el negocio puede transicionar de una gestión puramente intuitiva a una estrategia proactiva, permitiendo diseñar campañas de lealtad hiper-dirigidas a los productos estrella de mayor valor, predecir con exactitud la capacidad de distribución con los transportistas y redefinir los esfuerzos de retención de usuarios para blindar y potenciar los ingresos de la compañía.
+
+### Herramientas y Proceso de Datos
+
+![SQL](https://img.shields.io/badge/SQL-3262A8?style=for-the-badge)
+![Microsoft SQL Server](https://img.shields.io/badge/microsoft_sql_server-3262A8?style=for-the-badge)
+![Análisis exploratorio de datos](https://img.shields.io/badge/Análisis_exploratorio_de_datos-031796?style=for-the-badge)
+![Análisis de tendencias](https://img.shields.io/badge/Análisis_de_tendencias-031796?style=for-the-badge)
+![Limpieza de datos](https://img.shields.io/badge/Limpieza_de_datos-031796?style=for-the-badge)
+![Transformación de datos](https://img.shields.io/badge/Transformación_de_datos-031796?style=for-the-badge)
+![Análisis de cohortes](https://img.shields.io/badge/Análisis_de_cohortes-031796?style=for-the-badge)
+![Análisis temporal](https://img.shields.io/badge/Análisis_temporal-031796?style=for-the-badge)
+![Análisis financiero](https://img.shields.io/badge/Análisis_financiero-031796?style=for-the-badge)
+
+### Preguntas clave
+
+1. ¿Los clientes que compran por primera vez en Olist regresan a comprar en los meses siguientes, o somos una plataforma de "una sola compra"? ¿Ha mejorado la retención de los clientes que adquirimos en 2017 en comparación con los de 2018? 
+2. Si tuviéramos que hacer campañas de marketing hiper-segmentadas por categoría de producto, ¿cuáles son los 3 productos específicos (por ID) que están generando el mayor volumen de ventas en cada categoría para ponerlos en portada? ¿Hay categorías dominadas por un solo producto o la competencia interna es variada?
+3. El volumen de ventas diario es sumamente ruidoso y tiene picos extraños (como el Black Friday). ¿Cómo podemos ver la tendencia real "suavizada" de las ventas diarias para que el equipo de operaciones pueda planificar la capacidad logística de los transportistas sin alarmarse por picos de un solo día?
+
+### Metodología
+
+- **Ingesta, limpieza y tipado estructural de datos**: Se ejecutó la importación de archivos planos a **SSMS** y se corrigieron inconsistencias de origen mediante la reconfiguración de tipos de datos complejos, transformando identificadores únicos a cadenas (`VARCHAR`), montos comerciales a valores decimales (`DECIMAL(10,2)`) y marcas de tiempo a formatos de fecha nativos (`DATETIME`), garantizando la integridad de los cálculos temporales.
+- **Aislamiento cronológico y truncamiento temporal**: Se implementó una lógica de normalización de fechas utilizando la combinación matemática de las funciones `DATEADD` y `DATEDIFF` sobre el primer registro de compra (`MIN`), logrando truncar los timestamps crudos al primer día de su mes correspondiente para el establecimiento exacto de los periodos de inicio.
+- **Modelado analítico de cohortes y pivoteo condicional**: Se estructuraron expresiones de tabla comunes (CTEs) secuenciales para calcular el índice de madurez del cliente y, mediante sentencias avanzadas de agregación condicional (`COUNT DISTINCT` con `CASE WHEN`), se transformó un flujo de registros vertical en una matriz horizontal que mapea el ciclo de vida y el goteo de retención de los usuarios.
+- **Particionado y jerarquización de inventario**: Se unificaron las dimensiones de catálogo con los registros de órdenes mediante `JOINs` múltiples, aplicando la función de ventana analítica `DENSE_RANK() OVER (PARTITION BY ... ORDER BY ...)` para segmentar y extraer de forma compacta el Top 3 de productos con mayor recaudación por cada categoría de negocio sin omitir empates justos.
+- **Suavizado de la demanda mediante Window Framing**: Se desarrolló un modelo de agregación móvil diario aplicando la cláusula de restricción de filas `ROWS BETWEEN 6 PRECEDING AND CURRENT ROW`, aislando eficazmente la volatilidad, el ruido transaccional y la estacionalidad natural de los fines de semana para exponer la tendencia real de la capacidad logística.
+- **Filtrado y depuración del estado de operación**: Se integraron reglas de negocio rigurosas en la capa de persistencia mediante filtros de condición (`WHERE order_status = 'delivered'`), mitigando el sesgo de datos causado por órdenes canceladas o pendientes y asegurando que las conclusiones de retención y facturación se basaran exclusivamente en ingresos reales consolidados.
+
+### Conclusiones y recomendaciones
+
+- **Reestructuración de campañas hacia el ticket de alto valor**: Reorientar el presupuesto de pauta digital del equipo de Growth Marketing para promocionar de forma prioritaria los productos identificados en el Top 3 por facturación (como el ID líder de `health_beauty` que recauda más de $63k USD), priorizando el margen de ganancia por sobre los artículos que únicamente mueven volumen logístico de bajo costo.
+- **Diversificación de proveedores en categorías monopolizadas**: Iniciar mesas de negociación para dar de alta a nuevos vendedores dentro de la categoría de Cama y Baño (`bed_bath_table`), mitigando el riesgo crítico de centralización donde el producto estrella número uno absorbe casi la totalidad de la demanda y expone a la plataforma a un desplome de ingresos ante eventuales rupturas de inventario.
+- **Implementación de incentivos de lealtad post-compra (Cross-Selling)**: Diseñar una estrategia de automatización de correos (*Email Marketing*) y cupones de descuento válidos exclusivamente para los 30 y 60 días posteriores a la primera transacción, buscando romper la inercia del modelo actual donde menos del 1% de los usuarios de una cohorte regresa a realizar una segunda compra en el corto plazo.
+- **Planificación de capacidad logística basada en demanda suavizada**: Desplegar el modelo de media móvil de 7 días (`Media_Movil_Ordenes_7D`) en los tableros operativos del centro de distribución, permitiendo al equipo de logística predecir y contratar la flota de transportistas necesaria según la tendencia real de la demanda, aislando el ruido y las falsas alarmas provocadas por las caídas naturales de volumen los fines de semana.
+- **Fidelización y blindaje de sellers estratégicos**: Desarrollar un programa de beneficios exclusivos y comisiones reducidas para los vendedores que controlan los productos del Top 1 en categorías de alta competencia y fragmentadas (como `watches_gifts`), asegurando la permanencia de sus catálogos en Olist frente a la tentación de migrar hacia plataformas de la competencia.
+- **Aislamiento y auditoría de órdenes rezagadas al cierre de mes**: Establecer un protocolo de revisión conjunta entre el equipo de Operaciones y Atención al Cliente durante las últimas semanas de cada mes, con el fin de destrabar y acelerar la transición al estado 'delivered' de los pedidos pendientes (fenómeno crítico observado en agosto de 2018), evitando que los desfases de entrega impacten negativamente la percepción de marca y el registro analítico de recompra.
+- **Transición a un ecosistema de portafolio dinámico**: Automatizar el script de jerarquización (`DENSE_RANK`) para que se ejecute de forma estacional (trimestral), permitiendo al equipo comercial detectar de forma proactiva qué productos están perdiendo tracción frente a nuevas tendencias y garantizando que los banners principales del marketplace siempre muestren los artículos con la conversión orgánica más alta del momento.
+
+### Visualizaciones destacadas
+
+- **Matriz de análisis de cohortes para el diagnóstico de la tasa de recompra**
+
+La consulta arrojó una estructura transaccional plana y de baja retención horizontal a lo largo de todo el ciclo de vida del usuario. Tomando como ejemplo la cohorte con mayor tracción de adquisición, 2017-11 (con 7,060 clientes iniciales), se observa que solo 40 usuarios regresaron a realizar una segunda transacción en el Mes_1 (una tasa de retención inmediata del 0.56%), estabilizándose en niveles marginales hacia el Mes_6 con solo 8 clientes activos. Este comportamiento generalizado en todas las cohortes demuestra que el crecimiento de Olist ha dependido críticamente de un motor de adquisición masiva de nuevos usuarios, evidenciando la ausencia de un ecosistema de fidelización orgánica a corto y mediano plazo.
+
+![Matriz de análisis de cohortes](assets/img/project_Sales_Trends_Analysis_SQL/Respuesta_1.png)
+
+- **Jerarquización del portafolio comercial e identificación de productos estrella**
+
+A través de la segmentación jerárquica por categoría, el análisis expuso agudas discrepancias operativas entre el volumen logístico y el valor financiero de los artículos. En la vertical de Cama y Baño (bed_bath_table), el producto líder (99a478...) demuestra una dominancia absoluta en el mercado con 488 unidades vendidas que consolidaron $43,025.56, generando una brecha crítica de dependencia frente a su Top 3 (84f456...), el cual solo recaudó $10,304.96. Por otro lado, en categorías de alta gama como Bebés (baby), el producto Top 1 (25c385...) lidera la facturación con $38,907.32 a pesar de registrar apenas 38 unidades vendidas, lo que confirma que la optimización del inventario y las campañas deben segmentarse por valor de ticket y no por rotación de almacén.
+
+![Identificación de productos estrella](assets/img/project_Sales_Trends_Analysis_SQL/Respuesta_2.png)
+
+- **Suavizado temporal y estabilización analítica de la demanda diaria**
+
+El cálculo de la media móvil evidencia cómo la volatilidad extrema de la operación diaria puede distorsionar el diagnóstico de la demanda real si se evalúa de forma aislada. Durante el arranque de operaciones en octubre de 2016, se observa un pico aislado el 2016-10-04 con $8,595.89 en ventas crudas y 54 órdenes, el cual se desploma drásticamente hacia el 2016-10-09 registrando apenas $2,399.70. Al aplicar la función analítica de 7 días (Media_Movil_Ventas_7D), el flujo se estabiliza de forma progresiva, mostrando una curva suavizada de $3,057.61 que asciende de manera sana hasta $5,309.36, aislando las caídas estacionales de los fines de semana y proveyendo un indicador confiable para la planeación logística de la flota transportista.
+
+![Suavizado temporal y estabilización analítica de la demanda diaria](assets/img/project_Sales_Trends_Analysis_SQL/Respuesta_3.png)
+
+Explora más detalles del proyecto en el [repositorio completo](https://github.com/AndresASR-20/AndresASR-20.github.io/tree/main/assets/projects/project_Sales_Trends_Analysis_SQL).
