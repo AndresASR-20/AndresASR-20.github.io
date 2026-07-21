@@ -580,6 +580,8 @@ The moving average calculation demonstrates how the extreme volatility of daily 
 
 ![Temporal smoothing and analytical stabilization of daily demand](/assets/img/project_Sales_Trend_Analysis_SQL/Respuesta_3.png)
 
+Explore more details of the project in the [full repository](https://github.com/AndresASR-20/AndresASR-20.github.io/tree/main/assets/projects/project_Sales_Trend_Analysis_SQL).
+
 ---
 
 ## Retail Sales and Returns Intelligence. Revenue Leakage Detection via Power Pivot and DAX
