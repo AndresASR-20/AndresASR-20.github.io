@@ -25,14 +25,15 @@ Mechanical engineer and ERP consultant certified in data analysis with solid exp
 Specialist in the full data lifecycle: from the extraction and cleaning of large volumes of information, to predictive modeling and interactive dashboard design. I automate ETL workflows to reduce processing times and transform complex data into visual dashboards that guide business decisions.
 
 ### Technical skills
-* Data analysis and management using **Excel / SQL / Python**
-* Data visualization and storytelling using **Tableau / Power BI**
+* Data analysis and management using **Microsoft Excel / Power Query / DAX / Power Pivot / SQL / Python**
+* Python libraries domain: **Pandas / NumPy / Matplotlib / Seaborn / SciPy / Scikit-learn**
+* Data visualization and storytelling using **Tableau / Power BI / Microsoft Excel**
 * Information transfer between systems using **API / Postman**
 * Digitalization of business operations using **ERP (Microsoft Dynamics 365 ERP's)**
-* AI adoption as a research assistant and optimization of my deliverables using **GitHub Copilot / Copilot / Gemini 3.1 Pro**
+* AI adoption as an assistant and optimizer of my deliverables using **GitHub Copilot / Copilot / Gemini 3.1 Pro**
 * Generation of process flowcharts using **Microsoft Visio**
 * Management of milestones and project tasks using **Azure DevOps**
-* Data project documentation using **Jupyter Notebooks**
+* Data project documentation and coding using **Jupyter Notebooks / Visual Studio / PostgreSQL / Microsoft SQL Server**
 * Project documentation management using **Microsoft SharePoint / Microsoft OneDrive**
 
 ### Soft skills
