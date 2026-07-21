@@ -577,6 +577,8 @@ El cálculo de la media móvil evidencia cómo la volatilidad extrema de la oper
 
 ![Suavizado temporal y estabilización analítica de la demanda diaria](assets/img/project_Sales_Trend_Analysis_SQL/Respuesta_3.png)
 
+Explora más detalles del proyecto en el [repositorio completo](https://github.com/AndresASR-20/AndresASR-20.github.io/tree/main/assets/projects/project_Sales_Trend_Analysis_SQL).
+
 ---
 
 ## Inteligencia de Ventas y Devoluciones en Retail. Detección de Fugas de Ingresos mediante Power Pivot y DAX
