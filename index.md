@@ -22,14 +22,15 @@ Ingeniero mecánico y consultor de ERP certificado en análisis de datos con só
 Especialista en el ciclo completo del dato: desde la extracción y limpieza de grandes volúmenes de información, hasta el modelado predictivo y el diseño de tableros interactivos. Automatizo flujos de trabajo ETL para reducir tiempos de procesamiento y transformo datos complejos en tableros visuales que guían las decisiones del negocio.
 
 ### Habilidades tecnológicas
-* Análisis y gestión de datos utilizando **Excel / SQL / Python**
-* Visualización de datos y narración de historias usando **Tableau / Power BI**
+* Análisis y gestión de datos utilizando **Microsoft Excel / Power Query / DAX / Power Pivot / SQL / Python**
+* Librerías de Python dominadas: **Pandas / NumPy / Matplotlib / Seaborn / SciPy / Scikit-learn**
+* Visualización de datos y narración de historias usando **Tableau / Power BI / Microsoft Excel**
 * Transferencia de información entre sistemas usando **API / Postman**
 * Digitalización de business operations usando **ERP (Microsoft Dynamics 365 ERP's)**
-* Adopción de IA como asistente de investigación y optimización de mis entregables usando **GitHub Copilot / Copilot / Gemini 3.1 Pro**
+* Adopción de IA como asistente y optimización de mis entregables usando **GitHub Copilot / Copilot / Gemini 3.1 Pro**
 * Generación de diagramas de flujo de procesos usando **Microsoft Visio**
 * Gestión de hitos y tareas de proyecto usando **Azure DevOps**
-* Documentación de proyectos de data usando **Jupyter Notebooks**
+* Documentación y codificación de proyectos de data usando **Jupyter Notebooks / Visual Studio / PostgreSQL / Microsoft SQL Server**
 * Gestión de documentación de proyectos usando **Microsoft SharePoint / Microsoft OneDrive**
 
 ### Habilidades blandas
