@@ -34,7 +34,7 @@ Especialista en el ciclo completo del dato: desde la extracción y limpieza de g
 * Gestión de documentación de proyectos usando **Microsoft SharePoint / Microsoft OneDrive**
 
 ### Habilidades blandas
-Análisis de datos | Resolución de problemas | Comunicación efectiva | Trabajo en equipo | Orientación a resultados | Organización | Proactividad | Atención al detalle | Optimización de Procesos
+Análisis de datos | Resolución de problemas | Storytelling | Comunicación efectiva | Pensamiento crítico | Trabajo en equipo | Orientación a resultados | Organización | Gestión del tiempo, prioridad y riesgos | Proactividad | Atención al detalle | Optimización de Procesos | Aprendizaje contínuo
 
 ## Índice de Proyectos
 
