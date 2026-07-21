@@ -92,9 +92,7 @@ The solution equips senior management and Operations, Finance, and Supply Chain 
 - **Executable layout and Dashboard UX/UI architecture:** The Excel canvas was transformed into an executive-level interactive interface by removing native spreadsheet elements (gridlines, headings, and formula bars), structuring floating KPI cards with contrasting corporate color palettes (Navy Blue for revenue and Soft Coral/Red for alerts), and linking horizontal data slicers by year, month, and country to enable seamless real-time analytical exploration.
 
 ### Data Dictionary
-Here is the data dictionary translated into English using the exact same structure:
 
-Data Dictionary
 The Online Retail (Transactions) table:
 - InvoiceNo: Unique alphanumeric code assigned to each transaction. Codes starting with the prefix 'C' indicate a cancellation or return (Credit Note).
 - StockCode: Unique alphanumeric product or item code (SKU).
