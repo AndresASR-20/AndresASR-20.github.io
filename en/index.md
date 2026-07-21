@@ -37,7 +37,7 @@ Specialist in the full data lifecycle: from the extraction and cleaning of large
 * Project documentation management using **Microsoft SharePoint / Microsoft OneDrive**
 
 ### Soft skills
-Data analysis | Problem solving | Effective communication | Teamwork | Results orientation | Organization | Proactivity | Attention to detail | Process Optimization
+Data analysis | Problem solving | Storytelling | Effective communication | Critical thinking | Teamwork | Results orientation | Organization | Time, priority and risks management | Proactivity | Attention to detail | Process Optimization | Continuous learning
 
 ## Project Index
 
