@@ -53,7 +53,7 @@ Data analysis | Problem solving | Effective communication | Teamwork | Results o
 * [Sales Performance Analysis and Cohort Analysis](#sales-performance-analysis-and-cohort-analysis)
 
 ### Area: Analysis and Data Visualization with Excel
-* [Retail Returns and Sales Intelligence. Uncovering Revenue Leakage through Power Pivot and DAX](#retail-returns-and-sales-intelligence-uncovering-revenue-leakage-through-power-pivot-and-dax)
+* [Retail Sales and Returns Intelligence. Revenue Leakage Detection via Power Pivot and DAX](#retail-sales-and-returns-intelligence-revenue-leakage-detection-via-power-pivot-and-dax)
 
 ## Selected Projects
 
