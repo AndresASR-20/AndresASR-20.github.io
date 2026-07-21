@@ -50,7 +50,7 @@ Análisis de datos | Resolución de problemas | Comunicación efectiva | Trabajo
 * [Análisis de rendimiento de ventas y análisis de cohortes](#análisis-de-rendimiento-de-ventas-y-análisis-de-cohortes)
 
 ### Área: Análisis y visualización con Excel
-* [Inteligencia de Ventas y Devoluciones en Retail: Detección de Fugas de Ingresos mediante Power Pivot y DAX](#inteligencia-de-ventas-y-devoluciones-en-retail.-detección-de-fugas-de-ingresos-mediante-power-pivot-y-DAX)
+* [Inteligencia de Ventas y Devoluciones en Retail. Detección de Fugas de Ingresos mediante Power Pivot y DAX](#inteligencia-de-ventas-y-devoluciones-en-retail.-detección-de-fugas-de-ingresos-mediante-power-pivot-y-DAX)
 
 ## Proyectos Seleccionados
 
