@@ -49,6 +49,9 @@ Análisis de datos | Resolución de problemas | Comunicación efectiva | Trabajo
 * [Análisis de tendencias y patrones de cancelación en servicio de suscripción para empresa de telecomunicaciones](#análisis-de-tendencias-y-patrones-de-cancelación-en-servicio-de-suscripción-para-empresa-de-telecomunicaciones)
 * [Análisis de rendimiento de ventas y análisis de cohortes](#análisis-de-rendimiento-de-ventas-y-análisis-de-cohortes)
 
+### Área: Análisis y visualización con Excel
+* [Inteligencia de Ventas y Devoluciones en Retail: Detección de Fugas de Ingresos mediante Power Pivot y DAX](#inteligencia-de-ventas-y-devoluciones-en-retail:-detección-de-fugas-de-ingresos-mediante-power-pivot-y-DAX)
+
 ## Proyectos Seleccionados
 
 ## Optimización de gastos de distribuidora de entrada a eventos de entretenimiento
@@ -573,4 +576,55 @@ El cálculo de la media móvil evidencia cómo la volatilidad extrema de la oper
 
 ![Suavizado temporal y estabilización analítica de la demanda diaria](assets/img/project_Sales_Trend_Analysis_SQL/Respuesta_3.png)
 
-Explora más detalles del proyecto en el [repositorio completo](https://github.com/AndresASR-20/AndresASR-20.github.io/tree/main/assets/projects/project_Sales_Trend_Analysis_SQL).
+---
+
+## Inteligencia de Ventas y Devoluciones en Retail: Detección de Fugas de Ingresos mediante Power Pivot y DAX
+
+Este proyecto consistió en el análisis diagnóstico y el diseño de una arquitectura analítica ejecutiva sobre datos transaccionales masivos para identificar la variabilidad en los ingresos y auditar la tasa de devoluciones en una plataforma e-commerce multinacional. Tras un proceso riguroso de ingesta, saneamiento y tipado de datos en Power Query (M), se construyó un modelo dimensional en Power Pivot potenciado con medidas en DAX para aislar el sesgo de las cancelaciones sobre las ventas reales. Se desarrollaron análisis temporales y geográficos avanzados que permitieron descubrir el fenómeno del desfase temporal (temporal lag), donde devoluciones masivas post-temporada navideña sobrepasaron el volumen de ventas del periodo corriente, evidenciando un efecto de arrastre de inventario de ciclos previos.
+
+La solución dota a la alta dirección y a los equipos de Operaciones, Finanzas y Supply Chain de un Dashboard interactivo de alto nivel que transforma más de medio millón de registros en un mapa táctico de decisiones. Gracias a este cuadro de mando, la empresa puede migrar de un monitoreo pasivo de ventas a una gestión proactiva del riesgo comercial, permitiendo auditar el impacto real de las devoluciones en la caja chica, reestructurar las políticas de retorno de producto para mitigar fugas de capital y optimizar la estrategia de expansión en mercados internacionales clave como Países Bajos, Irlanda y Alemania.
+
+### Herramientas y Proceso de Datos
+
+![Microsoft Excel](https://img.shields.io/badge/Microsoft_Excel-3262A8?style=for-the-badge&logo=microsoft-excel&logoColor=white)
+![Power Query](https://img.shields.io/badge/Power_Query-3262A8?style=for-the-badge&logo=powerbi&logoColor=black)
+![Power Pivot](https://img.shields.io/badge/Power_Pivot-3262A8?style=for-the-badge&logo=microsoft&logoColor=white)
+![DAX](https://img.shields.io/badge/DAX-3262A8?style=for-the-badge&logo=microsoft&logoColor=white)
+![Data Visualization](https://img.shields.io/badge/Data_Visualization-031796?style=for-the-badge)
+
+### Preguntas clave
+
+- 📊 Dirección General y Finanzas (Estrategia y Flujo de Caja)
+1. ¿Cuál es el volumen real de ingresos netos que genera el negocio tras descontar el impacto de las devoluciones?
+2. ¿Cuál es el porcentaje de fuga de capital global por concepto de devoluciones y se mantiene dentro de los márgenes aceptables del e-commerce?
+3. ¿Cómo impactan las devoluciones al flujo de caja durante el primer trimestre (Q1) frente al cierre de año (Q4)?
+- 🌍 Growth, Marketing y Expansión Internacional
+4. Si excluimos el mercado dominante (Reino Unido), ¿cuáles son los 3 países internacionales con mayor volumen de ventas para enfocar las campañas de adquisición?
+5. ¿Existen países internacionales que, a pesar de tener buenas ventas, presenten tasas de devolución anormalmente altas que arriesguen la rentabilidad de la pauta publicitaria?
+- 📦 Operaciones, Logística y Servicio al Cliente
+6. ¿En qué meses del año la operación sufre el fenómeno de "desfase temporal" (temporal lag) donde las devoluciones procesadas amenazan con superar la venta del mes?
+7. ¿Cuál es el alcance real de la base de clientes activos que están sosteniendo el volumen transaccional de la empresa?
+- 🗓️ Análisis Estacional y Planificación Comercial
+8. ¿Cómo varía el comportamiento de compra y la tasa de devolución cuando comparamos el desempeño interanual de 2010 vs. 2011?
+9. ¿Qué meses representan la "temporada baja" de ventas donde el equipo comercial debe activar promociones para estimular la demanda?
+
+### Metodología
+
+- **Ingesta, saneamiento y tipado estructural en Power Query:** Se ejecutó la importación del volumen transaccional masivo hacia Power Query, aplicando una limpieza rigurosa sobre los datos crudos para corregir inconsistencias de origen; se depuraron descripciones operativas no comerciales (AMAZON FEE, POSTAGE, ajustadores de inventario) y se reconfiguraron los tipos de datos asignando formato de texto a códigos de stock/factura (StockCode, InvoiceNo), valores decimales moneda a los precios unitarios (UnitPrice) y marcas de tiempo nativas (DateTime), garantizando la integridad técnica del modelo.
+- **Aislamiento de transacciones y lógica de notas de crédito:** Se implementó una regla de negocio condicional para segmentar la naturaleza de los registros, identificando las facturas regulares frente a las devoluciones/cancelaciones mediante la detección del prefijo 'C' en el identificador de factura y valores negativos en la cantidad (Quantity < 0), sentando las bases sintácticas para aislar las devoluciones sin corruptos en los totales brutos.
+- **Modelado dimensional y desarrollo de métricas dinámicas en DAX:** Se estructuró un modelo de datos robusto en Power Pivot construyendo medidas analíticas optimizadas en DAX; se utilizó la función SUMX combinada con FILTER para calcular las ventas puras absolutas (Quantity > 0) y el monto consolidado de devoluciones (ABS(Quantity)), integrando la función DIVIDE con manejo de errores para obtener la tasa de devolución real (Return_Rate) y DISTINCTCOUNT para contabilizar la base real de clientes únicos.
+- **Diagnóstico del fenómeno de desfase temporal (Temporal Lag):** Se diseñó un análisis de variaciones temporales mes a mes para auditar picos atípicos en las devoluciones, identificando y documentando el efecto de arrastre de inventario post-temporada navideña (donde devoluciones procesadas en enero sobre compras de diciembre generaron tasas de retorno superiores al 100% en productos específicos), permitiendo diagnosticar cuellos de botella en las ventanas de devolución sin alterar la integridad matemática de las fuentes.
+- **Aislamiento geográfico y jerarquización de mercados (Top 10):** Se configuraron filtros de comportamiento combinados en la capa visual para aislar el mercado dominante (Reino Unido) y evaluar el desempeño del comercio internacional, habilitando la función de filtros múltiples por campo para jerarquizar dinámicamente el Top 10 de países con mayor volumen de facturación pura (Total_only_sales), eliminando el ruido visual de mercados marginales y reescalando las barras de comparación.
+- **Maquetación ejecutable y arquitectura UX/UI de Dashboard:** Se transformó el lienzo de Excel en una interfaz interactiva de nivel directivo eliminando elementos nativos de hoja de cálculo (cuadrículas, encabezados y barras de fórmulas), estructurando tarjetas de KPIs flotantes con paletas de color corporativas contrastadas (Azul Marino para ingresos y Coral/Rojo para alertas) y vinculando segmentadores de datos horizontales por año, mes y país para permitir una exploración analítica fluida en tiempo real.
+
+### Visualizaciones destacadas
+
+- **Dashboard ejecutivo de analítica de ventas y tasa de devoluciones**
+
+La solución integra un cuadro de mando consolidador que muestra una arquitectura analítica limpia e interactiva diseñada para la toma de decisiones directivas. Al aislar el mercado principal de Reino Unido, se observa un volumen de ventas puras de **$1,298,794 USD** generado por **7,814 clientes únicos**, registrando un monto global de devoluciones de **$486,428 USD** con una tasa de retorno del **4.76%**. 
+
+En el gráfico de tendencia temporal se evidencia con claridad el fenómeno del *desfase temporal* (*temporal lag*), donde las devoluciones procesadas en diciembre rozan el **30.00%** de la facturación del mes, producto del arrastre de compras de periodos anteriores. Por su parte, la jerarquización geográfica internacional posiciona a **Países Bajos (Netherlands)** e **Irlanda (EIRE)** a la cabeza del mercado global con una facturación que supera los **$250,000 USD** cada uno, seguidos por **Alemania (Germany)** y **Francia (France)**, consolidando las regiones clave para la expansión de la compañía.
+
+![Dashboard de Analítica de Ventas y Devoluciones](assets/img/project_Excel_eCommerce_Performance/imagen_1.png)
+
+Explora más detalles del proyecto en el [repositorio completo](https://github.com/AndresASR-20/AndresASR-20.github.io/tree/main/assets/projects/project_Excel_eCommerce_Performance).
