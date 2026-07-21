@@ -50,7 +50,7 @@ Análisis de datos | Resolución de problemas | Comunicación efectiva | Trabajo
 * [Análisis de rendimiento de ventas y análisis de cohortes](#análisis-de-rendimiento-de-ventas-y-análisis-de-cohortes)
 
 ### Área: Análisis y visualización con Excel
-* [Inteligencia de Ventas y Devoluciones en Retail: Detección de Fugas de Ingresos mediante Power Pivot y DAX](#inteligencia-de-ventas-y-devoluciones-en-retail:-detección-de-fugas-de-ingresos-mediante-power-pivot-y-DAX)
+* [Inteligencia de Ventas y Devoluciones en Retail: Detección de Fugas de Ingresos mediante Power Pivot y DAX](#inteligencia-de-ventas-y-devoluciones-en-retail.-detección-de-fugas-de-ingresos-mediante-power-pivot-y-DAX)
 
 ## Proyectos Seleccionados
 
@@ -578,7 +578,7 @@ El cálculo de la media móvil evidencia cómo la volatilidad extrema de la oper
 
 ---
 
-## Inteligencia de Ventas y Devoluciones en Retail: Detección de Fugas de Ingresos mediante Power Pivot y DAX
+## Inteligencia de Ventas y Devoluciones en Retail. Detección de Fugas de Ingresos mediante Power Pivot y DAX
 
 Este proyecto consistió en el análisis diagnóstico y el diseño de una arquitectura analítica ejecutiva sobre datos transaccionales masivos para identificar la variabilidad en los ingresos y auditar la tasa de devoluciones en una plataforma e-commerce multinacional. Tras un proceso riguroso de ingesta, saneamiento y tipado de datos en Power Query (M), se construyó un modelo dimensional en Power Pivot potenciado con medidas en DAX para aislar el sesgo de las cancelaciones sobre las ventas reales. Se desarrollaron análisis temporales y geográficos avanzados que permitieron descubrir el fenómeno del desfase temporal (temporal lag), donde devoluciones masivas post-temporada navideña sobrepasaron el volumen de ventas del periodo corriente, evidenciando un efecto de arrastre de inventario de ciclos previos.
 
@@ -590,7 +590,7 @@ La solución dota a la alta dirección y a los equipos de Operaciones, Finanzas 
 ![Power Query](https://img.shields.io/badge/Power_Query-3262A8?style=for-the-badge&logo=powerbi&logoColor=black)
 ![Power Pivot](https://img.shields.io/badge/Power_Pivot-3262A8?style=for-the-badge&logo=microsoft&logoColor=white)
 ![DAX](https://img.shields.io/badge/DAX-3262A8?style=for-the-badge&logo=microsoft&logoColor=white)
-![Data Visualization](https://img.shields.io/badge/Data_Visualization-031796?style=for-the-badge)
+![Visualización de datos](https://img.shields.io/badge/Visualización_de_datos-031796?style=for-the-badge)
 
 ### Preguntas clave
 
