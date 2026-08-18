@@ -22,7 +22,7 @@ Ingeniero mecánico y consultor de ERP certificado en análisis de datos con só
 Especialista en el ciclo completo del dato: desde la extracción y limpieza de grandes volúmenes de información, hasta el modelado predictivo y el diseño de tableros interactivos. Automatizo flujos de trabajo ETL para reducir tiempos de procesamiento y transformo datos complejos en tableros visuales que guían las decisiones del negocio.
 
 ### Habilidades tecnológicas
-* Análisis y gestión de datos utilizando **Microsoft Excel / Power Query / DAX / Power Pivot / SQL / Python / Alteryx**
+* Análisis y gestión de datos utilizando **Microsoft Excel / Power Query / DAX / Power Pivot / SQL / T-SQL / Python / Alteryx**
 * Librerías de Python dominadas: **Pandas / NumPy / Matplotlib / Seaborn / SciPy / Scikit-learn**
 * Visualización de datos y narración de historias usando **Tableau / Power BI / Microsoft Excel**
 * Transferencia de información entre sistemas usando **API / Postman**
@@ -45,6 +45,7 @@ Análisis de datos | Resolución de problemas | Storytelling | Comunicación efe
 ### Área: Dashboards y Visualización
 * [Análisis de tendencias de categorías consumidas en Youtube](#análisis-de-tendencias-de-categorías-consumidas-en-youtube)
 * [Dashboard para análisis ejecutivo y comercial de ventas para tienda online](#dashboard-para-análisis-ejecutivo-y-comercial-de-ventas-para-tienda-online)
+* [Dashboard de análisis ejecutivo y comercial para la industria FMCG (extracción con SQL Server + Power BI)](#dashboard-de-análisis-ejecutivo-y-comercial-para-la-industria-fmcg-extracción-con-sql-server--power-bi)
 
 ### Área: Ingeniería de Datos y SQL
 * [Análisis de tendencias y patrones de cancelación en servicio de suscripción para empresa de telecomunicaciones](#análisis-de-tendencias-y-patrones-de-cancelación-en-servicio-de-suscripción-para-empresa-de-telecomunicaciones)
@@ -390,6 +391,91 @@ Se encontró que existe una variabilidad de la participación de cada genero en 
 ![Dashboard Comercial](assets/img/project_Data_Visualization_Online_Sales/Screenshot_2026_07_07_113947.png)
 
 Explora más detalles del proyecto en el [repositorio completo](https://github.com/AndresASR-20/AndresASR-20.github.io/tree/main/assets/projects/project_Data_Visualization_Online_Sales).
+
+---
+
+## Dashboard de análisis ejecutivo y comercial para la industria FMCG (extracción con SQL Server + Power BI)
+
+Este proyecto consistió en el diseño e implementación de un dashboard interactivo en Power BI para una empresa de bienes de consumo masivo (FMCG) con presencia en múltiples canales y regiones. El objetivo principal fue estructurar la información proveniente de tres frentes clave del negocio: el registro transaccional de ventas (que detalla fechas, tiendas, canales y regiones), la disponibilidad semanal de producto en cada punto de venta (base de las métricas de distribución y quiebres de stock), y el desglose de promociones aplicadas por producto. Con esta base, se diseñó un modelo de datos dimensional en SQL Server, se extrajeron los KPIs mediante consultas T-SQL, y se transformaron en un ecosistema de visualización unificado que equilibra un enfoque ejecutivo de alto nivel con un análisis comercial profundamente operativo.
+
+La solución permite al negocio supervisar continuamente su estatus mediante el seguimiento de KPIs críticos de la industria FMCG como el revenue total, el crecimiento mes contra mes y año contra año, el margen bruto, la distribución numérica y ponderada, y la tasa de quiebre de stock (OOS). Para responder a las necesidades estratégicas de la empresa, el cuadro de mando fue dotado de herramientas dinámicas que explican el comportamiento temporal y estacional de las ventas, la cobertura de producto por región y canal, la participación real de cada categoría y marca en el portafolio, y la efectividad y rentabilidad de las promociones. Como resultado, el negocio ahora cuenta con una herramienta clave para agilizar la toma de decisiones y detectar oportunidades de crecimiento y de mejora en distribución.
+
+### Herramientas y Proceso de Datos
+
+![SQL Server](https://img.shields.io/badge/SQL_Server-3262A8?style=for-the-badge)
+![T-SQL](https://img.shields.io/badge/T--SQL-3262A8?style=for-the-badge)
+![Power BI](https://img.shields.io/badge/Power_BI-3262A8?style=for-the-badge)
+![DAX](https://img.shields.io/badge/DAX-3262A8?style=for-the-badge)
+![Modelado de datos](https://img.shields.io/badge/Modelado_de_Datos-031796?style=for-the-badge)
+![Dashboards](https://img.shields.io/badge/Dashboards-031796?style=for-the-badge)
+![KPIs](https://img.shields.io/badge/KPI-031796?style=for-the-badge)
+![Métricas de negocio](https://img.shields.io/badge/Métricas_de_Negocio-031796?style=for-the-badge)
+![StoryTelling](https://img.shields.io/badge/Storytelling-031796?style=for-the-badge)
+
+### Preguntas clave
+
+1. ¿Cómo se comportan las métricas clave del negocio (revenue, margen, distribución, quiebres de stock)?
+2. ¿Cómo se comportan las ventas a través del tiempo? ¿Existen patrones estacionales?
+3. ¿Cómo es el comportamiento de las ventas y la disponibilidad por región y canal? ¿Dónde hay mayor oportunidad de mejora?
+4. ¿Qué categorías y marcas tienen mayor y menor participación dentro del portafolio?
+5. ¿Qué tan efectivas son las promociones y cómo impactan la rentabilidad del negocio?
+
+### Metodología
+
+- **Diseño de modelo de datos dimensional en SQL Server**: Se construyó un esquema estrella con 4 tablas de dimensión (fecha, producto, tienda, promoción) y 2 tablas de hechos (ventas y disponibilidad), pensado para consultas analíticas eficientes.
+- **Extracción de KPIs mediante consultas T-SQL**: Se desarrollaron consultas con funciones de ventana (`LAG`, `RANK`, sumas acumuladas) para calcular crecimiento MoM/YoY, distribución numérica y ponderada, tasa de quiebre de stock, margen y ROI de promociones directamente en la base de datos.
+- **Generación de cards para métricas clave de negocio**: Se genera una visualización de valores de métricas clave (revenue total, crecimiento YoY, margen bruto, distribución ponderada, tasa de quiebre de stock) para comprensión ágil del estatus del negocio.
+- **Generación de gráfico de comportamiento de ventas en el tiempo**: Se genera una visualización de gráfico de líneas que permite entender ágilmente cómo han evolucionado las ventas a través del tiempo y detectar patrones estacionales.
+- **Generación de mapa de calor de disponibilidad y quiebres de stock**: Se genera una visualización de matriz con formato de color secuencial que permite identificar, por región y canal, dónde la cobertura de producto es más débil.
+- **Generación de gráfico de rentabilidad por producto**: Se genera una visualización de dispersión (margen % vs. revenue) que permite identificar productos de alto volumen pero bajo margen.
+- **Generación de comparación de efectividad de promociones**: Se genera una visualización de barras que compara el promedio de unidades vendidas con y sin promoción por producto, y una tabla de ROI por tipo de promoción.
+- **Creación de segmentadores y filtros dinámicos**: Se crearon elementos visuales para permitir dashboards dinámicos que filtran la información acorde a año, categoría, canal y región, permitiendo un análisis más profundo del comportamiento del negocio.
+
+### Visualizaciones destacadas
+
+- **Dashboard — Resumen Ejecutivo**
+
+Página con los 5 KPIs generales del negocio (revenue, crecimiento YoY, margen bruto, distribución ponderada y tasa de quiebre de stock), la tendencia mensual de revenue comparando 2024 vs. 2025, y el panorama de ventas por región y categoría. Se identificó un comportamiento estacional marcado, con pico de ventas en noviembre-diciembre y una caída de alrededor de 37% en enero-febrero respecto al cierre del año anterior.
+
+![Dashboard Resumen Ejecutivo](assets/img/project_Data_Visualization_FMCG/image1.png)
+
+- **Dashboard — Ventas y Crecimiento**
+
+Página enfocada en el desempeño comercial: ticket promedio, crecimiento mes contra mes por categoría, top de productos y participación de revenue por categoría. Se confirmó que Cuidado Personal es la categoría con mayor participación del portafolio, y que la caída generalizada de ~50% en enero es consistente en las 6 categorías — reflejo directo de la estacionalidad del negocio, no un comportamiento aislado de una sola línea de producto.
+
+![Dashboard Ventas y Crecimiento](assets/img/project_Data_Visualization_FMCG/image2.png)
+
+- **Dashboard — Distribución y Disponibilidad**
+
+Página que mide la cobertura del producto en tienda: distribución numérica, distribución ponderada y tasa de quiebre de stock (OOS), desglosadas por región y canal, además del top y bottom 5 de productos según su distribución ponderada. Se encontró que el canal Farmacia presenta la tasa de quiebre de stock más alta de todos los canales al ver el portafolio completo — sin embargo, al segmentar por categoría se confirma que esto se debe a que Farmacia es un canal especializado en Cuidado Personal, no a un problema real de reabastecimiento.
+
+![Dashboard Distribución y Disponibilidad](assets/img/project_Data_Visualization_FMCG/image3.png)
+
+- **Dashboard — Rentabilidad y Promociones**
+
+Página que conecta margen, utilidad bruta y efectividad de promociones: comparación de unidades promedio vendidas con y sin promoción por producto, dispersión de margen % vs. revenue por producto, y una tabla de ROI por tipo de promoción. Se detectó que la promoción tipo "2x1" es la que genera mayor incremento en unidades vendidas, pero también la que más golpea el margen (13.8% contra un promedio de 46-57% en el resto de las promociones), evidenciando un trade-off claro entre volumen y rentabilidad.
+
+![Dashboard Rentabilidad y Promociones](assets/img/project_Data_Visualization_FMCG/image4.png)
+
+- **Modelo de datos**
+
+Esquema estrella implementado en Power BI: 4 tablas de dimensión (fecha, producto, tienda, promoción) y 2 tablas de hechos (ventas y disponibilidad), relacionadas mediante llaves de un solo sentido para consultas eficientes. Las medidas DAX se organizaron en tablas independientes por tema (Ventas, Rentabilidad, Distribución, Promociones) para mantener el panel de campos limpio y facilitar el mantenimiento del modelo.
+
+![Modelo de datos](assets/img/project_Data_Visualization_FMCG/image5.png)
+
+- **Script de creación de base de datos (T-SQL)**
+
+Consulta DDL que crea el esquema estrella completo en SQL Server: tablas, tipos de dato, llaves primarias y foráneas con sus restricciones de integridad referencial entre dimensiones y hechos.
+
+![Query de creación de base de datos](assets/img/project_Data_Visualization_FMCG/image6.png)
+
+- **Script de extracción y análisis de KPIs (T-SQL)**
+
+Consultas de extracción organizadas en 5 bloques temáticos (ventas y crecimiento, distribución y disponibilidad, rentabilidad y promociones, market share y ranking, y vistas reutilizables para Power BI), usando funciones de ventana para calcular crecimiento y agregaciones directamente en la base de datos antes de conectar con Power BI.
+
+![Query de análisis de KPIs](assets/img/project_Data_Visualization_FMCG/image7.png)
+
+Explora más detalles del proyecto en el [repositorio completo](https://github.com/AndresASR-20/AndresASR-20.github.io/tree/main/assets/projects/project_Data_Visualization_FMCG).
 
 ---
 
