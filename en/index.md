@@ -440,43 +440,43 @@ The solution allows the business to continuously monitor its status by tracking 
 
 Page with the business's 5 general KPIs (revenue, YoY growth, gross margin, weighted distribution and out-of-stock rate), the monthly revenue trend comparing 2024 vs. 2025, and the sales overview by region and category. A marked seasonal pattern was identified, with a sales peak in November-December and a drop of around 37% in January-February compared to the prior year's close.
 
-![Executive Summary Dashboard](assets/img/project_Data_Visualization_FMCG/image1.png)
+![Executive Summary Dashboard](/assets/img/project_Data_Visualization_FMCG/image1.png)
 
 - **Dashboard — Sales & Growth**
 
 Page focused on commercial performance: average ticket, month-over-month growth by category, top products, and revenue share by category. Personal Care was confirmed as the category with the largest share of the portfolio, and the widespread ~50% drop in January was found to be consistent across all 6 categories — a direct reflection of the business's seasonality, not an isolated behavior of a single product line.
 
-![Sales & Growth Dashboard](assets/img/project_Data_Visualization_FMCG/image2.png)
+![Sales & Growth Dashboard](/assets/img/project_Data_Visualization_FMCG/image2.png)
 
 - **Dashboard — Distribution & Availability**
 
 Page that measures in-store product coverage: numeric distribution, weighted distribution and out-of-stock rate (OOS), broken down by region and channel, plus the top and bottom 5 products by weighted distribution. The Pharmacy channel was found to have the highest out-of-stock rate of all channels when looking at the full portfolio — however, segmenting by category confirms this is because Pharmacy is a channel specialized in Personal Care, not an actual replenishment problem.
 
-![Distribution & Availability Dashboard](assets/img/project_Data_Visualization_FMCG/image3.png)
+![Distribution & Availability Dashboard](/assets/img/project_Data_Visualization_FMCG/image3.png)
 
 - **Dashboard — Profitability & Promotions**
 
 Page that connects margin, gross profit and promotion effectiveness: comparison of average units sold with and without promotion per product, a scatter plot of margin % vs. revenue per product, and a ROI table by promotion type. The "2-for-1" promotion type was found to generate the largest increase in units sold, but also to hit margin the hardest (13.8% against an average of 46-57% for the rest of the promotions), highlighting a clear trade-off between volume and profitability.
 
-![Profitability & Promotions Dashboard](assets/img/project_Data_Visualization_FMCG/image4.png)
+![Profitability & Promotions Dashboard](/assets/img/project_Data_Visualization_FMCG/image4.png)
 
 - **Data Model**
 
 Star schema implemented in Power BI: 4 dimension tables (date, product, store, promotion) and 2 fact tables (sales and availability), related through one-directional keys for efficient querying. DAX measures were organized into separate tables by topic (Sales, Profitability, Distribution, Promotions) to keep the fields pane clean and make the model easier to maintain.
 
-![Data Model](assets/img/project_Data_Visualization_FMCG/image5.png)
+![Data Model](/assets/img/project_Data_Visualization_FMCG/image5.png)
 
 - **Database Creation Script (T-SQL)**
 
 DDL query that creates the complete star schema in SQL Server: tables, data types, and primary/foreign keys with their referential integrity constraints between dimensions and facts.
 
-![Database Creation Query](assets/img/project_Data_Visualization_FMCG/image6.png)
+![Database Creation Query](/assets/img/project_Data_Visualization_FMCG/image6.png)
 
 - **KPI Extraction & Analysis Script (T-SQL)**
 
 Extraction queries organized into 5 thematic blocks (sales and growth, distribution and availability, profitability and promotions, market share and ranking, and reusable views for Power BI), using window functions to calculate growth and aggregations directly in the database before connecting to Power BI.
 
-![KPI Analysis Query](assets/img/project_Data_Visualization_FMCG/image7.png)
+![KPI Analysis Query](/assets/img/project_Data_Visualization_FMCG/image7.png)
 
 Explore more project details in the [full repository](https://github.com/AndresASR-20/AndresASR-20.github.io/tree/main/assets/projects/project_Data_Visualization_FMCG).
 
