@@ -25,7 +25,7 @@ Mechanical engineer and ERP consultant certified in data analysis with solid exp
 Specialist in the full data lifecycle: from the extraction and cleaning of large volumes of information, to predictive modeling and interactive dashboard design. I automate ETL workflows to reduce processing times and transform complex data into visual dashboards that guide business decisions.
 
 ### Technical skills
-* Data analysis and management using **Microsoft Excel / Power Query / DAX / Power Pivot / SQL / Python / Alteryx**
+* Data analysis and management using **Microsoft Excel / Power Query / DAX / Power Pivot / SQL / T-SQL / Python / Alteryx**
 * Python libraries domain: **Pandas / NumPy / Matplotlib / Seaborn / SciPy / Scikit-learn**
 * Data visualization and storytelling using **Tableau / Power BI / Microsoft Excel**
 * Information transfer between systems using **API / Postman**
@@ -47,7 +47,8 @@ Data analysis | Problem solving | Storytelling | Effective communication | Criti
 
 ### Area: Dashboards and Visualization
 * [Category Trend Analysis on YouTube](#youtube-trending-categories-analysis)
-* [Executive and Commercial Sales Analysis Dashboard for Online Store](#dashboard-for-executive-and-commercial-sales-analysis-for-online-store) 
+* [Executive and Commercial Sales Analysis Dashboard for Online Store](#dashboard-for-executive-and-commercial-sales-analysis-for-online-store)
+* [Executive and Commercial Analytics Dashboard for the FMCG Industry (SQL Server extraction + Power BI)](#executive-and-commercial-analytics-dashboard-for-the-fmcg-industry-sql-server-extraction--power-bi) 
 
 ### Area: Data Engineering and SQL
 * [Trend and Churn Pattern Analysis in Subscription Service for Telecom Company](#trend-and-churn-pattern-analysis-in-subscription-services-for-a-telecommunications-company)
@@ -393,6 +394,91 @@ It was found that there is a variability in the participation of each gender in 
 ![Commercial Dashboard](/assets/img/project_Data_Visualization_Online_Sales/Screenshot_2026_07_07_113947.png)
 
 Explore more details of the project in the [entire repository](https://github.com/AndresASR-20/AndresASR-20.github.io/tree/main/assets/projects/project_Data_Visualization_Online_Sales).
+
+---
+
+## Executive and Commercial Analytics Dashboard for the FMCG Industry (SQL Server extraction + Power BI)
+
+This project consisted of designing and building an interactive Power BI dashboard for a fast-moving consumer goods (FMCG) company operating across multiple channels and regions. The main goal was to structure information coming from three key sources of the business: the transactional sales record (detailing dates, stores, channels and regions), the weekly product availability at each point of sale (the foundation for distribution and out-of-stock metrics), and the breakdown of promotions applied per product. Based on this foundation, a dimensional data model was designed in SQL Server, KPIs were extracted through T-SQL queries, and the results were turned into a unified visualization ecosystem that balances a high-level executive view with a deeply operational commercial analysis.
+
+The solution allows the business to continuously monitor its status by tracking critical FMCG KPIs such as total revenue, month-over-month and year-over-year growth, gross margin, numeric and weighted distribution, and out-of-stock rate (OOS). To meet the company's strategic needs, the dashboard was equipped with dynamic tools that explain the temporal and seasonal behavior of sales, product coverage by region and channel, the real participation of each category and brand within the portfolio, and the effectiveness and profitability of promotions. As a result, the business now has a key tool to speed up decision-making and identify growth opportunities as well as areas to improve in distribution.
+
+### Tools and Data Process
+
+![SQL Server](https://img.shields.io/badge/SQL_Server-3262A8?style=for-the-badge)
+![T-SQL](https://img.shields.io/badge/T--SQL-3262A8?style=for-the-badge)
+![Power BI](https://img.shields.io/badge/Power_BI-3262A8?style=for-the-badge)
+![DAX](https://img.shields.io/badge/DAX-3262A8?style=for-the-badge)
+![Data Modeling](https://img.shields.io/badge/Data_Modeling-031796?style=for-the-badge)
+![Dashboards](https://img.shields.io/badge/Dashboards-031796?style=for-the-badge)
+![KPIs](https://img.shields.io/badge/KPI-031796?style=for-the-badge)
+![Business Metrics](https://img.shields.io/badge/Business_Metrics-031796?style=for-the-badge)
+![StoryTelling](https://img.shields.io/badge/Storytelling-031796?style=for-the-badge)
+
+### Key Questions
+
+1. How are the business's key metrics behaving (revenue, margin, distribution, out-of-stock)?
+2. How do sales behave over time? Are there seasonal patterns?
+3. How do sales and availability behave by region and channel? Where is there the most room for improvement?
+4. Which categories and brands have the highest and lowest share within the portfolio?
+5. How effective are promotions, and how do they impact the business's profitability?
+
+### Methodology
+
+- **Dimensional data model design in SQL Server**: A star schema was built with 4 dimension tables (date, product, store, promotion) and 2 fact tables (sales and availability), designed for efficient analytical queries.
+- **KPI extraction through T-SQL queries**: Queries using window functions (`LAG`, `RANK`, running totals) were developed to calculate MoM/YoY growth, numeric and weighted distribution, out-of-stock rate, margin, and promotion ROI directly in the database.
+- **Business KPI cards generation**: A visualization of key metric values (total revenue, YoY growth, gross margin, weighted distribution, out-of-stock rate) is generated for a quick understanding of the business's status.
+- **Sales trend over time chart generation**: A line chart visualization is generated to quickly understand how sales have evolved over time and to detect seasonal patterns.
+- **Availability and out-of-stock heatmap generation**: A matrix visualization with sequential color formatting is generated to identify, by region and channel, where product coverage is weakest.
+- **Product profitability chart generation**: A scatter plot (margin % vs. revenue) is generated to identify high-volume, low-margin products.
+- **Promotion effectiveness comparison generation**: A bar chart visualization is generated comparing the average units sold with and without promotion per product, along with a ROI table by promotion type.
+- **Dynamic slicers and filters creation**: Visual elements were created to enable dynamic dashboards that filter information by year, category, channel and region, allowing for a deeper analysis of business behavior.
+
+### Featured Visualizations
+
+- **Dashboard — Executive Summary**
+
+Page with the business's 5 general KPIs (revenue, YoY growth, gross margin, weighted distribution and out-of-stock rate), the monthly revenue trend comparing 2024 vs. 2025, and the sales overview by region and category. A marked seasonal pattern was identified, with a sales peak in November-December and a drop of around 37% in January-February compared to the prior year's close.
+
+![Executive Summary Dashboard](assets/img/project_Data_Visualization_FMCG/image1.png)
+
+- **Dashboard — Sales & Growth**
+
+Page focused on commercial performance: average ticket, month-over-month growth by category, top products, and revenue share by category. Personal Care was confirmed as the category with the largest share of the portfolio, and the widespread ~50% drop in January was found to be consistent across all 6 categories — a direct reflection of the business's seasonality, not an isolated behavior of a single product line.
+
+![Sales & Growth Dashboard](assets/img/project_Data_Visualization_FMCG/image2.png)
+
+- **Dashboard — Distribution & Availability**
+
+Page that measures in-store product coverage: numeric distribution, weighted distribution and out-of-stock rate (OOS), broken down by region and channel, plus the top and bottom 5 products by weighted distribution. The Pharmacy channel was found to have the highest out-of-stock rate of all channels when looking at the full portfolio — however, segmenting by category confirms this is because Pharmacy is a channel specialized in Personal Care, not an actual replenishment problem.
+
+![Distribution & Availability Dashboard](assets/img/project_Data_Visualization_FMCG/image3.png)
+
+- **Dashboard — Profitability & Promotions**
+
+Page that connects margin, gross profit and promotion effectiveness: comparison of average units sold with and without promotion per product, a scatter plot of margin % vs. revenue per product, and a ROI table by promotion type. The "2-for-1" promotion type was found to generate the largest increase in units sold, but also to hit margin the hardest (13.8% against an average of 46-57% for the rest of the promotions), highlighting a clear trade-off between volume and profitability.
+
+![Profitability & Promotions Dashboard](assets/img/project_Data_Visualization_FMCG/image4.png)
+
+- **Data Model**
+
+Star schema implemented in Power BI: 4 dimension tables (date, product, store, promotion) and 2 fact tables (sales and availability), related through one-directional keys for efficient querying. DAX measures were organized into separate tables by topic (Sales, Profitability, Distribution, Promotions) to keep the fields pane clean and make the model easier to maintain.
+
+![Data Model](assets/img/project_Data_Visualization_FMCG/image5.png)
+
+- **Database Creation Script (T-SQL)**
+
+DDL query that creates the complete star schema in SQL Server: tables, data types, and primary/foreign keys with their referential integrity constraints between dimensions and facts.
+
+![Database Creation Query](assets/img/project_Data_Visualization_FMCG/image6.png)
+
+- **KPI Extraction & Analysis Script (T-SQL)**
+
+Extraction queries organized into 5 thematic blocks (sales and growth, distribution and availability, profitability and promotions, market share and ranking, and reusable views for Power BI), using window functions to calculate growth and aggregations directly in the database before connecting to Power BI.
+
+![KPI Analysis Query](assets/img/project_Data_Visualization_FMCG/image7.png)
+
+Explore more project details in the [full repository](https://github.com/AndresASR-20/AndresASR-20.github.io/tree/main/assets/projects/project_Data_Visualization_FMCG).
 
 ---
 
